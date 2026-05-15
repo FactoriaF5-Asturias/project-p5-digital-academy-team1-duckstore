@@ -218,7 +218,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `chore`: add .gitignore
 - `docs`: add project to README
 - `feat`: add project folder structure
-- `feat: add imgs to folder" 
+- `feat`: add imgs to folder" 
 
 ## 🚀 Commits de Jenny 
 -
