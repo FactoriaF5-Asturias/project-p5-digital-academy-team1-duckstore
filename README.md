@@ -232,7 +232,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: homepage ventajas styles
 - `feat`: add homepage featured products
 - `style`: add homepage featured products styles
-- 
+- `feat`: add homepage footer
 - 
 - 
 
