@@ -224,7 +224,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: add homepage html structure
 - `feat`: add homepage header
 - `style`: add homepage header styles
-- 
+- `feat`: add homepage hero
 - 
 - 
 
