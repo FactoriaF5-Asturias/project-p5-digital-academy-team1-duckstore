@@ -220,20 +220,20 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: add project folder structure
 - `feat`: add imgs to folder" 
 
-## 🚀 Commits de Jenny 
--
+## 🚀 Commits de Jenny (Homepage)
+- `feat`: add homepage html structure
 -
 -
 
-## 🚀 Commits de Luisa
+## 🚀 Commits de Nieves (Catálogo)
 -
 -
 -
-## 🚀 Commits de Nieves 
+## 🚀 Commits de Luisa (Detalle-producto)
+- 
 -
 -
--
-## 🚀 Commits de Viktoryia
+## 🚀 Commits de Viktoryia (Contacto)
 -
 -
 -
