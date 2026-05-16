@@ -222,7 +222,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 🚀 Commits de Jenny (Homepage)
 - `feat`: add homepage html structure
--
+- `feat`: add homepage header
 -
 
 ## 🚀 Commits de Nieves (Catálogo)
