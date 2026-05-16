@@ -235,7 +235,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: add homepage footer
 - `style`: add homepage footer styles
 - `fix`: homepage hero image styles
-- 
+- `fix`: homepage ventajas and hero styles
 - 
 
 ## 🚀 Commits de Nieves (Catálogo)

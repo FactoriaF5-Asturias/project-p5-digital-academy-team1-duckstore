@@ -1,8 +1,8 @@
 .ventajas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
-  padding: var(--spacing-xl) var(--spacing-lg);
+  gap: 24px;
+  padding: 80px 40px;
   background-color: var(--color-fondo);
 }
 
@@ -10,56 +10,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
-  gap: 1.5rem;
   background-color: var(--color-blanco);
-  border-radius: var(--radius-card);
-  padding: 3rem 2rem;
-  border: 1px solid #E8E8E8;
-  transition: transform 0.3s ease;
-  min-height: 280px;
+  border-radius: 2rem;
+  padding: 80px 2rem;
+  border: 1px solid rgba(126, 119, 95, 0.1);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.12);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  height: 100%;
 }
 
 .ventajas__card:hover {
-  transform: translateY(-4px);
+  transform: scale(1.05) translateY(-4px);
 }
 
 .ventajas__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  background-color: var(--color-amarillo);
+  width: 64px;
+  height: 64px;
+  background-color: #ffe16d;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .ventajas__icon i {
-  font-size: 1.3rem;
-  color: var(--color-grey);
+  font-size: 1.5rem;
+  color: #221b00;
 }
 
 .ventajas__title {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-texto);
+  color: #1a1c1c;
+  margin-bottom: 12px;
 }
 
 .ventajas__text {
   font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--color-texto-suave);
+  font-size: 1rem;
+  color: #5f5e5e;
   line-height: 1.6;
 }
 
-/* -- RESPONSIVE --*/
+/* -- RESPONSIVE -- */
 @media (max-width: 768px) {
   .ventajas {
     grid-template-columns: 1fr;
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 40px 16px;
   }
 }
 
