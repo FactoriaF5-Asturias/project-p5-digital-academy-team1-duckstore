@@ -223,20 +223,27 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ## 🚀 Commits de Jenny (Homepage)
 - `feat`: add homepage html structure
 - `feat`: add homepage header
--
+- `style`: add homepage header styles
+- 
+- 
+- 
+
 
 ## 🚀 Commits de Nieves (Catálogo)
--
--
--
+- 
+- 
+- 
+
 ## 🚀 Commits de Luisa (Detalle-producto)
 - 
--
--
+- 
+- 
+
 ## 🚀 Commits de Viktoryia (Contacto)
--
--
--
+- 
+- 
+- 
+
 
 ---
 
@@ -247,7 +254,7 @@ Proyecto desarrollado por:
 **[Jennifer Sánchez Requejo]**  
 **[ Nombre]**  
 **[ Nombre]**  
-**[Nombre]**  
+**[ Nombre ]**  
 Training Developers · F5 Bootcamp
 
 ---
