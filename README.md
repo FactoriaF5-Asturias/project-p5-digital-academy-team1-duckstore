@@ -226,6 +226,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `style`: add homepage header styles
 - `feat`: add homepage hero
 - `style`: add homepage hero styles
+- `fix`: homepage header nav position
 - 
 
 
