@@ -177,7 +177,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 🏠 Landing Page
 
-![Landing Page](assets/imgs/.png)
+![Landing Page](assets/imgs/homepage-screenshot.png)
 
 ---
 
@@ -238,7 +238,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: homepage ventajas and hero styles
 - `fix`: homepage featured products styles
 - `refactor`: reorganize CSS folder structure
-- 
+- `docs`: add homepage screenshot to README
 
 
 ## 🚀 Commits de Nieves (Catálogo)
