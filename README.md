@@ -233,7 +233,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: add homepage featured products
 - `style`: add homepage featured products styles
 - `feat`: add homepage footer
-- 
+- `style`: add homepage footer styles
 - 
 
 
