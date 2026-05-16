@@ -1,15 +1,16 @@
 /* Colores */
 :root {
-  --color-amarillo: #F5C518;
-  --color-dorado: #A07B0E;
+  --color-amarillo: #FFD700;
+  --color-dorado: #B8860B;
+  --color-terciario: #00B4D8;
   --color-fondo: #FAF5E6;
   --color-blanco: #FFFFFF;
   --color-texto: #1F1F1F;
   --color-texto-suave: #5C5C5C;
 
   /* Tipografía */
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-display: 'Quicksand', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 
   /* Bordes */
   --radius-card: 16px;
