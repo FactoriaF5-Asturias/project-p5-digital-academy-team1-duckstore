@@ -227,7 +227,13 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: add homepage hero
 - `style`: add homepage hero styles
 - `fix`: homepage header nav position
+- `feat`: add homepage ventajas
 - 
+- 
+- 
+- 
+- 
+
 
 
 ## 🚀 Commits de Nieves (Catálogo)
