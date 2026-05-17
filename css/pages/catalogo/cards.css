@@ -136,3 +136,9 @@
     background-color: var(--color-amarillo); /* Oro brillante compartida [cite: 131] */
     color: var(--color-texto);            /* Texto oscuro [cite: 136] */
 }
+
+/* Modificador BEM para la etiqueta del Pato Astronauta */
+.product-card__badge--edicion-espacial {
+    background-color: #A2E8FF; /* Azul cielo suave */
+    color: #005570;            /* Azul oscuro legible */
+}

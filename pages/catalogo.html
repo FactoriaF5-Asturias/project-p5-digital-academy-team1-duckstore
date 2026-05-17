@@ -1,57 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo - DuckStore</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="../assets/imgs/logo.png" alt="DuckStore Logo">
-        </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li><a href="../index.html" class="nav__link">Inicio</a></li>
-                <li><a href="catalogo.html" class="nav__link nav__link--active">Catálogo</a></li>
-                <li><a href="contacto.html" class="nav__link">Contacto</a></li>
-            </ul>
-        </nav>
+      <div class="header__logo">
+        <img src="../assets/imgs/logo.png" alt="DuckStore Logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="catalogo.html" class="nav__link nav__link--active"
+              >Catálogo</a
+            >
+          </li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="catalog-container">
-        <section class="catalog-intro">
-            <h1 class="catalog-intro__title">Nuestros Patitos</h1>
-            <p class="catalog-intro__subtitle">
-                Colecciona alegría con nuestra selección premium de patitos de goma. Desde</p>
-            <p>héroes galácticos hasta clásicos de bañera.</p>
-            
-        </section>
-        <section class="filters">
-            <button class="filters__btn filters__btn--active">Todos</button>
-            <button class="filters__btn">Coleccionables</button>
-            <button class="filters__btn">Edición Limitada</button>
-        </section>
-        <section class="filters">
-            <button class="filters__btn filters__btn--active">Todos</button>
-            <button class="filters__btn">Coleccionables</button>
-            <button class="filters__btn">Edición Limitada</button>
-        </section>
+      <section class="catalog-intro">
+        <h1 class="catalog-intro__title">Nuestros Patitos</h1>
+        <p class="catalog-intro__subtitle">
+          Colecciona alegría con nuestra selección premium de patitos de goma.
+          Desde
+        </p>
+        <p>héroes galácticos hasta clásicos de bañera.</p>
+      </section>
+      <section class="filters">
+        <button class="filters__btn filters__btn--active">Todos</button>
+        <button class="filters__btn">Coleccionables</button>
+        <button class="filters__btn">Edición Limitada</button>
+      </section>
+      <section class="filters">
+        <button class="filters__btn filters__btn--active">Todos</button>
+        <button class="filters__btn">Coleccionables</button>
+        <button class="filters__btn">Edición Limitada</button>
+      </section>
 
-        <div class="product-grid">
-            </div>
-    <article class="product-card">
-    <span class="product-card__badge product-card__badge--top-ventas">Top Ventas</span>
-    <div class="product-card__image-container">
-        <img class="product-card__image" src="../assets/imgs/pato-clasico.png" alt="Pato Clásico">
-    </div>
-    <h2 class="product-card__title">Pato Clásico</h2>
-    <p class="product-card__price">12,50€</p>
-    <button class="product-card__button">Ver detalle</button>
-    </article>
-        </main>
-
-</body>
+      <div class="product-grid"></div>
+      <article class="product-card">
+        <span class="product-card__badge product-card__badge--top-ventas"
+          >Top Ventas</span
+        >
+        <div class="product-card__image-container">
+          <img
+            class="product-card__image"
+            src="../assets/imgs/pato-clasico.png"
+            alt="Pato Clásico"
+          />
+        </div>
+        <h2 class="product-card__title">Pato Clásico</h2>
+        <p class="product-card__price">12,50€</p>
+        <button class="product-card__button">Ver detalle</button>
+      </article>
+      <article class="product-card">
+        <span class="product-card__badge product-card__badge--edicion-espacial"
+          >Edición Espacial</span
+        >
+        <div class="product-card__image-container">
+          <img
+            class="product-card__image"
+            src="../assets/imgs/pato-astronauta.png"
+            alt="Pato Astronauta"
+          />
+        </div>
+        <h2 class="product-card__title">Pato Astronauta</h2>
+        <p class="product-card__price">15,90€</p>
+        <button class="product-card__button">Ver detalle</button>
+      </article>
+    </main>
+  </body>
 </html>
