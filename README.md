@@ -244,9 +244,18 @@ fix: fix contact map assets and css import path
 
 
 ## 🚀 Commits de Nieves (Catálogo)
-- 
-- 
-- 
+- git commit -m "feat: add catalog base structure and intro section"
+- git commit -m "feat: add catalog category filter buttons component"
+- git commit -m "feat: implement responsive product grid layout structure"
+- git commit -m "feat: inject classic duck card into layout"
+- git commit -m "feat: inject astronaut duck card into layout"
+- git commit -m "feat: inject pirate duck card into layout"
+- git commit -m "feat: inject superhero duck card into layout"
+- git commit -m "feat: inject chef duck card into layout"
+- git commit -m "feat: inject king duck card into layout"
+- git commit -m "feat: attach project shared footer to finish catalog page"
+- git commit -m "feat: complete pristine catalog page grid structure and styling"
+- git commit -m "feat: complete catalog 3x2 grid structure and correct footer"
 
 ## 🚀 Commits de Luisa (Detalle-producto)
 - 
