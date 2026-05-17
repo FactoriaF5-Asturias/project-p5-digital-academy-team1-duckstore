@@ -1,21 +1,32 @@
-/* Estilos específicos de la sección de introducción (Cabecera del contenido) */
-.intro {
-    margin-top: 20px;
-    margin-bottom: 35px;
-    text-align: left;
+.filters {
+    display: flex;
+    gap: var(--spacing-sm); /* Usa vuestro 0.5rem */
+    margin-bottom: var(--spacing-xl); /* Usa vuestro 4rem */
+    flex-wrap: wrap;
 }
 
-.intro h1 {
-    font-size: 2.5rem;          /* Tamaño destacado para el título principal */
-    font-weight: 700;           /* Estilo negrita / bold */
-    color: #111111;             /* Tono casi negro muy elegante */
-    margin-bottom: 12px;        /* Separación con el párrafo de abajo */
-    letter-spacing: -0.02em;    /* Ajuste sutil de las letras */
+.filters__btn {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--radius-button); /* Usa vuestro 999px */
+    background-color: #EAEAEA; /* Gris suave de la imagen para los inactivos */
+    color: var(--color-texto);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.intro p {
-    font-size: 1rem;            /* Tamaño de lectura cómodo */
-    color: #555555;             /* Gris suave para texto secundario */
-    max-width: 650px;           /* Limitamos el ancho para que no se estire en pantallas grandes */
-    line-height: 1.6;           /* Interlineado equilibrado para mejorar la legibilidad */
+.filters__btn:hover {
+    background-color: #DFDFDF;
+}
+
+/* Modificador BEM para el botón "Todos" seleccionado (Color marrón/oliva de la foto) */
+.filters__btn--active {
+    background-color: #6E5A0E; 
+    color: var(--color-blanco);
+}
+
+.filters__btn--active:hover {
+    background-color: #55450B;
 }
