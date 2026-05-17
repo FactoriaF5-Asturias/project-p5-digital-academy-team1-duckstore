@@ -213,7 +213,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ---
 
 # 📋 Planificación de commits
-feat/contacto-html-structure
+feat: create contacto.html boilerplate and header
 style: style contact page cards and responsive grid
 
 ## 🚀 Commits iniciales
