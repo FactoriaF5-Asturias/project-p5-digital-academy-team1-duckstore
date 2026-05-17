@@ -125,3 +125,14 @@
 .product-card__button:hover {
     background-color: #E6C200;
 }
+
+.product-card__badge--top-ventas {
+    background-color: var(--color-amarillo);
+    color: var(--color-texto);
+}
+
+/* Modificador BEM para la etiqueta del Pato Clásico */
+.product-card__badge--top-ventas {
+    background-color: var(--color-amarillo); /* Oro brillante compartida [cite: 131] */
+    color: var(--color-texto);            /* Texto oscuro [cite: 136] */
+}
