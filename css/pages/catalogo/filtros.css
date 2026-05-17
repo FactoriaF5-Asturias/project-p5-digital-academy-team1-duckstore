@@ -1,0 +1,21 @@
+/* Estilos específicos de la sección de introducción (Cabecera del contenido) */
+.intro {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 2.5rem;          /* Tamaño destacado para el título principal */
+    font-weight: 700;           /* Estilo negrita / bold */
+    color: #111111;             /* Tono casi negro muy elegante */
+    margin-bottom: 12px;        /* Separación con el párrafo de abajo */
+    letter-spacing: -0.02em;    /* Ajuste sutil de las letras */
+}
+
+.intro p {
+    font-size: 1rem;            /* Tamaño de lectura cómodo */
+    color: #555555;             /* Gris suave para texto secundario */
+    max-width: 650px;           /* Limitamos el ancho para que no se estire en pantallas grandes */
+    line-height: 1.6;           /* Interlineado equilibrado para mejorar la legibilidad */
+}
