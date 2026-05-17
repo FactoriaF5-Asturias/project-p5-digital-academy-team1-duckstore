@@ -213,6 +213,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ---
 
 # 📋 Planificación de commits
+feat/contacto-html-structure
 
 ## 🚀 Commits iniciales
 - `chore`: add .gitignore
