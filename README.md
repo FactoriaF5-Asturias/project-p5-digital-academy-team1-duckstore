@@ -248,12 +248,12 @@ fix: fix contact map assets and css import path
 - 
 - 
 
-## 🚀 Commits de Luisa (Detalle-producto)
+## 🚀 Commits de Viktoryia (Detalle-producto)
 - 
 - 
 - 
 
-## 🚀 Commits de Viktoryia (Contacto)
+## 🚀 Commits de Luisa (Contacto)
 - 
 - 
 - 
