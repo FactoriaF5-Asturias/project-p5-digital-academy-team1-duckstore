@@ -1,4 +1,7 @@
-/* Estilos globales del contenedor del catálogo */
+/* ==========================================================================
+   ESTILOS GENERALES DEL CATÁLOGO
+   ========================================================================== */
+
 .catalog-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -7,9 +10,9 @@
     background-color: var(--color-blanco);
 }
 
-/* Bloque de Introducción */
 .catalog-intro {
     margin-bottom: var(--spacing-lg);
+    text-align: left;
 }
 
 .catalog-intro__title {
@@ -27,37 +30,29 @@
     line-height: 1.5;
 }
 
-/* Responsive para la intro */
-@media (max-width: 768px) {
-    .catalog-container {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-    
-    .catalog-intro__title {
-        font-size: 2rem;
-    }
-}
-
-/* Layout de la cuadrícula general */
+/* ==========================================================================
+   REJILLA DE PRODUCTOS (FUERZA LAS 3 COLUMNAS DEL DISEÑO)
+   ========================================================================== */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--spacing-lg); /* 2rem de separación */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas perfectas una al lado de la otra */
+    gap: var(--spacing-lg); /* Separación de 2rem */
     margin-bottom: var(--spacing-xl);
 }
 
-/* ---- ESTILOS ESTRUCTURALES BEM PARA LAS TARJETAS ---- */
+/* Tarjeta Base */
 .product-card {
     background-color: var(--color-blanco);
-    border-radius: var(--radius-card); /* 16px */
+    border-radius: var(--radius-card);
     padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #EAEAEA;
 }
 
-/* Etiquetas flotantes superiores (Badges) */
+/* Etiquetas flotantes generales */
 .product-card__badge {
     position: absolute;
     top: var(--spacing-md);
@@ -71,9 +66,9 @@
     font-family: var(--font-body);
 }
 
-/* Contenedor gris de fondo donde flota el patito */
+/* Contenedor gris del fondo del patito */
 .product-card__image-container {
-    background-color: #F3F4F6; /* Fondo gris sutil de la foto */
+    background-color: #F3F4F6;
     border-radius: calc(var(--radius-card) - 4px);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
@@ -86,7 +81,7 @@
 .product-card__image {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ajusta el patito sin cortarlo */
+    object-fit: contain;
 }
 
 .product-card__title {
@@ -105,34 +100,86 @@
     margin-bottom: var(--spacing-md);
 }
 
-/* Botón "Ver detalle" amarillo redondeado */
+/* Botón Ver Detalle estilo píldora amarillo */
 .product-card__button {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--color-amarillo);
     color: var(--color-texto);
     border: none;
-    border-radius: var(--radius-button); /* 999px */
+    border-radius: var(--radius-button);
     font-family: var(--font-body);
     font-weight: 700;
     font-size: 0.9rem;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.2s ease;
-    margin-top: auto; /* Empuja el botón al fondo siempre parejo */
+    margin-top: auto;
 }
 
 .product-card__button:hover {
     background-color: #E6C200;
 }
 
+/* ==========================================================================
+   MODIFICADORES BEM PARA LOS COLORES DE LAS ETIQUETAS (BADGES)
+   ========================================================================== */
+
+/* 1. Pato Clásico */
 .product-card__badge--top-ventas {
     background-color: var(--color-amarillo);
     color: var(--color-texto);
 }
 
-/* Modificador BEM para la etiqueta del Pato Clásico */
-.product-card__badge--top-ventas {
-    background-color: var(--color-amarillo); /* Oro brillante compartida [cite: 131] */
-    color: var(--color-texto);            /* Texto oscuro [cite: 136] */
+/* 2. Pato Astronauta */
+.product-card__badge--edicion-espacial {
+    background-color: #A2E8FF;
+    color: #005570;
+}
+
+/* 3. Pato Pirata */
+.product-card__badge--aventura {
+    background-color: #E0E0E0;
+    color: var(--color-texto-suave);
+}
+
+/* 4. Pato Superhéroe */
+.product-card__badge--poder-duck {
+    background-color: #FFB347;
+    color: #D35400;
+}
+
+/* 5. Pato Cocinero */
+.product-card__badge--chef-master {
+    background-color: #D1F2D9;
+    color: #27AE60;
+}
+
+/* 6. Pato Rey */
+.product-card__badge--realeza {
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .catalog-intro__title {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
