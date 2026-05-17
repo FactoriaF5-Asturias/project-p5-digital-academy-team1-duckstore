@@ -215,7 +215,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 # 📋 Planificación de commits
 feat: create contacto.html boilerplate and header
 style: style contact page cards and responsive grid
-
+fix: fix contact map assets and css import path
 ## 🚀 Commits iniciales
 - `chore`: add .gitignore
 - `docs`: add project to README
