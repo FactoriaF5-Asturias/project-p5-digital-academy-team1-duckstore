@@ -142,3 +142,15 @@
     background-color: #A2E8FF; /* Azul cielo suave */
     color: #005570;            /* Azul oscuro legible */
 }
+
+/* Modificador BEM para la etiqueta del Pato Pirata */
+.product-card__badge--aventura {
+    background-color: #E0E0E0;              /* Gris de fondo */
+    color: var(--color-texto-suave);        /* Gris oscuro de vuestro equipo [cite: 137] */
+}
+
+/* Modificador BEM para la etiqueta del Pato Superhéroe */
+.product-card__badge--poder-duck {
+    background-color: #FFB347; /* Naranja claro */
+    color: #D35400;            /* Naranja oscuro para contraste */
+}
