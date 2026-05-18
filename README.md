@@ -213,14 +213,12 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ---
 
 # 📋 Planificación de commits
-feat: create contacto.html boilerplate and header
-style: style contact page cards and responsive grid
-fix: fix contact map assets and css import path
+
 ## 🚀 Commits iniciales
 - `chore`: add .gitignore
 - `docs`: add project to README
 - `feat`: add project folder structure
-- `feat`: add imgs to folder" 
+- `feat`: add imgs to folder
 
 ## 🚀 Commits de Jenny (Homepage)
 - `feat`: add homepage html structure
@@ -246,21 +244,21 @@ fix: fix contact map assets and css import path
 - `fix`: header and footer responsive mobile first
 
 ## 🚀 Commits de Nieves (Catálogo)
-- git commit -m "feat: add catalog base structure and intro section"
-- git commit -m "feat: add catalog category filter buttons component"
-- git commit -m "feat: implement responsive product grid layout structure"
-- git commit -m "feat: inject classic duck card into layout"
-- git commit -m "feat: inject astronaut duck card into layout"
-- git commit -m "feat: inject pirate duck card into layout"
-- git commit -m "feat: inject superhero duck card into layout"
-- git commit -m "feat: inject chef duck card into layout"
-- git commit -m "feat: inject king duck card into layout"
-- git commit -m "feat: attach project shared footer to finish catalog page"
-- git commit -m "feat: complete pristine catalog page grid structure and styling"
-- git commit -m "feat: complete catalog 3x2 grid structure and correct footer"
-- git commit -m "feat: adjust the position of the top sales tag and fix the Facebook icon"
+- `feat`: add catalog base structure and intro section
+- `feat`: add catalog category filter buttons component
+- `feat`: implement responsive product grid layout structure
+- `feat`: inject classic duck card into layout
+- `feat`: inject astronaut duck card into layout
+- `feat`: inject pirate duck card into layout
+- `feat`: inject superhero duck card into layout
+- `feat`: inject chef duck card into layout
+- `feat`: inject king duck card into layout
+- `feat`: attach project shared footer to finish catalog page
+- `feat`: complete pristine catalog page grid structure and styling
+- `feat`: complete catalog 3x2 grid structure and correct footer
+- `feat`: adjust the position of the top sales tag and fix the Facebook icon
 
-## 🚀 Commits de Luisa (Detalle-producto)
+## 🚀 Commits de Jenny (Detalle-producto)
 - `feat` add page contacto.html boilerplate and header nav
 - `feat` add contact cards layout structure and hero elements
 - `style` contact page cards and mobile responsive grid
@@ -286,9 +284,16 @@ fix: fix contact map assets and css import path
 - `fix`: fix logo route in product detail
 
 ## 🚀 Commits de Luisa (Contacto)
-- 
-- 
-- 
+- `feat`: create contacto.html boilerplate and header
+- `feat`: add contact cards layout and hero elements
+- `feat`: replace static map with interactive google maps iframe
+- `feat`: implement main website footer in contact page with correct spacing
+- `style`: adjust typography and apply corporate color palette
+- `style`: style contact page cards and responsive grid
+- `fix`: fix contact map assets and css import path
+- `fix`: accept remaining layout updates in contact html
+- `fix`: resolve footer logo redirection link to homepage
+- `docs`: log contact page development milestones in README
 
 
 ---
@@ -297,9 +302,9 @@ fix: fix contact map assets and css import path
 
 Proyecto desarrollado por:
 
-**[Jennifer Sánchez Requejo]**  
-**[ Nombre ]**  
-**[ Nombre ]**  
+**Jennifer Sánchez Requejo**  
+**Nieves Durán López**  
+**Luisa María Cortés**  
 
 
 Training Developers · F5 Bootcamp
