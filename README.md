@@ -189,7 +189,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 🦆 Página Detalle Producto
 
-![Detalle Producto](assets/imgs/.png)
+![Detalle Producto](assets/imgs/detalle-screenshot.png)
 
 ---
 
@@ -264,6 +264,7 @@ fix: fix contact map assets and css import path
 - `fix`: resolve merge conflicts in README and style.css
 - `feat`: add product detail footer
 - `feat`: add product detail animations
+- `docs`: add product detail screenshot to README
 
 
 ## 🚀 Commits de Luisa (Contacto)
