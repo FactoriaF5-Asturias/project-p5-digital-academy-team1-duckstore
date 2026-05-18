@@ -250,11 +250,11 @@ fix: fix contact map assets and css import path
 - 
 
 ## 🚀 Commits de Jenny (Detalle-producto)
-- `feat`: add detalle html structure
-- `feat`: add detalle header
-- `feat`: add detalle breadcrumb
-- `style`: add detalle breadcrumb styles
-- 
+- `feat`: add product detail html structure
+- `feat`: add product detail header
+- `feat`: add product detail breadcrumb
+- `style`: add product detail breadcrumb styles
+- `feat`: add product detail image
 - 
 - 
 - 
