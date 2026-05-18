@@ -243,7 +243,7 @@ fix: fix contact map assets and css import path
 - `docs`: add homepage screenshot to README
 - `feat`: add homepage animations
 - `fix`: homepage responsive mobile first
-
+- `fix`: header and footer responsive mobile first
 
 ## 🚀 Commits de Nieves (Catálogo)
 - 
