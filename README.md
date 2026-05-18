@@ -250,7 +250,7 @@ fix: fix contact map assets and css import path
 - 
 
 ## 🚀 Commits de Jenny (Detalle-producto)
-- 
+- `feat`: add detalle html structure
 - 
 - 
 
