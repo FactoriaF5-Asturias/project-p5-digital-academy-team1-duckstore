@@ -260,6 +260,13 @@ fix: fix contact map assets and css import path
 - git commit -m "feat: complete catalog 3x2 grid structure and correct footer"
 - git commit -m "feat: adjust the position of the top sales tag and fix the Facebook icon"
 
+## 🚀 Commits de Luisa (Detalle-producto)
+- `feat` add page contacto.html boilerplate and header nav
+- `feat` add contact cards layout structure and hero elements
+- `style` contact page cards and mobile responsive grid
+- `feat` replace static map with interactive google maps iframe
+- `feat` implement main website footer in contact page with correct spacing
+- `docs` add homepage screenshot to README
 ## 🚀 Commits de Jenny (Detalle-producto)
 - `feat`: add product detail html structure
 - `feat`: add product detail header
@@ -292,6 +299,7 @@ Proyecto desarrollado por:
 **[Jennifer Sánchez Requejo]**  
 **[ Nombre ]**  
 **[ Nombre ]**  
+
 
 Training Developers · F5 Bootcamp
 
