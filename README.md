@@ -256,7 +256,7 @@ fix: fix contact map assets and css import path
 - `style`: add product detail breadcrumb styles
 - `feat`: add product detail image
 - `style`: add product detail image card styles
-- 
+- `fix`: add product detail image card import to style.css
 - 
 - 
 
