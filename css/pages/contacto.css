@@ -210,3 +210,30 @@ body {
     font-size: 2.2rem;
   }
 } 
+
+/* Títulos dentro de las tarjetas (Nuestra Base, Horario, Ubicación) */
+.contacto-info-title, 
+.contacto-card__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #222222; /* Un gris muy oscuro/negro corporativo */
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+}
+
+/* Textos principales de la información */
+.contacto-info-text,
+.contacto-card__social-text {
+    font-family: 'Quicksand', sans-serif;
+    color: #666666; /* Gris intermedio para los datos */
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* El recordatorio del fin de semana (en cursiva y con el azul/celeste de tu diseño) */
+.contacto-info-subtext {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    color: #0099b8; /* El tono azul/celeste que tienes en tu captura */
+    font-size: 0.85rem;
+    margin: 5px 0 0 0;
+}
