@@ -241,6 +241,7 @@ fix: fix contact map assets and css import path
 - `fix`: homepage featured products styles
 - `refactor`: reorganize CSS folder structure
 - `docs`: add homepage screenshot to README
+- `feat`: add homepage animations
 
 
 ## 🚀 Commits de Nieves (Catálogo)
@@ -248,7 +249,7 @@ fix: fix contact map assets and css import path
 - 
 - 
 
-## 🚀 Commits de Viktoryia (Detalle-producto)
+## 🚀 Commits de Jenny (Detalle-producto)
 - 
 - 
 - 
@@ -266,9 +267,9 @@ fix: fix contact map assets and css import path
 Proyecto desarrollado por:
 
 **[Jennifer Sánchez Requejo]**  
-**[ Nombre]**  
-**[ Nombre]**  
 **[ Nombre ]**  
+**[ Nombre ]**  
+
 Training Developers · F5 Bootcamp
 
 ---
