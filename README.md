@@ -257,7 +257,7 @@ fix: fix contact map assets and css import path
 - `feat`: add product detail image
 - `style`: add product detail image card styles
 - `fix`: add product detail image card import to style.css
-- 
+- `feat`: add product detail info section 
 - 
 
 
