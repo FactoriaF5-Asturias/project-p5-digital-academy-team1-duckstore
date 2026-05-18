@@ -258,7 +258,7 @@ fix: fix contact map assets and css import path
 - `style`: add product detail image card styles
 - `fix`: add product detail image card import to style.css
 - `feat`: add product detail info section 
-- 
+- `style`: add product detail info styles
 
 
 ## 🚀 Commits de Luisa (Contacto)
