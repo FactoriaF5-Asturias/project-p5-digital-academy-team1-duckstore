@@ -251,7 +251,10 @@ fix: fix contact map assets and css import path
 ## 🚀 Commits de Luisa (Detalle-producto)
 - `feat` add page contacto.html boilerplate and header nav
 - `feat` add contact cards layout structure and hero elements
-- 
+- `style` contact page cards and mobile responsive grid
+- `feat` replace static map with interactive google maps iframe
+- `feat` implement main website footer in contact page with correct spacing
+- `docs` add homepage screenshot to README
 
 ## 🚀 Commits de Viktoryia (Contacto)
 - 
