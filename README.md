@@ -214,13 +214,15 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 # 📋 Planificación de commits
 
-## 🚀 Commits iniciales
+## 🥚 Commits iniciales
+
 - `chore`: add .gitignore
 - `docs`: add project to README
 - `feat`: add project folder structure
 - `feat`: add imgs to folder
 
 ## 🚀 Commits de Jenny (Homepage)
+
 - `feat`: add homepage html structure
 - `feat`: add homepage header
 - `style`: add homepage header styles
@@ -244,6 +246,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: header and footer responsive mobile first
 
 ## 🚀 Commits de Nieves (Catálogo)
+
 - `feat`: add catalog base structure and intro section
 - `feat`: add catalog category filter buttons component
 - `feat`: implement responsive product grid layout structure
@@ -259,6 +262,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: adjust the position of the top sales tag and fix the Facebook icon
 
 ## 🚀 Commits de Jenny (Detalle-producto)
+
 - `feat` add page contacto.html boilerplate and header nav
 - `feat` add contact cards layout structure and hero elements
 - `style` contact page cards and mobile responsive grid
@@ -267,6 +271,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `docs` add homepage screenshot to README
 
 ## 🚀 Commits de Jenny (Detalle-producto)
+
 - `feat`: add product detail html structure
 - `feat`: add product detail header
 - `feat`: add product detail breadcrumb
@@ -284,6 +289,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: fix logo route in product detail
 
 ## 🚀 Commits de Luisa (Contacto)
+
 - `feat`: create contacto.html boilerplate and header
 - `feat`: add contact cards layout and hero elements
 - `feat`: replace static map with interactive google maps iframe
@@ -295,6 +301,9 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: resolve footer logo redirection link to homepage
 - `docs`: log contact page development milestones in README
 
+## 🔧 Commits finales (revisión y arreglos)
+
+- `fix`: fix homepage nav and CTA links to pages folder
 
 ---
 
