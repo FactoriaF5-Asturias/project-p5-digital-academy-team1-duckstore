@@ -130,40 +130,6 @@
     gap: var(--spacing-sm);
 }
 
-/* Modificador BEM para la etiqueta del Pato Clásico */
-.product-card__badge--top-ventas {
-    background-color: var(--color-amarillo); /* Oro brillante compartida [cite: 131] */
-    color: var(--color-texto);            /* Texto oscuro [cite: 136] */
-}
-
-/* Modificador BEM para la etiqueta del Pato Astronauta */
-.product-card__badge--edicion-espacial {
-    background-color: #A2E8FF; /* Azul cielo suave */
-    color: #005570;            /* Azul oscuro legible */
-}
-
-/* Modificador BEM para la etiqueta del Pato Pirata */
-.product-card__badge--aventura {
-    background-color: #E0E0E0;              /* Gris de fondo */
-    color: var(--color-texto-suave);        /* Gris oscuro de vuestro equipo [cite: 137] */
-}
-
-/* Modificador BEM para la etiqueta del Pato Superhéroe */
-.product-card__badge--poder-duck {
-    background-color: #FFB347; /* Naranja claro */
-    color: #D35400;            /* Naranja oscuro para contraste */
-}
-
-/* Modificador BEM para la etiqueta del Pato Cocinero */
-.product-card__badge--chef-master {
-    background-color: #D1F2D9; /* Verde pastel sutil */
-    color: #27AE60;            /* Verde oscuro corporativo */
-}
-
-/* Modificador BEM para la etiqueta del Pato Rey */
-.product-card__badge--realeza {
-    background-color: var(--color-dorado); /* Vuestro dorado oscuro de variables.css [cite: 132] */
-    color: var(--color-blanco);            /* Texto blanco [cite: 135] */
 /* ==========================================================================
    MODIFICADORES PARA LAS ETIQUETAS (BADGES DE COLORES)
    ========================================================================== */
