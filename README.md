@@ -213,8 +213,9 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ---
 
 # 📋 Planificación de commits
-feat/contacto-html-structure
-
+feat: create contacto.html boilerplate and header
+style: style contact page cards and responsive grid
+fix: fix contact map assets and css import path
 ## 🚀 Commits iniciales
 - `chore`: add .gitignore
 - `docs`: add project to README
@@ -248,7 +249,7 @@ feat/contacto-html-structure
 - 
 
 ## 🚀 Commits de Luisa (Detalle-producto)
-- 
+- `feat` add page contacto.html boilerplate and header nav
 - 
 - 
 
