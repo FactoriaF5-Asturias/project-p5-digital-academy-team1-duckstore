@@ -256,6 +256,7 @@ fix: fix contact map assets and css import path
 - git commit -m "feat: attach project shared footer to finish catalog page"
 - git commit -m "feat: complete pristine catalog page grid structure and styling"
 - git commit -m "feat: complete catalog 3x2 grid structure and correct footer"
+- git commit -m "feat: adjust the position of the top sales tag and fix the Facebook icon"
 
 ## 🚀 Commits de Luisa (Detalle-producto)
 - 
