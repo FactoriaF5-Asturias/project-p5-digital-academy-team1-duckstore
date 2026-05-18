@@ -70,3 +70,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* -- ANIMACIONES DE ENTRADA - */
+.ventajas__card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.ventajas__card:nth-child(1) { animation-delay: 0s; }
+.ventajas__card:nth-child(2) { animation-delay: 0.15s; }
+.ventajas__card:nth-child(3) { animation-delay: 0.3s; }

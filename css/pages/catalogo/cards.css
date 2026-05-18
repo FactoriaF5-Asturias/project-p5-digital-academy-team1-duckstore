@@ -1,0 +1,168 @@
+/* Estilos globales del contenedor del catálogo */
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    font-family: var(--font-body);
+    background-color: var(--color-blanco);
+}
+
+/* Bloque de Introducción */
+.catalog-intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+.catalog-intro__title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--color-texto);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.catalog-intro__subtitle {
+    font-size: 1rem;
+    color: var(--color-texto-suave);
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Responsive para la intro */
+@media (max-width: 768px) {
+    .catalog-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .catalog-intro__title {
+        font-size: 2rem;
+    }
+}
+
+/* Layout de la cuadrícula general */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg); /* 2rem de separación */
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ---- ESTILOS ESTRUCTURALES BEM PARA LAS TARJETAS ---- */
+.product-card {
+    background-color: var(--color-blanco);
+    border-radius: var(--radius-card); /* 16px */
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Etiquetas flotantes superiores (Badges) */
+.product-card__badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 10;
+    font-family: var(--font-body);
+}
+
+/* Contenedor gris de fondo donde flota el patito */
+.product-card__image-container {
+    background-color: #F3F4F6; /* Fondo gris sutil de la foto */
+    border-radius: calc(var(--radius-card) - 4px);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    aspect-ratio: 1 / 1; /* Cuadrado perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta el patito sin cortarlo */
+}
+
+.product-card__title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--color-texto);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.product-card__price {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Botón "Ver detalle" amarillo redondeado */
+.product-card__button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-amarillo);
+    color: var(--color-texto);
+    border: none;
+    border-radius: var(--radius-button); /* 999px */
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    margin-top: auto; /* Empuja el botón al fondo siempre parejo */
+}
+
+.product-card__button:hover {
+    background-color: #E6C200;
+}
+
+.product-card__badge--top-ventas {
+    background-color: var(--color-amarillo);
+    color: var(--color-texto);
+}
+
+/* Modificador BEM para la etiqueta del Pato Clásico */
+.product-card__badge--top-ventas {
+    background-color: var(--color-amarillo); /* Oro brillante compartida [cite: 131] */
+    color: var(--color-texto);            /* Texto oscuro [cite: 136] */
+}
+
+/* Modificador BEM para la etiqueta del Pato Astronauta */
+.product-card__badge--edicion-espacial {
+    background-color: #A2E8FF; /* Azul cielo suave */
+    color: #005570;            /* Azul oscuro legible */
+}
+
+/* Modificador BEM para la etiqueta del Pato Pirata */
+.product-card__badge--aventura {
+    background-color: #E0E0E0;              /* Gris de fondo */
+    color: var(--color-texto-suave);        /* Gris oscuro de vuestro equipo [cite: 137] */
+}
+
+/* Modificador BEM para la etiqueta del Pato Superhéroe */
+.product-card__badge--poder-duck {
+    background-color: #FFB347; /* Naranja claro */
+    color: #D35400;            /* Naranja oscuro para contraste */
+}
+
+/* Modificador BEM para la etiqueta del Pato Cocinero */
+.product-card__badge--chef-master {
+    background-color: #D1F2D9; /* Verde pastel sutil */
+    color: #27AE60;            /* Verde oscuro corporativo */
+}
+
+/* Modificador BEM para la etiqueta del Pato Rey */
+.product-card__badge--realeza {
+    background-color: var(--color-dorado); /* Vuestro dorado oscuro de variables.css [cite: 132] */
+    color: var(--color-blanco);            /* Texto blanco [cite: 135] */
+}

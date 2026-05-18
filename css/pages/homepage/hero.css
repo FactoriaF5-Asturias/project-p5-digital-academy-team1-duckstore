@@ -110,3 +110,23 @@
     margin: 0 auto;
   }
 }
+
+/*-- ANIMACIONES DE ENTRADA -- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__content {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero__img-wrapper {
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}

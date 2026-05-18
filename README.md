@@ -241,6 +241,7 @@ fix: fix contact map assets and css import path
 - `fix`: homepage featured products styles
 - `refactor`: reorganize CSS folder structure
 - `docs`: add homepage screenshot to README
+- `feat`: add homepage animations
 
 
 ## 🚀 Commits de Nieves (Catálogo)
@@ -255,8 +256,23 @@ fix: fix contact map assets and css import path
 - `feat` replace static map with interactive google maps iframe
 - `feat` implement main website footer in contact page with correct spacing
 - `docs` add homepage screenshot to README
+## 🚀 Commits de Jenny (Detalle-producto)
+- `feat`: add product detail html structure
+- `feat`: add product detail header
+- `feat`: add product detail breadcrumb
+- `style`: add product detail breadcrumb styles
+- `feat`: add product detail image
+- `style`: add product detail image card styles
+- `fix`: add product detail image card import to style.css
+- `feat`: add product detail info section 
+- `style`: add product detail info styles
+- `style`: add product detail layout styles
+- `fix`: resolve merge conflicts in README and style.css
+- `feat`: add product detail footer
+- `feat`: add product detail animations
 
-## 🚀 Commits de Viktoryia (Contacto)
+
+## 🚀 Commits de Luisa (Contacto)
 - 
 - 
 - 
@@ -269,9 +285,10 @@ fix: fix contact map assets and css import path
 Proyecto desarrollado por:
 
 **[Jennifer Sánchez Requejo]**  
-**[ Nombre]**  
-**[ Nombre]**  
 **[ Nombre ]**  
+**[ Nombre ]**  
+
+
 Training Developers · F5 Bootcamp
 
 ---
