@@ -4,5 +4,6 @@
 @import url('pages/homepage/hero.css');
 @import url('pages/homepage/ventajas.css');
 @import url('pages/homepage/featured.css');
-@import url('pages/contacto.css');
 @import url('footer.css');
+@import url('pages/contacto.css');
+@import url('pages/detalle/breadcrumb.css');

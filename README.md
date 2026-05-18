@@ -253,6 +253,13 @@ fix: fix contact map assets and css import path
 - `feat`: add detalle html structure
 - `feat`: add detalle header
 - `feat`: add detalle breadcrumb
+- `style`: add detalle breadcrumb styles
+- 
+- 
+- 
+- 
+- 
+
 
 ## 🚀 Commits de Luisa (Contacto)
 - 
