@@ -183,7 +183,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 🛍️ Página Catálogo
 
-![Catálogo](assets/imgs/.png)
+![Catálogo](assets/imgs/catalogo-screenshot.png)
 
 ---
 
@@ -195,7 +195,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 📩 Página Contacto
 
-![Contacto](assets/imgs/.png)
+![Contacto](assets/imgs/contacto-screenshot.png)
 
 
 ---
@@ -307,6 +307,14 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `fix`: fix align footer logo and social links spacing
 - `fix`: replace buttons with detail links in catalog
 - `fix`: unify catalog footer with main layout
+- `fix`: add share, maps and instagram links to contact buttons
+- `fix`: correct logo path in catalogo footer
+- `fix`: unify catalog footer with main layout
+- `fix`: replace buttons with detail links in catalog
+- `fix`: resolve merge conflict in contacto.html
+- `fix`: align footer logo and copyright inline
+- `docs`: add fix commits summary to and final screenshots to README
+
 ---
 
 # 👨‍💻 Autoras
