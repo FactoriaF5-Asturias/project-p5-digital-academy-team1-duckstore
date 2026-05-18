@@ -260,7 +260,8 @@ fix: fix contact map assets and css import path
 - `feat`: add product detail info section 
 - `style`: add product detail info styles
 - `style`: add product detail layout styles
-
+- `fix`: resolve merge conflicts in README and style.css
+- `feat`: add product detail footer
 
 ## 🚀 Commits de Luisa (Contacto)
 - 
