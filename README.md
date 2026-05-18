@@ -305,6 +305,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 - `fix`: fix homepage nav and CTA links to pages folder
 - `fix`: fix align footer logo and social links spacing
+- `fix`: replace buttons with detail links in catalog
 ---
 
 # 👨‍💻 Autoras
