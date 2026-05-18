@@ -250,7 +250,7 @@ fix: fix contact map assets and css import path
 
 ## 🚀 Commits de Luisa (Detalle-producto)
 - `feat` add page contacto.html boilerplate and header nav
-- 
+- `feat` add contact cards layout structure and hero elements
 - 
 
 ## 🚀 Commits de Viktoryia (Contacto)
