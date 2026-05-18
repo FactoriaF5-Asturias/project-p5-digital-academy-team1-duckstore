@@ -44,7 +44,7 @@
 .product-card {
     background-color: var(--color-blanco);
     border-radius: var(--radius-card);
-    padding: var(--spacing-md);
+    padding: 50px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -55,12 +55,12 @@
 /* Etiquetas flotantes en la esquina derecha */
 .product-card__badge {
     position: absolute;
-    top: var(--spacing-md);
+    top: 10px;
     right: var(--spacing-md);
     font-size: 0.7rem;
     font-weight: 700;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
+    padding: 5px;
+    border-radius: 15px;
     text-transform: uppercase;
     z-index: 10;
     font-family: var(--font-body);
@@ -95,7 +95,7 @@
 .product-card__price {
     font-family: var(--font-body);
     font-size: 1.1rem;
-    color: var(--color-texto);
+    color: rgb(95, 74, 3);
     font-weight: 700;
     margin-bottom: var(--spacing-md);
 }
@@ -115,6 +115,7 @@
     text-align: center;
     transition: background-color 0.2s ease;
     margin-top: auto;
+    
 }
 
 .product-card__button:hover {
@@ -135,9 +136,9 @@
 .product-card__badge--top-ventas { background-color: var(--color-amarillo); color: var(--color-texto); }
 .product-card__badge--edicion-espacial { background-color: #A2E8FF; color: #005570; }
 .product-card__badge--aventura { background-color: #E0E0E0; color: var(--color-texto-suave); }
-.product-card__badge--poder-duck { background-color: #FFB347; color: #D35400; }
-.product-card__badge--chef-master { background-color: #D1F2D9; color: #27AE60; }
-.product-card__badge--realeza { background-color: var(--color-dorado); color: var(--color-blanco); }
+.product-card__badge--poder-duck { background-color: yellow; color: #0e0d0d; }
+.product-card__badge--chef-master { background-color: #e0e6e2; color: #111111; }
+.product-card__badge--realeza { background-color: yellow; color: black; }
 
 /* RESPONSIVE */
 @media (max-width: 992px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
