@@ -9,231 +9,209 @@ body {
     padding: 0;
 }
 
-/* Contenedor del Hero (Título y párrafo) */
+/* --- Sección Hero (Título y párrafo) --- */
 .contacto-hero {
     text-align: center;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 20px;
+}
+
+.contacto-hero__content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contacto-hero__title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #D49B28; /* Color mostaza/dorado del título */
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
 .contacto-hero__text {
     font-family: 'Quicksand', sans-serif;
-    color: #555555;
+    color: #5c5549;
+    font-size: 1.1rem;
+    line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* ==========================================================================
-   PÁGINA DE CONTACTO - ESTILOS PRINCIPALES (contacto.css)
-   ========================================================================== */
-
-/* --- Sección Hero --- */
-.contacto-hero {
-  background-color: #fdf8eb; /* Tono crema suave de fondo */
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.contacto-hero__content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contacto-hero__title {
-  font-family: 'Quicksand', sans-serif;
-  color: #c48b04; /* Dorado oscuro característico */
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.contacto-hero__text {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #5c5549;
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 /* --- Contenedor Principal de Tarjetas --- */
 .contacto-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  max-width: 1100px;
-  margin: -40px auto 60px auto; /* Superposición ligera sobre el hero */
-  padding: 0 20px;
-  position: relative;
-  z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    
+    /* CORRECCIÓN: Espacio alto abajo para separar las tarjetas del footer */
+    padding: 0 20px 140px 20px; 
+    
+    position: relative;
+    z-index: 2;
 }
 
-
-/* -- CONTENEDOR DE TARJETAS -- */
-.contacto-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-  background-color: var(--color-fondo);
-}
-
+/* --- Tarjetas Blancas Flotantes --- */
 .contacto-card {
-  background-color: var(--color-blanco);
-  border-radius: var(--radius-card);
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    background-color: #ffffff; /* Blanco puro para resaltar */
+    border-radius: 32px;       /* Bordes curvos y modernos como el prototipo */
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03); /* Sombra suave que da relieve */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
 }
 
 .contacto-card--center {
-  align-items: center;
-  text-align: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* -- DETALLES TARJETA IZQUIERDA -- */
+/* --- Detalles Tarjeta Izquierda (Información) --- */
 .contacto-info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .contacto-info-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-amarillo);
-  color: var(--color-texto);
-  border-radius: 50%;
-  font-size: 1.2rem;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFCC00; /* Amarillo de la marca */
+    color: #222222;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
-.contacto-info-title {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  color: var(--color-texto);
-  margin-bottom: 4px;
-}
-
-.contacto-info-text {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--color-texto-suave);
-}
-
-.contacto-info-subtext {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--color-terciario);
-  font-style: italic;
-  margin-top: 4px;
-}
-
-.contacto-card__img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  margin-top: auto;
-}
-
-/* -- DETALLES TARJETA DERECHA -- */
-.contacto-card__title {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--color-texto);
-}
-
-.contacto-card__map-placeholder {
-  width: 100%;
-  aspect-ratio: 1.2 / 1;
-  background-color: #f0f0f0;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.contacto-card__map-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.contacto-card__social-text {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--color-texto-suave);
-}
-
-.contacto-card__social-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.social-icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: #e0e0e0;
-  color: var(--color-texto-suave);
-  border-radius: 50%;
-  font-size: 1.2rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.social-icon-btn:hover {
-  background-color: var(--color-amarillo);
-  color: var(--color-texto);
-}
-
-/* -- RESPONSIVE -- */
-@media (max-width: 768px) {
-  .contacto-container {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin: 20px auto;
-  }
-  
-  .contacto-hero__title {
-    font-size: 2.2rem;
-  }
-} 
-
-/* Títulos dentro de las tarjetas (Nuestra Base, Horario, Ubicación) */
 .contacto-info-title, 
 .contacto-card__title {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #222222; /* Un gris muy oscuro/negro corporativo */
-    font-size: 1.2rem;
-    margin: 0 0 5px 0;
+    color: #222222; /* Negro corporativo */
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
 }
 
-/* Textos principales de la información */
 .contacto-info-text,
 .contacto-card__social-text {
     font-family: 'Quicksand', sans-serif;
-    color: #666666; /* Gris intermedio para los datos */
-    font-size: 0.95rem;
+    color: #666666; /* Gris intermedio */
+    font-size: 1rem;
     margin: 0;
+    line-height: 1.4;
 }
 
-/* El recordatorio del fin de semana (en cursiva y con el azul/celeste de tu diseño) */
 .contacto-info-subtext {
     font-family: 'Quicksand', sans-serif;
-    font-style: italic;
-    color: #0099b8; /* El tono azul/celeste que tienes en tu captura */
     font-size: 0.85rem;
-    margin: 5px 0 0 0;
+    color: #0099b8; /* Azul/celeste de tu diseño */
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.contacto-card__img {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+/* --- Detalles Tarjeta Derecha (Mapa e Iconos) --- */
+.contacto-card__map-placeholder {
+    width: 100%;
+    aspect-ratio: 1.2 / 1;
+    background-color: #f0f0f0;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* Asegura que tu nuevo iframe ocupe todo el espacio de forma limpia */
+.contacto-card__map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.contacto-card__social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 5px;
+}
+
+.social-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #e0e0e0;
+    color: #666666;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon-btn:hover {
+    background-color: #FFCC00;
+    color: #222222;
+}
+
+/* --- Diseño Responsivo (Móviles) --- */
+@media (max-width: 768px) {
+    .contacto-container {
+        grid-template-columns: 1fr; /* Pasa a una sola columna */
+        gap: 24px;
+        padding-bottom: 80px; /* Reducimos un poco el espacio en móvil */
+    }
+    
+    .contacto-hero__title {
+        font-size: 2.2rem;
+    }
+} 
+
+/* ==========================================================================
+   Ajustes para el Footer (Línea institucional DuckStore)
+   ========================================================================== */
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); /* Delgada línea divisoria */
+}
+
+.footer__left, .footer__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__logo img {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+.footer__copy, .footer__link {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    color: #555555;
+    text-decoration: none;
+}
+
+.footer__link i {
+    margin-right: 5px;
 }
