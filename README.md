@@ -189,7 +189,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 ## 🦆 Página Detalle Producto
 
-![Detalle Producto](assets/imgs/.png)
+![Detalle Producto](assets/imgs/detalle-screenshot.png)
 
 ---
 
@@ -241,7 +241,9 @@ fix: fix contact map assets and css import path
 - `fix`: homepage featured products styles
 - `refactor`: reorganize CSS folder structure
 - `docs`: add homepage screenshot to README
-
+- `feat`: add homepage animations
+- `fix`: homepage responsive mobile first
+- `fix`: header and footer responsive mobile first
 
 ## 🚀 Commits de Nieves (Catálogo)
 - git commit -m "feat: add catalog base structure and intro section"
@@ -258,10 +260,22 @@ fix: fix contact map assets and css import path
 - git commit -m "feat: complete catalog 3x2 grid structure and correct footer"
 - git commit -m "feat: adjust the position of the top sales tag and fix the Facebook icon"
 
-## 🚀 Commits de Viktoryia (Detalle-producto)
-- 
-- 
-- 
+## 🚀 Commits de Jenny (Detalle-producto)
+- `feat`: add product detail html structure
+- `feat`: add product detail header
+- `feat`: add product detail breadcrumb
+- `style`: add product detail breadcrumb styles
+- `feat`: add product detail image
+- `style`: add product detail image card styles
+- `fix`: add product detail image card import to style.css
+- `feat`: add product detail info section 
+- `style`: add product detail info styles
+- `style`: add product detail layout styles
+- `fix`: resolve merge conflicts in README and style.css
+- `feat`: add product detail footer
+- `feat`: add product detail animations
+- `docs`: add product detail screenshot to README
+
 
 ## 🚀 Commits de Luisa (Contacto)
 - 
@@ -276,9 +290,9 @@ fix: fix contact map assets and css import path
 Proyecto desarrollado por:
 
 **[Jennifer Sánchez Requejo]**  
-**[ Nombre]**  
-**[ Nombre]**  
 **[ Nombre ]**  
+**[ Nombre ]**  
+
 Training Developers · F5 Bootcamp
 
 ---

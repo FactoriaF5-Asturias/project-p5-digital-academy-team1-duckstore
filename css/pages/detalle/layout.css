@@ -1,0 +1,20 @@
+/* Mobile first */
+.detalle {
+  padding: 24px 16px 40px;
+}
+
+/* -- RESPONSIVE — Tablet (min 640px) -- */
+@media (min-width: 640px) {
+  .detalle {
+    padding: 40px 24px 60px;
+  }
+}
+
+/* -- RESPONSIVE — Desktop (min 1024px) -- */
+@media (min-width: 1024px) {
+  .detalle {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 40px 80px;
+  }
+}
