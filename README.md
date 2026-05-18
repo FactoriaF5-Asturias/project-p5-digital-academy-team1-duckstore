@@ -304,7 +304,7 @@ El proyecto aplica conceptos básicos de accesibilidad:
 ## 🔧 Commits finales (revisión y arreglos)
 
 - `fix`: fix homepage nav and CTA links to pages folder
-
+- `fix`: fix align footer logo and social links spacing
 ---
 
 # 👨‍💻 Autoras
