@@ -267,6 +267,7 @@ fix: fix contact map assets and css import path
 - `feat` replace static map with interactive google maps iframe
 - `feat` implement main website footer in contact page with correct spacing
 - `docs` add homepage screenshot to README
+
 ## 🚀 Commits de Jenny (Detalle-producto)
 - `feat`: add product detail html structure
 - `feat`: add product detail header
@@ -282,7 +283,7 @@ fix: fix contact map assets and css import path
 - `feat`: add product detail footer
 - `feat`: add product detail animations
 - `docs`: add product detail screenshot to README
-
+- `fix`: fix logo route in product detail
 
 ## 🚀 Commits de Luisa (Contacto)
 - 
