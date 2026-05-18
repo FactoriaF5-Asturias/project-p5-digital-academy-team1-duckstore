@@ -1,4 +1,7 @@
-/* Estilos globales del contenedor del catálogo */
+/* ==========================================================================
+   ESTILOS GENERALES DEL CATÁLOGO
+   ========================================================================== */
+
 .catalog-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -7,9 +10,9 @@
     background-color: var(--color-blanco);
 }
 
-/* Bloque de Introducción */
 .catalog-intro {
     margin-bottom: var(--spacing-lg);
+    text-align: left; /* Título e intro fijos a la izquierda */
 }
 
 .catalog-intro__title {
@@ -27,57 +30,49 @@
     line-height: 1.5;
 }
 
-/* Responsive para la intro */
-@media (max-width: 768px) {
-    .catalog-container {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-    
-    .catalog-intro__title {
-        font-size: 2rem;
-    }
-}
-
-/* Layout de la cuadrícula general */
+/* ==========================================================================
+   REJILLA DE PRODUCTOS (FUERZA FILAS DE 3 COLUMNAS COMPACTAS)
+   ========================================================================== */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--spacing-lg); /* 2rem de separación */
+    grid-template-columns: repeat(3, 1fr); /* 3 patitos por fila idénticos a la maqueta */
+    gap: var(--spacing-lg); /* Separación simétrica de 2rem */
     margin-bottom: var(--spacing-xl);
 }
 
-/* ---- ESTILOS ESTRUCTURALES BEM PARA LAS TARJETAS ---- */
+/* Tarjeta Base de cada patito */
 .product-card {
     background-color: var(--color-blanco);
-    border-radius: var(--radius-card); /* 16px */
-    padding: var(--spacing-md);
+    border-radius: var(--radius-card);
+    padding: 50px;
     display: flex;
     flex-direction: column;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #EAEAEA;
 }
 
-/* Etiquetas flotantes superiores (Badges) */
+/* Etiquetas flotantes en la esquina derecha */
 .product-card__badge {
     position: absolute;
-    top: var(--spacing-md);
+    top: 10px;
     right: var(--spacing-md);
     font-size: 0.7rem;
     font-weight: 700;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
+    padding: 5px;
+    border-radius: 15px;
     text-transform: uppercase;
     z-index: 10;
     font-family: var(--font-body);
 }
 
-/* Contenedor gris de fondo donde flota el patito */
+/* Contenedor gris suave del fondo del patito */
 .product-card__image-container {
-    background-color: #F3F4F6; /* Fondo gris sutil de la foto */
+    background-color: #F3F4F6;
     border-radius: calc(var(--radius-card) - 4px);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
-    aspect-ratio: 1 / 1; /* Cuadrado perfecto */
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +81,7 @@
 .product-card__image {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ajusta el patito sin cortarlo */
+    object-fit: contain;
 }
 
 .product-card__title {
@@ -100,35 +95,39 @@
 .product-card__price {
     font-family: var(--font-body);
     font-size: 1.1rem;
-    color: var(--color-texto);
+    color: rgb(95, 74, 3);
     font-weight: 700;
     margin-bottom: var(--spacing-md);
 }
 
-/* Botón "Ver detalle" amarillo redondeado */
+/* Botón estilizado Ver Detalle */
 .product-card__button {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--color-amarillo);
     color: var(--color-texto);
     border: none;
-    border-radius: var(--radius-button); /* 999px */
+    border-radius: var(--radius-button);
     font-family: var(--font-body);
     font-weight: 700;
     font-size: 0.9rem;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.2s ease;
-    margin-top: auto; /* Empuja el botón al fondo siempre parejo */
+    margin-top: auto;
+    
 }
 
 .product-card__button:hover {
     background-color: #E6C200;
 }
 
-.product-card__badge--top-ventas {
-    background-color: var(--color-amarillo);
-    color: var(--color-texto);
+/* CORRECCIÓN ADICIONAL PARA EL TEXTO IZQUIERDO DEL FOOTER DEBAJO DEL LOGO */
+.footer__left {
+    display: flex;
+    flex-direction: column; /* Apila el logo arriba y el texto de copyright abajo */
+    align-items: flex-start;
+    gap: var(--spacing-sm);
 }
 
 /* Modificador BEM para la etiqueta del Pato Clásico */
@@ -165,4 +164,19 @@
 .product-card__badge--realeza {
     background-color: var(--color-dorado); /* Vuestro dorado oscuro de variables.css [cite: 132] */
     color: var(--color-blanco);            /* Texto blanco [cite: 135] */
+/* ==========================================================================
+   MODIFICADORES PARA LAS ETIQUETAS (BADGES DE COLORES)
+   ========================================================================== */
+.product-card__badge--top-ventas { background-color: var(--color-amarillo); color: var(--color-texto); }
+.product-card__badge--edicion-espacial { background-color: #A2E8FF; color: #005570; }
+.product-card__badge--aventura { background-color: #E0E0E0; color: var(--color-texto-suave); }
+.product-card__badge--poder-duck { background-color: yellow; color: #0e0d0d; }
+.product-card__badge--chef-master { background-color: #e0e6e2; color: #111111; }
+.product-card__badge--realeza { background-color: yellow; color: black; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+    .product-grid { grid-template-columns: 1fr; }
+    .catalog-intro__title { font-size: 2rem; }
 }
