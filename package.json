@@ -1,0 +1,24 @@
+{
+  "name": "project-p5-digital-academy-team1-duckstore",
+  "version": "1.0.0",
+  "description": "> *\"No son simples patitos de goma. Son compañeros de aventuras.\"*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore/issues"
+  },
+  "homepage": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore#readme",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}
