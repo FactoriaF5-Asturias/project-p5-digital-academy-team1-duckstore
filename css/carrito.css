@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -- CARRITO - Mobile first -- */
 .carrito-main {
   padding: var(--spacing-md);
@@ -323,57 +324,45 @@
   .carrito-main {
     padding: var(--spacing-lg);
   }
-
   .carrito-hero {
     margin-bottom: var(--spacing-lg);
   }
-
   .carrito-hero__titulo {
     font-size: 2rem;
   }
-
   .carrito-hero__subtitulo {
     font-size: 1rem;
   }
-
   .carrito-contenido {
     gap: var(--spacing-lg);
   }
-
   .carrito-items {
     gap: var(--spacing-md);
   }
-
   .carrito-item {
     flex-wrap: nowrap;
     padding: var(--spacing-md);
     gap: var(--spacing-md);
   }
-
   .carrito-item img {
     width: 80px;
     height: 80px;
   }
-
   .carrito-item__nombre {
     font-size: 1rem;
   }
-
   .carrito-item__categoria {
     font-size: 0.75rem;
   }
-
   .carrito-item__precio {
     font-size: 1rem;
   }
-
   .btn-incrementar,
   .btn-decrementar {
     width: 32px;
     height: 32px;
     font-size: 1.2rem;
   }
-
   .carrito-item__subtotal {
     flex-direction: column;
     align-items: flex-end;
@@ -381,68 +370,56 @@
     gap: var(--spacing-sm);
     font-size: 1rem;
   }
-
   .carrito-volver {
     font-size: 1rem;
   }
-
   .carrito-resumen__titulo {
     font-size: 1.5rem;
   }
-
   .carrito-resumen__item {
     font-size: 1rem;
   }
-
   .carrito-resumen__total-precio {
     font-size: 1.8rem;
   }
-
   .carrito-resumen__btn {
     font-size: 1rem;
   }
-
   .carrito-resumen__seguridad {
     font-size: 0.8rem;
   }
-
   .carrito-recibo {
     padding: var(--spacing-lg);
     margin-top: var(--spacing-lg);
   }
-
   .carrito-recibo__titulo {
     font-size: 1.5rem;
   }
-
   .carrito-recibo__lista li {
     font-size: 1rem;
   }
-
   .carrito-exito {
     font-size: 1.5rem;
     padding: var(--spacing-xl);
   }
 }
-
 /* -- RESPONSIVE — Desktop (min 1024px) -- */
 @media (min-width: 1024px) {
   .carrito-main {
     max-width: 1200px;
     margin: 0 auto;
   }
-
   .carrito-hero__titulo {
     font-size: 2.5rem;
   }
-
   .carrito-contenido {
     grid-template-columns: 2fr 1fr;
   }
-
   .carrito-resumen {
     height: fit-content;
     position: sticky;
     top: 100px;
   }
 }
+
+/*# sourceMappingURL=carrito.css.map */
