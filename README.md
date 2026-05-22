@@ -465,6 +465,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `docs`: update README for part 2
 - `docs`: add part 2 prototype screenshots to README
 - `chore`: add package.json and update gitignore
+- `refactor`: move carrito styles to scss/parcials structure
 
 
 ## 🚀 Commits de Nieves (Catálogo JS)
