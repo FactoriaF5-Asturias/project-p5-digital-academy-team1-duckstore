@@ -492,7 +492,8 @@ El proyecto aplica conceptos de accesibilidad:
 
 > 📌 Se añadirán durante el desarrollo.
 
-- - `feat`: add cart logic and render cart items
+- `feat`: add cart logic and render cart items 
+- `feat`: add carrito.scss styles
 - 
 
 ## 🚀 Commits de Luisa (Contacto)
