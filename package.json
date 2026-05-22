@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore/issues"
   },
-  "homepage": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore#readme"
+  "homepage": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore#readme",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
 }

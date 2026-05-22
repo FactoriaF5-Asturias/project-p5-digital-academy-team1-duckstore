@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckStore | Tu Carrito Quack</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/carrito.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="header__logo">
+            <img src="../assets/imgs/logo.png" alt="DuckStore logo" />
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="catalogo.html" class="nav__link">Catálogo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="carrito.html" class="header__carrito nav__link--active">
+            🛒 <span id="contador-carrito">0</span>
+        </a>
+    </header>
+
+    <main class="carrito-main">
+
+        <section class="carrito-hero">
+            <h1 class="carrito-hero__titulo">Tu Carrito Quack 🦆</h1>
+            <p class="carrito-hero__subtitulo" id="carrito-subtitulo">Tu carrito está vacío.</p>
+        </section>
+
+        <section class="carrito-contenido">
+
+            <section class="carrito-lista">
+                <ul id="carrito-items" class="carrito-items">
+                </ul>
+                <a href="catalogo.html" class="carrito-volver">← Seguir comprando más patitos</a>
+            </section>
+
+            <aside class="carrito-resumen">
+                <h2 class="carrito-resumen__titulo">Resumen</h2>
+                <ul class="carrito-resumen__lista">
+                    <li class="carrito-resumen__item">
+                        <span>Subtotal</span>
+                        <span id="carrito-subtotal">0.00€</span>
+                    </li>
+                    <li class="carrito-resumen__item">
+                        <span>Envío</span>
+                        <span class="carrito-resumen__gratis">¡GRATIS!</span>
+                    </li>
+                </ul>
+                <div class="carrito-resumen__separador"></div>
+                <div class="carrito-resumen__total">
+                    <span>Total</span>
+                    <span id="carrito-total" class="carrito-resumen__total-precio">0.00€</span>
+                </div>
+                <button id="btn-pago" class="carrito-resumen__btn">Proceder al pago</button>
+                <p class="carrito-resumen__seguridad">
+                    🔒 Tu compra está protegida. ¡Compra con confianza!
+                </p>
+            </aside>
+
+        </section>
+
+        <section id="recibo" class="carrito-recibo" style="display: none;">
+            <h2 class="carrito-recibo__titulo">Resumen de tu pedido</h2>
+            <ul id="recibo-items" class="carrito-recibo__lista"></ul>
+            <div class="carrito-recibo__total">
+                <span>Total</span>
+                <span id="recibo-total"></span>
+            </div>
+            <button id="btn-confirmar" class="carrito-resumen__btn">Confirmar pago</button>
+        </section>
+
+        <p id="mensaje-pago" class="carrito-exito" style="display: none;">
+            ¡Compra realizada con éxito! 🦆
+        </p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <a href="../index.html" class="footer__logo">
+                <img src="assets/imgs/logo.png" alt="DuckStore logo" />
+            </a>
+            <p class="footer__copy"> 2026 - DuckStore by Group 1 of F5 Bootcamp</p>
+        </div>
+        <div class="footer__right">
+            <a href="https://www.facebook.com/factoriaf5" target="_blank" rel="noopener noreferrer" class="footer__link"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/factoria_f5" target="_blank" rel="noopener noreferrer"
+                class="footer__link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </footer>
+
+
+    <script type="module" src="../js/carrito.js"></script>
+
+</body>
+
+</html>

@@ -492,7 +492,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 > 📌 Se añadirán durante el desarrollo.
 
-- 
+- - `feat`: add cart logic and render cart items
 - 
 
 ## 🚀 Commits de Luisa (Contacto)
