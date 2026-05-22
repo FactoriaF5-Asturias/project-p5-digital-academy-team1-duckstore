@@ -125,11 +125,11 @@ La identidad visual de DuckStore busca transmitir diversión, limpieza visual, e
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| [![Landing Page](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/homepage.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/homepage.png) | [![Catálogo](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/catalogo.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/catalogo.png) |
+| ![Landing Page](assets/imgs/homepage.png) | ![Catálogo](assets/imgs/catalogo.png) |
 
 | 🦆 Detalle Producto | 📩 Contacto |
 |:---:|:---:|
-| [![Detalle Producto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/detalle.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/detalle.png) | [![Contacto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/contacto.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/contacto.png) |
+| ![Detalle Producto](assets/imgs/detalle.png) | ![Contacto](assets/imgs/contacto.png) |
 
 ---
 
@@ -159,11 +159,11 @@ El proyecto aplica conceptos básicos de accesibilidad:
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| [![Landing Page](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/homepage-screenshot.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/homepage-screenshot.png) | [![Catálogo](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/catalogo-screenshot.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/catalogo-screenshot.png) |
+| ![Landing Page](assets/imgs/homepage-screenshot.png) | ![Catálogo](assets/imgs/catalogo-screenshot.png) |
 
 | 🦆 Detalle Producto | 📩 Contacto |
 |:---:|:---:|
-| [![Detalle Producto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/detalle-screenshot.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/detalle-screenshot.png) | [![Contacto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/contacto-screenshot.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/contacto-screenshot.png) |
+| ![Detalle Producto](assets/imgs/detalle-screenshot.png) | ![Contacto](assets/imgs/contacto-screenshot.png) |
 
 ---
 
@@ -402,15 +402,15 @@ La estructura visual se mantuvo consistente con la parte 1 en espaciados, paleta
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| [![Landing Page](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/homepage-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/homepage-p2.png) | [![Catálogo](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/catalogo-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/catalogo-p2.png) |
+| ![Landing Page](assets/imgs/part2/homepage-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-p2.png) |
 
 | 🦆 Detalle Producto | 🛒 Carrito |
 |:---:|:---:|
-| [![Detalle Producto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/detalle-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/detalle-p2.png) | [![Carrito](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/carrito-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/carrito-p2.png) |
+| ![Detalle Producto](assets/imgs/part2/detalle-p2.png) | ![Carrito](assets/imgs/part2/carrito-p2.png) |
 
 | 📩 Contacto | 💳 Pago |
 |:---:|:---:|
-| [![Contacto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/contacto-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/contacto-p2.png) | [![Pago](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/pago-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/pago-p2.png) |
+| ![Contacto](assets/imgs/part2/contacto-p2.png) | ![Pago](assets/imgs/part2/pago-p2.png) |
 
 ---
 
@@ -460,9 +460,10 @@ El proyecto aplica conceptos de accesibilidad:
 
 # 📋 Planificación de commits — Parte 2
 
-## ⚙️ Commits de setup
+## ⚙️ Commits de inicio
 
 - `docs`: update README for part 2
+- `docs`: add part 2 prototype screenshots to README
 - `chore`: add package.json and update gitignore
 
 
