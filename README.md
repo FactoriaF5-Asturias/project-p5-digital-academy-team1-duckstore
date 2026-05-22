@@ -478,7 +478,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 > 📌 Se añadirán durante el desarrollo.
 
-- 
+- `feat`: add cart icon and counter to homepage header
 - 
 
 ## 🚀 Commits de Jenny (Detalle de producto)

@@ -43,6 +43,33 @@
   padding-bottom: 2px;
 }
 
+/* -- CARRITO -- */
+.header__carrito {
+  font-size: 1.2rem;
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.header__carrito:hover {
+  color: var(--color-dorado);
+}
+
+#contador-carrito {
+  background-color: var(--color-dorado);
+  color: var(--color-fondo);
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* -- RESPONSIVE — Tablet (min 640px) -- */
 @media (min-width: 640px) {
   .header {
@@ -63,6 +90,10 @@
 
   .nav__link {
     font-size: 0.95rem;
+  }
+
+  .header__carrito {
+    font-size: 1.1rem;
   }
 }
 
@@ -87,5 +118,10 @@
 
   .nav__link {
     font-size: 1rem;
+  }
+
+  .header__carrito {
+    position: absolute;
+    right: 2rem;
   }
 }
