@@ -462,9 +462,9 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## ⚙️ Commits de setup
 
-- `chore`: configure SASS and migrate existing styles to scss
-- `chore`: add dev branch and gitflow structure
 - `docs`: update README for part 2
+- `chore`: add package.json and update gitignore
+
 
 ## 🚀 Commits de Nieves (Catálogo JS)
 
