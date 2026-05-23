@@ -35,71 +35,15 @@
     </section>
 
     <section class="filters">
-      <button class="filters__btn filters__btn--active">Todos</button>
-      <button class="filters__btn">Coleccionables</button>
-      <button class="filters__btn">Edición Limitada</button>
+      <button class="filters__btn filters__btn--active" data-category="todos">Todos</button>
+      <button class="filters__btn" data-category="Clásicos">Clásicos</button>
+      <button class="filters__btn" data-category="Superhéroes">Superhéroes</button>
+      <button class="filters__btn" data-category="Edición Espacial">Edición Espacial</button>
+      <button class="filters__btn" data-category="Aventura">Aventura</button>
     </section>
 
-    <div class="product-grid">
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--top-ventas">Top Ventas</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-clasico.png" alt="Pato Clásico" />
-        </div>
-        <h2 class="product-card__title">Pato Clásico</h2>
-        <p class="product-card__price">12,50€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
+    <div class="product-grid" id="contenedor-patitos">
 
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--edicion-espacial">Edición Espacial</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-astronauta.png" alt="Pato Astronauta" />
-        </div>
-        <h2 class="product-card__title">Pato Astronauta</h2>
-        <p class="product-card__price">15,90€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
-
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--aventura">Aventura</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-pirata.png" alt="Pato Pirata" />
-        </div>
-        <h2 class="product-card__title">Pato Pirata</h2>
-        <p class="product-card__price">14,00€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
-
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--poder-duck">Poder Duck</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-superheroe.png" alt="Pato Superhéroe" />
-        </div>
-        <h2 class="product-card__title">Pato Superhéroe</h2>
-        <p class="product-card__price">16,50€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
-
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--chef-master">Chef Master</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-cocinero.png" alt="Pato Cocinero" />
-        </div>
-        <h2 class="product-card__title">Pato Cocinero</h2>
-        <p class="product-card__price">13,20€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
-
-      <article class="product-card">
-        <span class="product-card__badge product-card__badge--realeza">Realeza</span>
-        <div class="product-card__image-container">
-          <img class="product-card__image" src="../assets/imgs/pato-rey.png" alt="Pato Rey" />
-        </div>
-        <h2 class="product-card__title">Pato Rey</h2>
-        <p class="product-card__price">18,00€</p>
-        <a href="detalle.html" class="product-card__button">Ver detalle</a>
-      </article>
     </div>
   </main>
 
@@ -121,6 +65,7 @@
       </a>
     </div>
   </footer>
+  <script type="module" src="../js/app.js"></script>
 </body>
 
 </html>
