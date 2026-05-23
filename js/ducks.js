@@ -13,7 +13,7 @@ export const ducks = [
         id: 2,
         nombre: "Pato Astronauta",
         precio: "15,90€",
-        categoria: "Edición Especial",
+        categoria: "Edición Espacial",
         imagen: "../assets/imgs/pato-astronauta.png",
         descripcion: "Listo para un viaje interestelar directo a una galaxia llena de burbujas.",
         destacado: true
@@ -49,7 +49,7 @@ export const ducks = [
         id: 6,
         nombre: "Pato Rey",
         precio: "18,00€",
-        categoria: "Edición Especial",
+        categoria: "Aventura",
         imagen: "../assets/imgs/pato-rey.png",
         descripcion: "Gobernante absoluto del reino del agua con corona de oro brillante.",
         destacado: true

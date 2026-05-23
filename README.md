@@ -262,7 +262,8 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: adjust the position of the top sales tag and fix the Facebook icon
 - `feat`: add ducks data array
 - `feat`: render duck cards dynamically from array"
-- `fix`: resolve modular script alignment, relative asset paths, and readme changes"
+- `fix`:  resolve modular script alignment, relative asset paths, and readme changes"
+- `feat`: implement interactive filtering and update catalog assets paths"
 
 
 ## 🚀 Commits de Jenny (Detalle-producto)
