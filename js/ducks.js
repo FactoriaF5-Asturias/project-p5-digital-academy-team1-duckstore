@@ -32,7 +32,7 @@ export const ducks = [
         nombre: "Pato Súper Héroe",
         precio: "16,50€",
         categoria: "Superhéroes",
-        imagen: "../assets/imgs/pato-poder.png",
+        imagen: "../assets/imgs/pato-superheroe.png",
         descripcion: "Equipado con capa y máscara para proteger tus baños del aburrimiento.",
         destacado: true
     },
@@ -50,7 +50,7 @@ export const ducks = [
         nombre: "Pato Rey",
         precio: "18,00€",
         categoria: "Edición Especial",
-        imagen: "../assets/imgs/pato-realeza.png",
+        imagen: "../assets/imgs/pato-rey.png",
         descripcion: "Gobernante absoluto del reino del agua con corona de oro brillante.",
         destacado: true
     }
