@@ -500,11 +500,6 @@ El proyecto aplica conceptos de accesibilidad:
 - `refactor`: convert featured.css to scss
 - `refactor`: convert hero.css to scss
 - `refactor`: convert ventajas.css to scss
-- `refactor`: convert breadcrumb.css to scss
-- `refactor`: convert image-card.css to scss
-- `refactor`: convert product-info.css to scss
-- `refactor`: convert layout.css to scss
-- `refactor`: convert animations.css to scss
 - `refactor`: convert header.css to scss
 - `refactor`: convert footer.css to scss
 - `refactor`: convert reset.css to scss
@@ -515,6 +510,11 @@ El proyecto aplica conceptos de accesibilidad:
 
 - `feat`: add cart icon and counter to detalle header
 - `feat`: add detalle.js dynamic product detail
+- `refactor`: convert breadcrumb.css to scss
+- `refactor`: convert image-card.css to scss
+- `refactor`: convert product-info.css to scss
+- `refactor`: convert layout.css to scss
+- `refactor`: convert animations.css to scss
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 
