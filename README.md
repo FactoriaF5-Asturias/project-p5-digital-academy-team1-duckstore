@@ -534,6 +534,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: add pago js logic
 - `feat`: add pago js success animation 
 - `style`: add pago scss styles
+- `feat`: connect cart to payment page
 
 ## 🚀 Commits de Luisa (Contacto)
 

@@ -160,7 +160,9 @@ export const confirmarPago = () => {
 };
 
 // Eventos botones de pago
-document.querySelector('#btn-pago')?.addEventListener('click', mostrarRecibo);
+document.querySelector('#btn-pago')?.addEventListener('click', () => {
+    window.location.href = 'pago.html';
+});
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
 
 // Evento al cargar el DOM
