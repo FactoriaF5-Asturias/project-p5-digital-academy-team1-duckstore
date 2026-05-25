@@ -497,29 +497,29 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: add font awesome cart icon to all mine headers
 - `feat`: add home.js dynamic featured products
 - `fix`: fix price format
-- `refactor`: convert featured.css to scss
-- `refactor`: convert hero.css to scss
-- `refactor`: convert ventajas.css to scss
-- `refactor`: convert header.css to scss
-- `refactor`: convert footer.css to scss
-- `refactor`: convert reset.css to scss
-- `refactor`: convert variables.css to scss
+- `refactor`: convert featured css to scss
+- `refactor`: convert hero css to scss
+- `refactor`: convert ventajas css to scss
+- `refactor`: convert header css to scss
+- `refactor`: convert footer css to scss
+- `refactor`: convert reset css to scss
+- `refactor`: convert variables css to scss
 - `refactor`: reorganize css folder structure with base and components
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
 - `feat`: add cart icon and counter to detalle header
 - `feat`: add detalle.js dynamic product detail
-- `refactor`: convert breadcrumb.css to scss
-- `refactor`: convert image-card.css to scss
+- `refactor`: convert breadcrumb css to scss
+- `refactor`: convert image-card css to scss
 - `refactor`: convert product-info.css to scss
-- `refactor`: convert layout.css to scss
-- `refactor`: convert animations.css to scss
+- `refactor`: convert layout css to scss
+- `refactor`: convert animations css to scss
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 
 - `feat`: add cart logic and render cart items 
-- `feat`: add carrito.scss styles
+- `feat`: add carrito scss styles
 - `fix`: fix footer logo path and remove inline styles from carrito
 - `feat`: persist cart with localStorage
 - `fix`: fix localStorage cart persistence
@@ -529,10 +529,11 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: fix subtotal not updating in cart summary
 - `fix`: add font awesome icons to carrito.html
 - `refactor`: convert carrito.css to scss with variables and nesting
-- `feat`: add pago.html base structure
-- `feat`: add pago.html main structure
-- `feat`: add pago.js logic
-- `feat`: add pago.js success animation 
+- `feat`: add pago html base structure
+- `feat`: add pago html main structure
+- `feat`: add pago js logic
+- `feat`: add pago js success animation 
+- `style`: add pago scss styles
 
 ## 🚀 Commits de Luisa (Contacto)
 
