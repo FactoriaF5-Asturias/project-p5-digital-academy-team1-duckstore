@@ -484,6 +484,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `chore`: create empty catalogo.js file for catalog logic
 - `feat`: import ducks array into catalogo.js
 - `feat`: select grid container using document.querySelector
+- `feat`: generate cards array using map and template strings
 - 
 
 ## 🚀 Commits de Jenny (Homepage)
