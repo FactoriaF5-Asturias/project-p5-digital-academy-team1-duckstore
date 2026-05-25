@@ -523,6 +523,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `docs`: resolve README merge conflict
 - `feat`: update cart subtitle with product count
 - `fix`: fix price format in cart items
+- `fix`: fix subtotal not updating in cart summary
 
 ## 🚀 Commits de Luisa (Contacto)
 

@@ -68,6 +68,10 @@ export const renderCarrito = () => {
 
     const totalCalculado = carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
     if (total) total.textContent = `${totalCalculado.toFixed(2)}€`;
+    
+    // Actualizar subtotal en el resumen
+    const subtotal = document.querySelector('#carrito-subtotal');
+    if (subtotal) subtotal.textContent = `${totalCalculado.toFixed(2)}€`;
     agregarEventosCarrito();
 };
 
