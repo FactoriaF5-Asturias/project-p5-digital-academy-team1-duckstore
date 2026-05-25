@@ -488,6 +488,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: insert mapped cards into DOM using innerHTML and join
 - `feat`: link catalogo.js script in HTML using type module
 - `feat`: setup catalog sass structure and compile to css
+- `feat`: refactor catalog rendering to use ES6 map and template strings"
+- `chore`: merge remote changes and resolve README conflict
 
 ## 🚀 Commits de Jenny (Homepage)
 
