@@ -1,4 +1,7 @@
-import { carrito, confirmarPago, actualizarContador } from "./carrito.js";
+import { confirmarPago, actualizarContador } from "./carrito.js";
+
+// Leemos el carrito directamente del localStorage
+const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 // Genera un ID de pedido aleatorio
 const generarId = () => {
@@ -40,8 +43,8 @@ const mostrarExito = () => {
 
     exito.innerHTML = `
         <div class="pago-exito__pato">🦆</div>
-        <h2 class="pago-exito__titulo">¡Compra realizada con exito!</h2>
-        <p class="pago-exito__texto">Tu pedido esta en camino a chapotear.</p>
+        <h2 class="pago-exito__titulo">¡Compra realizada con éxito!</h2>
+        <p class="pago-exito__texto">Tu pedido está en camino a chapotear...</p>
     `;
 
     exito.style.display = "flex";
