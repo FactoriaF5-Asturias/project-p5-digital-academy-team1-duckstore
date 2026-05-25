@@ -525,6 +525,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: fix price format in cart items
 - `fix`: fix subtotal not updating in cart summary
 - `fix`: add font awesome icons to carrito.html
+- `refactor`: convert carrito.css to scss with variables and nesting
 
 ## 🚀 Commits de Luisa (Contacto)
 
