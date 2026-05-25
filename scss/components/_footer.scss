@@ -1,3 +1,4 @@
+// Footer — Mobile first
 .footer {
   display: flex;
   flex-direction: column;
@@ -19,12 +20,13 @@
 .footer__logo {
   display: flex;
   align-items: center;
-}
-.footer__logo img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  display: block;
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+  }
 }
 
 .footer__copy {
@@ -51,11 +53,13 @@
   color: var(--color-texto-suave);
   text-decoration: none;
   transition: color 0.3s ease;
-}
-.footer__link:hover {
-  color: var(--color-texto);
+
+  &:hover {
+    color: var(--color-texto);
+  }
 }
 
+// Responsive — Tablet (min 480px)
 @media (min-width: 480px) {
   .footer {
     flex-direction: row;
@@ -64,19 +68,22 @@
     text-align: left;
   }
 }
+
+// Responsive — Desktop (min 1024px)
 @media (min-width: 1024px) {
   .footer {
     padding: 1rem 2rem;
   }
+
   .footer__copy {
     font-size: 0.8rem;
   }
 }
+
+// Fix alineacion footer izquierda
 .footer__left {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   gap: 0.75rem !important;
 }
-
-/*# sourceMappingURL=footer.css.map */
