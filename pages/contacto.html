@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/style.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages/contacto/contacto.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -43,74 +44,79 @@
     </header>
 
     <main class="contacto-main">
-        <section class="contacto-hero">
-            <h1 class="contacto-hero__titulo">Contáctanos</h1>
-            <p class="contacto-hero__subtitulo">¿Tienes dudas sobre tu próxima mascota de hule? ¿Quieres un pedido personalizado para tu bañera? ¡Estamos a un cuac de distancia!</p>
+    
+    <section class="contacto-hero">
+        <h1 class="contacto-hero__title">Contáctanos</h1>
+        <p class="contacto-hero__text">¿Tienes dudas sobre tu próxima mascota de hule? ¿Quieres un pedido personalizado para tu bañera? ¡Estamos a un cuac de distancia!</p>
+    </section>
+
+    <div class="contacto-container">
+        
+        <section class="contacto-card">
+            <h2 class="contacto-info-title">Nuestra Ubicación</h2>
+            
+            <div class="contacto-info-item">
+                <div class="contacto-info-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                    <h3 class="contacto-info-title">Horarios</h3>
+                    <p class="contacto-info-text">Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="contacto-info-item">
+                <div class="contacto-info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <h3 class="contacto-info-title">Teléfono</h3>
+                    <p class="contacto-info-text">+34 900 123 456</p>
+                </div>
+            </div>
+
+            <div class="contacto-card__map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001!2d-5.92!3d43.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMzJzAwLjAiTiA1wrA1NScwMC4wIlc!5e0!3m2!1ses!2ses!4v1234567890" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
 
-        <div class="contacto-container">
+        <form id="formulario-contacto" class="contacto-card" novalidate>
+            <h2 class="contacto-card__title">Envíanos un mensaje</h2>
             
-            <section class="contacto-info">
-                <div class="contacto-info__card">
-                    <h2>Nuestra Ubicación</h2>
-                    <p>Ven a visitarnos a Villa Patito y conoce a todos nuestros amigos.</p>
-                                        
-                    <div class="contacto-info__mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.6372861343714!2d-5.6641124!3d43.5307271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMxJzEwLjYiTiA1wrAzOScxMC44Ilc!5e0!3m2!1ses!2ses!4v1716640000000!5m2!1ses!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    
-                    <div class="contacto-info__detalles">
-                        <p><i class="fa-solid fa-clock"></i> Lunes a Viernes: 9:00 - 18:00</p>
-                        <p><i class="fa-solid fa-phone"></i> +34 900 123 456</p>
-                    </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="nombre" class="contacto-info-text" style="font-weight: 600;">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." style="padding: 12px; border: 1px solid #ccc; border-radius: 8px;" required />
+                <span id="error-nombre" style="color: red; font-size: 0.85rem; display: none;">Por favor, introduce tu nombre.</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="email" class="contacto-info-text" style="font-weight: 600;">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" style="padding: 12px; border: 1px solid #ccc; border-radius: 8px;" required />
+                <span id="error-email" style="color: red; font-size: 0.85rem; display: none;">Introduce un correo electrónico válido.</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="mensaje" class="contacto-info-text" style="font-weight: 600;">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" style="padding: 12px; border: 1px solid #ccc; border-radius: 8px; height: 100px; resize: none;" required></textarea>
+                <span id="error-mensaje" style="color: red; font-size: 0.85rem; display: none;">El mensaje no puede estar vacío.</span>
+            </div>
+
+            <button type="submit" id="btn-enviar" style="padding: 14px; background-color: var(--color-amarillo, #808000); border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">Enviar cuac</button>
+
+            <div style="margin-top: 10px;">
+                <p class="contacto-card__social-text">O búscanos en redes:</p>
+                <div class="contacto-card__social-icons">
+                    <a href="https://www.facebook.com/factoriaf5" target="_blank" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/factoria_f5" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-            </section>
+            </div>
+        </form>
 
-            <form id="formulario-contacto" class="contacto-form" novalidate>
-                <h2 class="contacto-form__titulo">Envíanos un mensaje</h2>
-                
-                <div class="contacto-form__grupo">
-                    <label for="nombre" class="contacto-form__label">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." class="contacto-form__input" required />
-                    <span id="error-nombre" class="contacto-form__error" style="display: none;">
-                        <i class="fa-solid fa-circle-exclamation"></i> Por favor, introduce tu nombre.
-                    </span>
-                </div>
-
-                <div class="contacto-form__grupo">
-                    <label for="email" class="contacto-form__label">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="contacto-form__input" required />
-                    <span id="error-email" class="contacto-form__error" style="display: none;">
-                        <i class="fa-solid fa-circle-exclamation"></i> Introduce un correo electrónico válido.
-                    </span>
-                </div>
-
-                <div class="contacto-form__grupo">
-                    <label for="mensaje" class="contacto-form__label">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" class="contacto-form__textarea" required></textarea>
-                    <span id="error-mensaje" class="contacto-form__error" style="display: none;">
-                        <i class="fa-solid fa-circle-exclamation"></i> El mensaje no puede estar vacío.
-                    </span>
-                </div>
-
-                <button type="submit" id="btn-enviar" class="contacto-form__btn">Enviar cuac</button>
-
-                <p id="mensaje-exito" class="contacto-form__exito" style="display: none;">
-                    <i class="fa-solid fa-circle-check"></i> ¡Mensaje enviado correctamente! 🦆
-                </p>
-                
-                <div class="contacto-form__redes">
-                    <p>O búscanos en redes:</p>
-                    <div class="contacto-form__iconos">
-                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </main>
-
+    </div>
+</main>
     <footer class="footer">
         <div class="footer__left">
             <a href="../index.html" class="footer__logo">
