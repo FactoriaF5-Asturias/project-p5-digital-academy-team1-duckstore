@@ -475,9 +475,10 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🚀 Commits de Nieves (Catálogo JS)
 
-> 📌 Se añadirán durante el desarrollo.
-
-- 
+- `feat`: add ducks data array"
+- `feat`: render duck cards dynamically from array
+- `fix`: resolve modular script alignment, relative asset paths, and readme changes
+- `feat`: implement interactive filtering and update catalog assets paths
 - 
 
 ## 🚀 Commits de Jenny (Homepage)
