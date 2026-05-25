@@ -531,6 +531,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `refactor`: convert carrito.css to scss with variables and nesting
 - `feat`: add pago.html base structure
 - `feat`: add pago.html main structure
+- `feat`: add pago.js logic
+- `feat`: add pago.js success animation 
 
 ## 🚀 Commits de Luisa (Contacto)
 

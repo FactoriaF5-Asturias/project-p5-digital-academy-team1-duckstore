@@ -1,4 +1,4 @@
-import { carrito, actualizarContador } from "./carrito.js";
+import { carrito, confirmarPago, actualizarContador } from "./carrito.js";
 
 // Genera un ID de pedido aleatorio
 const generarId = () => {
@@ -31,8 +31,30 @@ const renderPago = () => {
     total.textContent = `${totalCalculado.toFixed(2)}€`;
 };
 
+// Muestra el mensaje de exito con animacion
+const mostrarExito = () => {
+    const btnWrapper = document.querySelector("#pago-btn-wrapper");
+    const exito = document.querySelector("#pago-exito");
+
+    btnWrapper.style.display = "none";
+
+    exito.innerHTML = `
+        <div class="pago-exito__pato">🦆</div>
+        <h2 class="pago-exito__titulo">¡Compra realizada con exito!</h2>
+        <p class="pago-exito__texto">Tu pedido esta en camino a chapotear.</p>
+    `;
+
+    exito.style.display = "flex";
+    exito.classList.add("pago-exito--animado");
+
+    confirmarPago();
+};
+
 // Evento al cargar el DOM
 document.addEventListener("DOMContentLoaded", () => {
     actualizarContador();
     renderPago();
+
+    // Evento al confirmar pago
+    document.querySelector("#btn-confirmar-pago").addEventListener("click", mostrarExito);
 });
