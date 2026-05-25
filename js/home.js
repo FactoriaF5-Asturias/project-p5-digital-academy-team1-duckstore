@@ -1,4 +1,5 @@
 import { ducks } from "./ducks.js";
+import { actualizarContador } from "./carrito.js";
 
 // Muestra los patitos destacados en la home
 const renderDestacados = () => {
@@ -23,4 +24,7 @@ const renderDestacados = () => {
 };
 
 // Evento al cargar el DOM
-document.addEventListener("DOMContentLoaded", renderDestacados);
+document.addEventListener("DOMContentLoaded", () => {
+    actualizarContador();
+    renderDestacados();
+});

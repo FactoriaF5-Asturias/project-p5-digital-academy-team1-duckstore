@@ -1,5 +1,5 @@
 import { ducks } from "./ducks.js";
-import { agregarAlCarrito } from "./carrito.js";
+import { agregarAlCarrito, actualizarContador } from "./carrito.js";
 
 // Busca el patito por id en la URL y lo muestra en el detalle
 const renderDetalle = () => {
@@ -24,7 +24,7 @@ const renderDetalle = () => {
         <section class="detalle__info">
             <h1 class="detalle__info-title">${pato.nombre}</h1>
             <div class="detalle__info-prices">
-                <span class="detalle__info-price">${pato.precio.toFixed(2)}€</span>
+                <span class="detalle__info-price">${Number(pato.precio).toFixed(2)}€</span>
             </div>
             <hr class="detalle__info-divider" />
             <p class="detalle__info-description">${pato.descripcion}</p>
@@ -41,4 +41,7 @@ const renderDetalle = () => {
 };
 
 // Evento al cargar el DOM
-document.addEventListener("DOMContentLoaded", renderDetalle);
+document.addEventListener("DOMContentLoaded", () => {
+    actualizarContador();
+    renderDetalle();
+});
