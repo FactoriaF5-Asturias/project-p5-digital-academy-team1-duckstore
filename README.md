@@ -477,8 +477,10 @@ El proyecto aplica conceptos de accesibilidad:
 
 - `feat`: add ducks data array"
 - `feat`: render duck cards dynamically from array
-- `fix`: resolve modular script alignment, relative asset paths, and readme changes
+- `fix`:  resolve modular script alignment, relative asset paths, and readme changes
 - `feat`: implement interactive filtering and update catalog assets paths
+- `fix`:  refactor data types to number and polish badge layout styling"
+- `feat`: refactor catalog rendering to use ES6 map and template strings"
 - 
 
 ## 🚀 Commits de Jenny (Homepage)
