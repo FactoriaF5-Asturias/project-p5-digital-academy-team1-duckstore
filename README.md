@@ -485,22 +485,24 @@ El proyecto aplica conceptos de accesibilidad:
 > 📌 Se añadirán durante el desarrollo.
 
 - `feat`: add cart icon and counter to homepage header
-- `feat`: add cart icon and counter to detalle header
+- 
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
 > 📌 Se añadirán durante el desarrollo.
 
-- 
+- `feat`: add cart icon and counter to detalle header
 - 
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 
 > 📌 Se añadirán durante el desarrollo.
 
+
 - `feat`: add cart logic and render cart items 
 - `feat`: add carrito.scss styles
-- 
+- `fix`: fix footer logo path and remove inline styles from carrito
+
 
 ## 🚀 Commits de Luisa (Contacto)
 
