@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </nav>
-        <a href="carrito.html" class="header__carrito">
+        <a href="pages/carrito.html" class="header__carrito">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="contador-carrito">0</span>
         </a>
@@ -82,50 +82,7 @@
 
         <section class="featured-products">
             <h2 class="featured-products__title">Patitos Destacados del Mes</h2>
-            <div class="featured-products__grid">
-
-                <article class="product-card">
-                    <div class="product-card__img-wrapper">
-                        <img src="assets/imgs/pato-astronauta.png" alt="Pato Astronauta" class="product-card__img" />
-                    </div>
-                    <div class="product-card__info">
-                        <div class="product-card__header">
-                            <h3 class="product-card__name">Pato Astronauta</h3>
-                            <span class="product-card__price">15.99€</span>
-                        </div>
-                        <p class="product-card__desc">Listo para explorar las galaxias de tu bañera.</p>
-                        <a href="pages/detalle.html" class="product-card__btn">Ver detalle</a>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-card__img-wrapper">
-                        <img src="assets/imgs/pato-pirata.png" alt="Pato Pirata" class="product-card__img" />
-                    </div>
-                    <div class="product-card__info">
-                        <div class="product-card__header">
-                            <h3 class="product-card__name">Pato Pirata</h3>
-                            <span class="product-card__price">12.50€</span>
-                        </div>
-                        <p class="product-card__desc">En busca de los tesoros perdidos en el mar de espuma.</p>
-                        <a href="pages/detalle.html" class="product-card__btn">Ver detalle</a>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-card__img-wrapper">
-                        <img src="assets/imgs/pato-superheroe.png" alt="Pato Superhéroe" class="product-card__img" />
-                    </div>
-                    <div class="product-card__info">
-                        <div class="product-card__header">
-                            <h3 class="product-card__name">Pato Superhéroe</h3>
-                            <span class="product-card__price">14.99€</span>
-                        </div>
-                        <p class="product-card__desc">Protegiendo la hora del baño contra el aburrimiento.</p>
-                        <a href="pages/detalle.html" class="product-card__btn">Ver detalle</a>
-                    </div>
-                </article>
-
+            <div id="featured-grid" class="featured-products__grid">
             </div>
         </section>
 
@@ -149,6 +106,8 @@
             </a>
         </div>
     </footer>
+
+    <script type="module" src="js/home.js"></script>
 
 </body>
 

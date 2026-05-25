@@ -486,7 +486,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 - `feat`: add cart icon and counter to homepage header
 - `feat`: add font awesome cart icon to all mine headers
-- 
+- `feat`: add home.js dynamic featured products
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
