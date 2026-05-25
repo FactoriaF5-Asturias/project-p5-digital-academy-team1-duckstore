@@ -37,6 +37,59 @@
     </header>
 
     <main class="pago-main">
+
+        <article class="pago-card" id="pago-card">
+
+            <header class="pago-card__header">
+                <div class="pago-card__icono">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <h1 class="pago-card__titulo">Tu Recibo</h1>
+                <p class="pago-card__id" id="pago-id">ID: #DS-00000</p>
+            </header>
+
+            <section class="pago-card__body">
+                <ul id="pago-items" class="pago-items"></ul>
+
+                <hr class="pago-separador" />
+
+                <section class="pago-totales">
+                    <div class="pago-totales__fila">
+                        <span>Subtotal</span>
+                        <span id="pago-subtotal">0.00€</span>
+                    </div>
+                    <div class="pago-totales__fila">
+                        <span>Envio</span>
+                        <span class="pago-totales__gratis">¡Gratis!</span>
+                    </div>
+                    <div class="pago-totales__fila pago-totales__fila--total">
+                        <span>Total</span>
+                        <span id="pago-total">0.00€</span>
+                    </div>
+                </section>
+
+                <div class="pago-card__btn-wrapper" id="pago-btn-wrapper">
+                    <button id="btn-confirmar-pago" class="pago-card__btn">
+                        Confirmar pago <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div id="pago-exito" class="pago-exito" style="display: none;">
+                </div>
+
+            </section>
+
+            <div class="pago-card__perforacion">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+        </article>
+
+        <a href="carrito.html" class="pago-volver">
+            <i class="fa-solid fa-chevron-left"></i> Volver a la tienda
+        </a>
+
     </main>
 
     <footer class="footer">
