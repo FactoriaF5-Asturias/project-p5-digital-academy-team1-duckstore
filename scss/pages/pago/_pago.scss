@@ -37,9 +37,14 @@
     height: 64px;
     background-color: var(--color-blanco);
     border-radius: 50%;
-    font-size: 1.8rem;
-    color: var(--color-dorado);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .pago-card__titulo {

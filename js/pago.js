@@ -34,7 +34,7 @@ const renderPago = () => {
     total.textContent = `${totalCalculado.toFixed(2)}€`;
 };
 
-// Muestra el mensaje de exito con animacion
+// Muestra el mensaje de exito con animacion del patito
 const mostrarExito = () => {
     const btnWrapper = document.querySelector("#pago-btn-wrapper");
     const exito = document.querySelector("#pago-exito");
@@ -42,7 +42,7 @@ const mostrarExito = () => {
     btnWrapper.style.display = "none";
 
     exito.innerHTML = `
-        <div class="pago-exito__pato">🦆</div>
+        <iframe src="https://giphy.com/embed/gNMpZ7DWvYOd2" width="120" height="120" frameBorder="0" allowFullScreen></iframe>
         <h2 class="pago-exito__titulo">¡Compra realizada con éxito!</h2>
         <p class="pago-exito__texto">Tu pedido está en camino a chapotear...</p>
     `;
