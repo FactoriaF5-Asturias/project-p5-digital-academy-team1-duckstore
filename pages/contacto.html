@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="DuckStore - Contacta con nosotros para resolver tus dudas sobre tus patitos de goma de colección." />
+    <meta name="description" content="DuckStore - Contacta con nosotros para resolver tus dudas sobre tus patitos de goma de colección." />
     <title>DuckStore | Contacto</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+    
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/style.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -34,86 +37,92 @@
         </nav>
 
         <a href="carrito.html" class="header__carrito">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span id="contador-carrito">0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
         </a>
     </header>
 
-    <main>
+    <main class="contacto-main">
         <section class="contacto-hero">
-            <div class="contacto-hero__content">
-                <h1 class="contacto-hero__title">Contáctanos</h1>
-                <p class="contacto-hero__text">
-                    ¿Tienes dudas sobre tu próxima mascota de hule? ¿Quieres un pedido personalizado para tu bañera?
-                    ¡Estamos a un cuac de distancia!
+            <h1 class="contacto-hero__titulo">Contáctanos</h1>
+            <p class="contacto-hero__subtitulo">¿Tienes dudas sobre tu próxima mascota de hule? ¿Quieres un pedido personalizado para tu bañera? ¡Estamos a un cuac de distancia!</p>
+        </section>
+
+        <div class="contacto-container">
+            
+            <section class="contacto-info">
+                <div class="contacto-info__card">
+                    <h2>Nuestra Ubicación</h2>
+                    <p>Ven a visitarnos a Villa Patito y conoce a todos nuestros amigos.</p>
+                                        
+                    <div class="contacto-info__mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.6372861343714!2d-5.6641124!3d43.5307271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMxJzEwLjYiTiA1wrAzOScxMC44Ilc!5e0!3m2!1ses!2ses!4v1716640000000!5m2!1ses!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <div class="contacto-info__detalles">
+                        <p><i class="fa-solid fa-clock"></i> Lunes a Viernes: 9:00 - 18:00</p>
+                        <p><i class="fa-solid fa-phone"></i> +34 900 123 456</p>
+                    </div>
+                </div>
+            </section>
+
+            <form id="formulario-contacto" class="contacto-form" novalidate>
+                <h2 class="contacto-form__titulo">Envíanos un mensaje</h2>
+                
+                <div class="contacto-form__grupo">
+                    <label for="nombre" class="contacto-form__label">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." class="contacto-form__input" required />
+                    <span id="error-nombre" class="contacto-form__error" style="display: none;">
+                        <i class="fa-solid fa-circle-exclamation"></i> Por favor, introduce tu nombre.
+                    </span>
+                </div>
+
+                <div class="contacto-form__grupo">
+                    <label for="email" class="contacto-form__label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="contacto-form__input" required />
+                    <span id="error-email" class="contacto-form__error" style="display: none;">
+                        <i class="fa-solid fa-circle-exclamation"></i> Introduce un correo electrónico válido.
+                    </span>
+                </div>
+
+                <div class="contacto-form__grupo">
+                    <label for="mensaje" class="contacto-form__label">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" class="contacto-form__textarea" required></textarea>
+                    <span id="error-mensaje" class="contacto-form__error" style="display: none;">
+                        <i class="fa-solid fa-circle-exclamation"></i> El mensaje no puede estar vacío.
+                    </span>
+                </div>
+
+                <button type="submit" id="btn-enviar" class="contacto-form__btn">Enviar cuac</button>
+
+                <p id="mensaje-exito" class="contacto-form__exito" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i> ¡Mensaje enviado correctamente! 🦆
                 </p>
-            </div>
-        </section>
-
-        <section class="contacto-container">
-
-            <div class="contacto-card">
-                <div class="contacto-info-item">
-                    <div class="contacto-info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div>
-                        <h3 class="contacto-info-title">Nuestra Base</h3>
-                        <p class="contacto-info-text">Calle del Estanque 123, Villa Patito</p>
+                
+                <div class="contacto-form__redes">
+                    <p>O búscanos en redes:</p>
+                    <div class="contacto-form__iconos">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
+            </form>
 
-                <div class="contacto-info-item">
-                    <div class="contacto-info-icon"><i class="fa-solid fa-clock"></i></div>
-                    <div>
-                        <h3 class="contacto-info-title">Horario de Patrulla</h3>
-                        <p class="contacto-info-text">Lunes a Viernes: 9:00 - 18:00</p>
-                        <p class="contacto-info-subtext">Los patitos descansan los fines de semana.</p>
-                    </div>
-                </div>
-
-                <img src="../assets/imgs/mapa.png" alt="Mapa Base Patito" class="contacto-card__img" />
-            </div>
-
-            <div class="contacto-card contacto-card--center">
-                <h3 class="contacto-card__title">Ubicación Principal</h3>
-
-                <div class="contacto-card__map-placeholder">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.4246067710385!2d-5.666953823420888!3d43.52879877110825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd365f57036035f1%3A0xc687320815ab93f7!2sFactor%C3%ADa%20F5!5e0!3m2!1ses!2ses!4v1716000000000!5m2!1ses!2ses"
-                        width="100%" height="350" title="Mapa de la ubicación principal de DuckStore" allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
-                </div>
-
-                <p class="contacto-card__social-text">También puedes contactarnos por redes sociales:</p>
-
-                <div class="contacto-card__social-icons">
-                    <button class="social-icon-btn" aria-label="Compartir"
-                        onclick="if(navigator.share){navigator.share({title:'DuckStore',url:window.location.href})}"><i
-                            class="fa-solid fa-share-nodes"></i></button>
-                    <a href="https://maps.google.com/?q=Factoría+F5+Gijón" target="_blank" rel="noopener noreferrer"
-                        class="social-icon-btn" aria-label="Ver en Google Maps"><i
-                            class="fa-solid fa-map-location-dot"></i></a>
-                    <a href="https://www.instagram.com/factoria_f5" target="_blank" rel="noopener noreferrer"
-                        class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-
-        </section>
+        </div>
     </main>
+
     <footer class="footer">
         <div class="footer__left">
-            <a href="index.html" class="footer__logo">
+            <a href="../index.html" class="footer__logo">
                 <img src="../assets/imgs/logo.png" alt="DuckStore logo" />
             </a>
             <p class="footer__copy"> 2026 - DuckStore by Group 1 of F5 Bootcamp</p>
         </div>
         <div class="footer__right">
-            <a href="https://www.facebook.com/factoriaf5" target="_blank" rel="noopener noreferrer" class="footer__link"
-                aria-label="Facebook">
+            <a href="https://www.facebook.com/factoriaf5" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Facebook">
                 <i class="fa-brands fa-facebook"></i> Facebook
             </a>
-            <a href="https://www.instagram.com/factoria_f5" target="_blank" rel="noopener noreferrer"
-                class="footer__link" aria-label="Instagram">
+            <a href="https://www.instagram.com/factoria_f5" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i> Instagram
             </a>
         </div>
