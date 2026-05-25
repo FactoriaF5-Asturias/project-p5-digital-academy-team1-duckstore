@@ -486,6 +486,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: select grid container using document.querySelector
 - `feat`: generate cards array using map and template strings
 - `feat`: insert mapped cards into DOM using innerHTML and join
+- `feat`: link catalogo.js script in HTML using type module
 
 ## 🚀 Commits de Jenny (Homepage)
 
