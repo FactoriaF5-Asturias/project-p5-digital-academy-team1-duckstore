@@ -32,7 +32,7 @@ export const renderCarrito = () => {
     const total = document.querySelector('#carrito-total');
     if (!contenedor) return;
 
-    //Actualizar subtitulo segun productos en carrito
+    // Actualizar subtitulo segun productos en carrito
     const subtitulo = document.querySelector('#carrito-subtitulo');
     if (subtitulo) {
         subtitulo.textContent = carrito.length === 0
@@ -52,7 +52,7 @@ export const renderCarrito = () => {
       <div class="carrito-item__info">
         <h4 class="carrito-item__nombre">${pato.nombre}</h4>
         <p class="carrito-item__categoria">${pato.categoria}</p>
-        <p class="carrito-item__precio">${pato.precio}€</p>
+        <p class="carrito-item__precio">${Number(pato.precio).toFixed(2)}€</p>
       </div>
       <div class="carrito-item__cantidad">
         <button class="btn-decrementar" data-id="${pato.id}">−</button>
@@ -127,7 +127,7 @@ export const mostrarRecibo = () => {
       ${carrito.map(p => `
         <li>
           <span>${p.nombre}</span>
-          <span>${p.cantidad} x ${p.precio}€</span>
+          <span>${p.cantidad} x ${Number(p.precio).toFixed(2)}€</span>
           <span>${(p.precio * p.cantidad).toFixed(2)}€</span>
         </li>
       `).join('')}
