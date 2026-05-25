@@ -227,6 +227,11 @@ El proyecto aplica conceptos básicos de accesibilidad:
 - `feat`: complete pristine catalog page grid structure and styling
 - `feat`: complete catalog 3x2 grid structure and correct footer
 - `feat`: adjust the position of the top sales tag and fix the Facebook icon
+- `feat`: add ducks data array
+- `feat`: render duck cards dynamically from array"
+- `fix`:  resolve modular script alignment, relative asset paths, and readme changes"
+- `feat`: implement interactive filtering and update catalog assets paths"
+
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
