@@ -482,6 +482,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`:  refactor data types to number and polish badge layout styling"
 - `chore`: rename css files to scss and keep centralized style link
 - `chore`: create empty catalogo.js file for catalog logic
+- `feat`: import ducks array into catalogo.js
+- `feat`: select grid container using document.querySelector
 - 
 
 ## 🚀 Commits de Jenny (Homepage)
