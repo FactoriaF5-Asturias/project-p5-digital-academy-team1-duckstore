@@ -537,6 +537,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: connect cart to payment page
 - `fix`: add missing script to payment page
 - `style`: add duck gif to payment page
+- `style`: add duck gif to cart title
 
 ## 🚀 Commits de Luisa (Contacto)
 

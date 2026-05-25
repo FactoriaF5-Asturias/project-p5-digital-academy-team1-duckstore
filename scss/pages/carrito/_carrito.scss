@@ -15,6 +15,14 @@
   margin-bottom: var(--spacing-sm);
 }
 
+// Gif del patito en el titulo
+.carrito-hero__gif {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .carrito-hero__subtitulo {
   font-family: var(--font-body);
   color: var(--color-texto-suave);
