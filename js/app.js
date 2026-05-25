@@ -4,12 +4,11 @@ const gridPatitos = document.getElementById('contenedor-patitos');
 const botonesFiltro = document.querySelectorAll('.filters__btn');
 
 // ==========================================================================
-// 1. FUNCIÓN PRINCIPAL PARA PINTAR LOS PATITOS EN LA WEB
+// 1. FUNCIÓN PRINCIPAL PARA PINTAR LOS PATITOS EN LA WEB (USANDO MAP)
 // ==========================================================================
 function mostrarPatitos(productos) {
-    gridPatitos.innerHTML = '';
-
-    productos.forEach(pato => {
+    // Usamos .map() para transformar cada patito en su código HTML correspondiente
+    const mapeoTarjetas = productos.map(pato => {
         // Transformamos el precio a número y le ponemos el formato de euro con coma
         const precioNumero = Number(pato.precio);
         const precioParaPantalla = !isNaN(precioNumero) 
@@ -21,7 +20,8 @@ function mostrarPatitos(productos) {
             ? pato.categoria.toLowerCase().replace(' ', '-') 
             : 'default';
 
-        const tarjeta = `
+        // Retornamos el Template String de la tarjeta sin usar ninguna concatenación con '+'
+        return `
             <article class="product-card">
                 <span class="product-card__badge product-card__badge--${claseCategoria}">${pato.categoria}</span>
                 <div class="product-card__image-container">
@@ -32,8 +32,10 @@ function mostrarPatitos(productos) {
                 <a href="detalle.html" class="product-card__button">Ver detalle</a>
             </article>
         `;
-        gridPatitos.innerHTML += tarjeta;
     });
+
+    // .join('') junta todas las tarjetas del array en un único texto limpio de HTML
+    gridPatitos.innerHTML = mapeoTarjetas.join('');
 }
 
 // ==========================================================================
