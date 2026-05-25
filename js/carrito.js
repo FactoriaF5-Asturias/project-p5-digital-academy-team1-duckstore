@@ -32,6 +32,14 @@ export const renderCarrito = () => {
     const total = document.querySelector('#carrito-total');
     if (!contenedor) return;
 
+    //Actualizar subtitulo segun productos en carrito
+    const subtitulo = document.querySelector('#carrito-subtitulo');
+    if (subtitulo) {
+        subtitulo.textContent = carrito.length === 0
+            ? 'Tu carrito esta vacio.'
+            : `Tienes ${carrito.length} patito${carrito.length === 1 ? '' : 's'} listo${carrito.length === 1 ? '' : 's'} para irse a casa contigo...`;
+    }
+
     if (carrito.length === 0) {
         contenedor.innerHTML = `<p>Tu carrito está vacío.</p>`;
         if (total) total.textContent = '0.00€';

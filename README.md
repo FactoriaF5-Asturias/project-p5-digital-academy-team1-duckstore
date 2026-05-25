@@ -493,24 +493,27 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🚀 Commits de Jenny (Homepage)
 
-> 📌 Se añadirán durante el desarrollo.
-
 - `feat`: add cart icon and counter to homepage header
 - `feat`: add font awesome cart icon to all mine headers
 - `feat`: add home.js dynamic featured products
 - `fix`: fix price format
+- `refactor`: convert featured.css to scss
+- `refactor`: convert hero.css to scss
+- `refactor`: convert ventajas.css to scss
+- `refactor`: convert breadcrumb.css to scss
+- `refactor`: convert image-card.css to scss
+- `refactor`: convert product-info.css to scss
+- `refactor`: convert layout.css to scss
+- `refactor`: convert animations.css to scss
+
+
 
 ## 🚀 Commits de Jenny (Detalle de producto)
-
-> 📌 Se añadirán durante el desarrollo.
 
 - `feat`: add cart icon and counter to detalle header
 - `feat`: add detalle.js dynamic product detail
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
-
-> 📌 Se añadirán durante el desarrollo.
-
 
 - `feat`: add cart logic and render cart items 
 - `feat`: add carrito.scss styles
@@ -518,6 +521,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: persist cart with localStorage
 - `fix`: fix localStorage cart persistence
 - `docs`: resolve README merge conflict
+- `feat`: update cart subtitle with product count
 
 ## 🚀 Commits de Luisa (Contacto)
 
