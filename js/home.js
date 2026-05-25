@@ -13,7 +13,7 @@ const renderDestacados = () => {
             <div class="product-card__info">
                 <div class="product-card__header">
                     <h3 class="product-card__name">${pato.nombre}</h3>
-                    <span class="product-card__price">${pato.precio}€</span>
+                    <span class="product-card__price">${Number(pato.precio).toFixed(2)}€</span>
                 </div>
                 <p class="product-card__desc">${pato.descripcion}</p>
                 <a href="pages/detalle.html?id=${pato.id}" class="product-card__btn">Ver detalle</a>

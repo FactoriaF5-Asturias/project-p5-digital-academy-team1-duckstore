@@ -24,7 +24,7 @@ const renderDetalle = () => {
         <section class="detalle__info">
             <h1 class="detalle__info-title">${pato.nombre}</h1>
             <div class="detalle__info-prices">
-                <span class="detalle__info-price">${pato.precio}€</span>
+                <span class="detalle__info-price">${pato.precio.toFixed(2)}€</span>
             </div>
             <hr class="detalle__info-divider" />
             <p class="detalle__info-description">${pato.descripcion}</p>
