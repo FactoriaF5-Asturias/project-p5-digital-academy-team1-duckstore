@@ -524,6 +524,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: update cart subtitle with product count
 - `fix`: fix price format in cart items
 - `fix`: fix subtotal not updating in cart summary
+- `fix`: add font awesome icons to carrito.html
 
 ## 🚀 Commits de Luisa (Contacto)
 
