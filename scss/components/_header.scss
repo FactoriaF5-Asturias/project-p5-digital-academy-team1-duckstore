@@ -1,3 +1,4 @@
+// Header — Mobile first
 .header {
   display: flex;
   flex-direction: column;
@@ -12,11 +13,12 @@
   height: 40px;
   overflow: hidden;
   flex-shrink: 0;
-}
-.header__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .nav__list {
@@ -29,16 +31,19 @@
   font-size: 0.9rem;
   color: var(--color-texto);
   transition: color 0.3s ease;
-}
-.nav__link:hover {
-  color: var(--color-dorado);
-}
-.nav__link--active {
-  color: var(--color-dorado);
-  border-bottom: 2px solid var(--color-amarillo);
-  padding-bottom: 2px;
+
+  &:hover {
+    color: var(--color-dorado);
+  }
+
+  &--active {
+    color: var(--color-dorado);
+    border-bottom: 2px solid var(--color-amarillo);
+    padding-bottom: 2px;
+  }
 }
 
+// Carrito
 .header__carrito {
   font-size: 1.2rem;
   color: var(--color-texto);
@@ -46,9 +51,10 @@
   align-items: center;
   gap: 0.3rem;
   transition: color 0.3s ease;
-}
-.header__carrito:hover {
-  color: var(--color-dorado);
+
+  &:hover {
+    color: var(--color-dorado);
+  }
 }
 
 #contador-carrito {
@@ -64,6 +70,7 @@
   justify-content: center;
 }
 
+// Responsive — Tablet (min 640px)
 @media (min-width: 640px) {
   .header {
     flex-direction: row;
@@ -71,42 +78,50 @@
     padding: 1rem 2rem;
     position: relative;
   }
+
   .header__logo {
     width: 45px;
     height: 45px;
   }
+
   .nav__list {
     gap: 2rem;
   }
+
   .nav__link {
     font-size: 0.95rem;
   }
+
   .header__carrito {
     font-size: 1.1rem;
   }
 }
+
+// Responsive — Desktop (min 1024px)
 @media (min-width: 1024px) {
   .header {
     justify-content: center;
     position: relative;
     padding: 1rem 2rem;
   }
+
   .header__logo {
     position: absolute;
     left: 2rem;
     width: 50px;
     height: 50px;
   }
+
   .nav__list {
     gap: 2.5rem;
   }
+
   .nav__link {
     font-size: 1rem;
   }
+
   .header__carrito {
     position: absolute;
     right: 2rem;
   }
 }
-
-/*# sourceMappingURL=header.css.map */
