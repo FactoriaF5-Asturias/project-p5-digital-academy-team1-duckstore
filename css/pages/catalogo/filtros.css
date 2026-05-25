@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.filters {
+  display: flex;
+  gap: var(--spacing-sm); /* Usa vuestro 0.5rem */
+  margin-bottom: var(--spacing-xl); /* Usa vuestro 4rem */
+  flex-wrap: wrap;
+}
+
+.filters__btn {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-button); /* Usa vuestro 999px */
+  background-color: #EAEAEA; /* Gris suave de la imagen para los inactivos */
+  color: var(--color-texto);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filters__btn:hover {
+  background-color: #DFDFDF;
+}
+
+/* Modificador BEM para el botón "Todos" seleccionado (Color marrón/oliva de la foto) */
+.filters__btn--active {
+  background-color: #6E5A0E;
+  color: var(--color-blanco);
+}
+
+.filters__btn--active:hover {
+  background-color: #55450B;
+}/*# sourceMappingURL=filtros.css.map */
