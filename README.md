@@ -493,7 +493,7 @@ El proyecto aplica conceptos de accesibilidad:
 > 📌 Se añadirán durante el desarrollo.
 
 - `feat`: add cart icon and counter to detalle header
-- 
+- `feat`: add detalle.js dynamic product detail
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 

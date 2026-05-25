@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="DuckStore - Pato Astronauta Edición Espacial. Patito de goma premium con traje espacial." />
-    <title>DuckStore | Pato Astronauta</title>
+    <meta name="description" content="DuckStore - Detalle de producto." />
+    <title>DuckStore | Detalle</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
@@ -26,7 +25,7 @@
                     <a href="../index.html" class="nav__link">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="catalogo.html" class="nav__link nav__link--active" aria-current="page">Catálogo</a>
+                    <a href="catalogo.html" class="nav__link">Catálogo</a>
                 </li>
                 <li class="nav__item">
                     <a href="contacto.html" class="nav__link">Contacto</a>
@@ -51,54 +50,14 @@
                     <a href="catalogo.html" class="breadcrumb__link">Catálogo</a>
                 </li>
                 <li class="breadcrumb__separator" aria-hidden="true">›</li>
-                <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">
-                    Pato Astronauta
+                <li class="breadcrumb__item breadcrumb__item--active" aria-current="page" id="breadcrumb-nombre">
+                    <!-- JS rellena el nombre del patito -->
                 </li>
             </ol>
         </nav>
 
-        <article class="detalle__producto">
-
-            <section class="detalle__imagen">
-                <span class="detalle__imagen-badge">Edición Especial</span>
-                <img src="../assets/imgs/pato-astronauta-detalle.png" alt="Pato Astronauta - Edición Espacial"
-                    class="detalle__imagen-img" />
-            </section>
-
-            <section class="detalle__info">
-
-                <div class="detalle__info-stock">
-                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                    <span>Disponible: 12 unidades</span>
-                </div>
-
-                <h1 class="detalle__info-title">Pato Astronauta - Edición Espacial</h1>
-
-                <div class="detalle__info-prices">
-                    <span class="detalle__info-price">15,90€</span>
-                    <span class="detalle__info-price--old">19,90€</span>
-                </div>
-
-                <hr class="detalle__info-divider" />
-
-                <p class="detalle__info-description">
-                    ¡Listo para conquistar la bañera y más allá! Este patito de goma premium
-                    viene equipado con un traje espacial detallado y un casco reflectante.
-                    Fabricado con materiales resistentes al agua y de alta calidad para
-                    garantizar misiones seguras en cualquier charco.
-                </p>
-
-                <ul class="detalle__info-badges">
-                    <li class="detalle__info-badge">
-                        <i class="fa-solid fa-rocket" aria-hidden="true"></i>
-                        <span>Envío Galáctico</span>
-                    </li>
-                    <li class="detalle__info-badge">
-                        <i class="fa-solid fa-shield" aria-hidden="true"></i>
-                        <span>Pago Seguro</span>
-                    </li>
-                </ul>
-            </section>
+        <article id="detalle-producto" class="detalle__producto">
+            <!-- JS rellena el detalle del patito -->
         </article>
 
     </main>
@@ -121,6 +80,8 @@
             </a>
         </div>
     </footer>
+
+    <script type="module" src="../js/detalle.js"></script>
 
 </body>
 
