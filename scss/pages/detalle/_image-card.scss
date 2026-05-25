@@ -1,3 +1,4 @@
+// Mobile first
 .detalle__imagen {
   position: relative;
   background-color: var(--color-fondo);
@@ -9,9 +10,10 @@
   padding: 24px;
   box-shadow: 0 20px 40px -10px rgba(112, 93, 0, 0.08);
   overflow: hidden;
-}
-.detalle__imagen:hover .detalle__imagen-img {
-  transform: scale(1.05);
+
+  &:hover .detalle__imagen-img {
+    transform: scale(1.05);
+  }
 }
 
 .detalle__imagen-img {
@@ -34,12 +36,14 @@
   font-weight: 700;
 }
 
+// Responsive — Tablet (min 640px)
 @media (min-width: 640px) {
   .detalle__imagen {
     height: 400px;
     padding: 40px;
     border-radius: 1.25rem;
   }
+
   .detalle__imagen-badge {
     top: 20px;
     left: 20px;
@@ -47,17 +51,18 @@
     padding: 5px 16px;
   }
 }
+
+// Responsive — Desktop (min 1024px)
 @media (min-width: 1024px) {
   .detalle__imagen {
     height: 600px;
     padding: 80px;
     border-radius: 1.5rem;
   }
+
   .detalle__imagen-badge {
     top: 24px;
     left: 24px;
     padding: 6px 18px;
   }
 }
-
-/*# sourceMappingURL=image-card.css.map */
