@@ -1,7 +1,8 @@
-// Array del carrito - recuperamos de localStorage si existe
-export let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+// Recuperamos el carrito del navegador o empezamos vacio
+const carritoGuardado = localStorage.getItem('carrito');
+export let carrito = carritoGuardado ? JSON.parse(carritoGuardado) : [];
 
-// Guardar carrito en localStorage
+// Guardamos el carrito en el navegador
 const guardarCarrito = () => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 };
@@ -150,7 +151,7 @@ export const confirmarPago = () => {
 document.querySelector('#btn-pago')?.addEventListener('click', mostrarRecibo);
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
 
-// Evento al cargar el DOM - recuperar carrito y actualizar contador
+// Evento al cargar el DOM
 document.addEventListener('DOMContentLoaded', () => {
     actualizarContador();
     renderCarrito();
