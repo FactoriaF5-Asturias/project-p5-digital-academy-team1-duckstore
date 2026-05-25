@@ -509,6 +509,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `refactor`: convert footer.css to scss
 - `refactor`: convert reset.css to scss
 - `refactor`: convert variables.css to scss
+- `refactor`: reorganize css folder structure with base and components
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
