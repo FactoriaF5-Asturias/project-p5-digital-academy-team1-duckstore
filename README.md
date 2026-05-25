@@ -496,22 +496,28 @@ El proyecto aplica conceptos de accesibilidad:
 > 📌 Se añadirán durante el desarrollo.
 
 - `feat`: add cart icon and counter to homepage header
-- `feat`: add cart icon and counter to detalle header
+- `feat`: add font awesome cart icon to all mine headers
+- `feat`: add home.js dynamic featured products
+- `fix`: fix price format
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
 > 📌 Se añadirán durante el desarrollo.
 
-- 
-- 
+- `feat`: add cart icon and counter to detalle header
+- `feat`: add detalle.js dynamic product detail
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 
 > 📌 Se añadirán durante el desarrollo.
 
+
 - `feat`: add cart logic and render cart items 
 - `feat`: add carrito.scss styles
-- 
+- `fix`: fix footer logo path and remove inline styles from carrito
+- `feat`: persist cart with localStorage
+- `fix`: fix localStorage cart persistence
+- `docs`: resolve README merge conflict
 
 ## 🚀 Commits de Luisa (Contacto)
 

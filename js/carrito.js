@@ -1,7 +1,13 @@
-/* Array del carrito */
-export let carrito = [];
+// Recuperamos el carrito del navegador o empezamos vacio
+const carritoGuardado = localStorage.getItem('carrito');
+export let carrito = carritoGuardado ? JSON.parse(carritoGuardado) : [];
 
-/* Añadir al carrito */
+// Guardamos el carrito en el navegador
+const guardarCarrito = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
+
+// Añadir al carrito
 export const agregarAlCarrito = (pato) => {
     const existe = carrito.find(p => p.id === pato.id);
     if (existe) {
@@ -9,17 +15,18 @@ export const agregarAlCarrito = (pato) => {
         return;
     }
     carrito.push({ ...pato, cantidad: 1 });
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
 
-/* Actualizar contador del nav */
+// Actualizar contador del nav
 export const actualizarContador = () => {
     const contador = document.querySelector('#contador-carrito');
     if (contador) contador.textContent = carrito.length;
 };
 
-/* Pintar el carrito en pantalla */
+// Pintar el carrito en pantalla
 export const renderCarrito = () => {
     const contenedor = document.querySelector('#carrito-items');
     const total = document.querySelector('#carrito-total');
@@ -56,7 +63,7 @@ export const renderCarrito = () => {
     agregarEventosCarrito();
 };
 
-/* Eventos de los botones del carrito */
+// Eventos de los botones del carrito
 const agregarEventosCarrito = () => {
     document.querySelectorAll('.btn-incrementar').forEach(btn => {
         btn.addEventListener('click', () => incrementarCantidad(parseInt(btn.dataset.id)));
@@ -69,14 +76,15 @@ const agregarEventosCarrito = () => {
     });
 };
 
-/* Incrementar cantidad */
+// Incrementar cantidad
 export const incrementarCantidad = (id) => {
     const pato = carrito.find(p => p.id === id);
     if (pato) pato.cantidad += 1;
+    guardarCarrito();
     renderCarrito();
 };
 
-/* Decrementar cantidad */
+// Decrementar cantidad
 export const decrementarCantidad = (id) => {
     const pato = carrito.find(p => p.id === id);
     if (!pato) return;
@@ -84,18 +92,20 @@ export const decrementarCantidad = (id) => {
         eliminarDelCarrito(id);
     } else {
         pato.cantidad -= 1;
+        guardarCarrito();
         renderCarrito();
     }
 };
 
-/* Eliminar del carrito */
+// Eliminar del carrito
 export const eliminarDelCarrito = (id) => {
     carrito = carrito.filter(p => p.id !== id);
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
 
-/* Mostrar recibo */
+// Mostrar recibo
 export const mostrarRecibo = () => {
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -121,9 +131,10 @@ export const mostrarRecibo = () => {
     if (btnConfirmar) btnConfirmar.style.display = 'block';
 };
 
-/* Confirmar pago */
+// Confirmar pago
 export const confirmarPago = () => {
     carrito = [];
+    guardarCarrito();
     actualizarContador();
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -136,6 +147,12 @@ export const confirmarPago = () => {
     if (contenedor) contenedor.innerHTML = '';
 };
 
-/* Eventos botones de pago */
+// Eventos botones de pago
 document.querySelector('#btn-pago')?.addEventListener('click', mostrarRecibo);
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
+
+// Evento al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+    actualizarContador();
+    renderCarrito();
+});
