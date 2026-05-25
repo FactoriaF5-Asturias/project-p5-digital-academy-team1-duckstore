@@ -505,6 +505,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: add cart logic and render cart items 
 - `feat`: add carrito.scss styles
 - `fix`: fix footer logo path and remove inline styles from carrito
+- `fix`: fix localStorage cart persistence
 
 
 ## 🚀 Commits de Luisa (Contacto)

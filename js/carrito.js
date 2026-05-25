@@ -1,5 +1,11 @@
-// Array del carrito
-export let carrito = [];
+// Recuperamos el carrito del navegador o empezamos vacio
+const carritoGuardado = localStorage.getItem('carrito');
+export let carrito = carritoGuardado ? JSON.parse(carritoGuardado) : [];
+
+// Guardamos el carrito en el navegador
+const guardarCarrito = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
 
 // Añadir al carrito
 export const agregarAlCarrito = (pato) => {
@@ -9,6 +15,7 @@ export const agregarAlCarrito = (pato) => {
         return;
     }
     carrito.push({ ...pato, cantidad: 1 });
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
@@ -73,6 +80,7 @@ const agregarEventosCarrito = () => {
 export const incrementarCantidad = (id) => {
     const pato = carrito.find(p => p.id === id);
     if (pato) pato.cantidad += 1;
+    guardarCarrito();
     renderCarrito();
 };
 
@@ -84,18 +92,20 @@ export const decrementarCantidad = (id) => {
         eliminarDelCarrito(id);
     } else {
         pato.cantidad -= 1;
+        guardarCarrito();
         renderCarrito();
     }
 };
 
-// Eliminar del carrito 
+// Eliminar del carrito
 export const eliminarDelCarrito = (id) => {
     carrito = carrito.filter(p => p.id !== id);
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
 
-// Mostrar recibo 
+// Mostrar recibo
 export const mostrarRecibo = () => {
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -121,9 +131,10 @@ export const mostrarRecibo = () => {
     if (btnConfirmar) btnConfirmar.style.display = 'block';
 };
 
-// Confirmar pago 
+// Confirmar pago
 export const confirmarPago = () => {
     carrito = [];
+    guardarCarrito();
     actualizarContador();
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -136,6 +147,12 @@ export const confirmarPago = () => {
     if (contenedor) contenedor.innerHTML = '';
 };
 
-// Eventos botones de pago 
+// Eventos botones de pago
 document.querySelector('#btn-pago')?.addEventListener('click', mostrarRecibo);
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
+
+// Evento al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+    actualizarContador();
+    renderCarrito();
+});
