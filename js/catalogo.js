@@ -31,3 +31,14 @@ function generarCards(productos) {
 
     return mapeoTarjetas;
 }
+
+// Función para pintar las tarjetas en la pantalla usando innerHTML
+function mostrarCatalogo(productos) {
+    const tarjetasFormateadas = generarCards(productos);
+    
+    // .join('') une todas las tarjetas del array en una sola cadena de texto limpia
+    gridPatitos.innerHTML = tarjetasFormateadas.join('');
+}
+
+// Ejecutamos la función nada más cargar la página para que se vean todos los patitos
+mostrarCatalogo(ducks);

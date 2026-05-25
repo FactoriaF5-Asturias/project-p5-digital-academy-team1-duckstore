@@ -485,7 +485,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: import ducks array into catalogo.js
 - `feat`: select grid container using document.querySelector
 - `feat`: generate cards array using map and template strings
-- 
+- `feat`: insert mapped cards into DOM using innerHTML and join
 
 ## 🚀 Commits de Jenny (Homepage)
 
