@@ -490,6 +490,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: setup catalog sass structure and compile to css
 - `feat`: refactor catalog rendering to use ES6 map and template strings"
 - `chore`: merge remote changes and resolve README conflict
+- `feat`: new header and footer
 
 ## 🚀 Commits de Jenny (Homepage)
 
