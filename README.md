@@ -436,15 +436,15 @@ El proyecto aplica conceptos de accesibilidad:
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| [![Landing Page](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/homepage-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/homepage-screenshot-p2.png) | [![Catálogo](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/catalogo-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/catalogo-screenshot-p2.png) |
+| ![Landing Page](assets/imgs/part2/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-screenshot-p2.png) |
 
 | 🦆 Detalle Producto | 🛒 Carrito |
 |:---:|:---:|
-| [![Detalle Producto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/detalle-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/detalle-screenshot-p2.png) | [![Carrito](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/carrito-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/carrito-screenshot-p2.png) |
+| ![Detalle Producto](assets/imgs/part2/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/carrito-screenshot-p2.png) |
 
 | 📩 Contacto | 💳 Pago |
 |:---:|:---:|
-| [![Contacto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/contacto-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/contacto-screenshot-p2.png) | [![Pago](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/pago-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/pago-screenshot-p2.png) |
+| ![Contacto](assets/imgs/part2/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/pago-screenshot-p2.png) |
 
 ---
 
@@ -470,8 +470,6 @@ El proyecto aplica conceptos de accesibilidad:
 - `docs`: update README for part 2
 - `docs`: add part 2 prototype screenshots to README
 - `chore`: add package.json and update gitignore
-- `refactor`: move carrito styles to scss/parcials structure
-
 
 ## 🚀 Commits de Nieves (Catálogo JS)
 
@@ -538,6 +536,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: add missing script to payment page
 - `style`: add duck gif to payment page
 - `style`: add duck gif to cart title
+- `docs`: update README
 
 ## 🚀 Commits de Luisa (Contacto)
 
