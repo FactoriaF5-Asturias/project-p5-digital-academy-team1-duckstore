@@ -1,4 +1,3 @@
-/* Mobile first */
 .detalle__producto {
   display: flex;
   flex-direction: column;
@@ -11,7 +10,6 @@
   gap: 24px;
 }
 
-/* Badge de stock */
 .detalle__info-stock {
   display: inline-flex;
   align-items: center;
@@ -19,23 +17,21 @@
   background-color: #dcfce7;
   color: #15803d;
   padding: 6px 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-button);
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 700;
   width: fit-content;
 }
 
-/* Título */
 .detalle__info-title {
   font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1a1c1c;
+  color: var(--color-texto);
   line-height: 1.25;
 }
 
-/* Precios */
 .detalle__info-prices {
   display: flex;
   align-items: baseline;
@@ -46,33 +42,30 @@
   font-family: var(--font-display);
   font-size: 2.25rem;
   font-weight: 700;
-  color: #705d00;
+  color: var(--color-dorado);
   letter-spacing: -0.02em;
 }
 
 .detalle__info-price--old {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: #5f5e5e;
+  color: var(--color-texto-suave);
   text-decoration: line-through;
 }
 
-/* Divisor */
 .detalle__info-divider {
   border: none;
   border-top: 1px solid rgba(208, 198, 171, 0.3);
   margin: 0;
 }
 
-/* Descripción */
 .detalle__info-description {
   font-family: var(--font-body);
   font-size: 1rem;
-  color: #4d4732;
+  color: var(--color-texto-suave);
   line-height: 1.75;
 }
 
-/* Sellos de servicio */
 .detalle__info-badges {
   display: flex;
   flex-direction: column;
@@ -85,41 +78,34 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: #f3f3f4;
+  background-color: var(--color-fondo);
   border: 1px solid rgba(208, 198, 171, 0.1);
   padding: 12px 24px;
   border-radius: 0.75rem;
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 700;
-  color: #1a1c1c;
+  color: var(--color-texto);
 }
-
 .detalle__info-badge i {
-  color: #705d00;
+  color: var(--color-dorado);
   font-size: 1.1rem;
 }
 
-/* -- RESPONSIVE — Tablet (min 640px) -- */
 @media (min-width: 640px) {
   .detalle__info-badges {
     flex-direction: row;
   }
-
   .detalle__info-badge {
     flex: 1;
   }
-
   .detalle__info-title {
     font-size: 2rem;
   }
-
   .detalle__info-price {
     font-size: 2.75rem;
   }
 }
-
-/* -- RESPONSIVE — Desktop (min 1024px) -- */
 @media (min-width: 1024px) {
   .detalle__producto {
     display: grid;
@@ -127,12 +113,12 @@
     gap: 80px;
     align-items: start;
   }
-
   .detalle__info-title {
     font-size: 2.25rem;
   }
-
   .detalle__info-price {
     font-size: 3rem;
   }
 }
+
+/*# sourceMappingURL=product-info.css.map */

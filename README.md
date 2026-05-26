@@ -475,35 +475,69 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🚀 Commits de Nieves (Catálogo JS)
 
-> 📌 Se añadirán durante el desarrollo.
-
-- 
-- 
+- `feat`: add ducks data array"
+- `feat`: render duck cards dynamically from array
+- `fix`:  resolve modular script alignment, relative asset paths, and readme changes
+- `feat`: implement interactive filtering and update catalog assets paths
+- `fix`:  refactor data types to number and polish badge layout styling"
+- `chore`: rename css files to scss and keep centralized style link
+- `chore`: create empty catalogo.js file for catalog logic
+- `feat`: import ducks array into catalogo.js
+- `feat`: select grid container using document.querySelector
+- `feat`: generate cards array using map and template strings
+- `feat`: insert mapped cards into DOM using innerHTML and join
+- `feat`: link catalogo.js script in HTML using type module
+- `feat`: setup catalog sass structure and compile to css
+- `feat`: refactor catalog rendering to use ES6 map and template strings"
+- `chore`: merge remote changes and resolve README conflict
 
 ## 🚀 Commits de Jenny (Homepage)
 
-> 📌 Se añadirán durante el desarrollo.
-
 - `feat`: add cart icon and counter to homepage header
 - `feat`: add font awesome cart icon to all mine headers
-- 
+- `feat`: add home.js dynamic featured products
+- `fix`: fix price format
+- `refactor`: convert featured css to scss
+- `refactor`: convert hero css to scss
+- `refactor`: convert ventajas css to scss
+- `refactor`: convert header css to scss
+- `refactor`: convert footer css to scss
+- `refactor`: convert reset css to scss
+- `refactor`: convert variables css to scss
+- `refactor`: reorganize css folder structure with base and components
 
 ## 🚀 Commits de Jenny (Detalle de producto)
 
-> 📌 Se añadirán durante el desarrollo.
-
 - `feat`: add cart icon and counter to detalle header
-- 
+- `feat`: add detalle.js dynamic product detail
+- `refactor`: convert breadcrumb css to scss
+- `refactor`: convert image-card css to scss
+- `refactor`: convert product-info.css to scss
+- `refactor`: convert layout css to scss
+- `refactor`: convert animations css to scss
 
 ## 🚀 Commits de Jenny (Carrito y Pago)
 
-> 📌 Se añadirán durante el desarrollo.
-
-
 - `feat`: add cart logic and render cart items 
-- `feat`: add carrito.scss styles
+- `feat`: add carrito scss styles
 - `fix`: fix footer logo path and remove inline styles from carrito
-
+- `feat`: persist cart with localStorage
+- `fix`: fix localStorage cart persistence
+- `docs`: resolve README merge conflict
+- `feat`: update cart subtitle with product count
+- `fix`: fix price format in cart items
+- `fix`: fix subtotal not updating in cart summary
+- `fix`: add font awesome icons to carrito.html
+- `refactor`: convert carrito.css to scss with variables and nesting
+- `feat`: add pago html base structure
+- `feat`: add pago html main structure
+- `feat`: add pago js logic
+- `feat`: add pago js success animation 
+- `style`: add pago scss styles
+- `feat`: connect cart to payment page
+- `fix`: add missing script to payment page
+- `style`: add duck gif to payment page
+- `style`: add duck gif to cart title
 
 ## 🚀 Commits de Luisa (Contacto)
 

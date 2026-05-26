@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckStore | Tu Recibo</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="header__logo">
+            <img src="../assets/imgs/logo.png" alt="DuckStore logo" />
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="catalogo.html" class="nav__link">Catálogo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="carrito.html" class="header__carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
+    </header>
+
+    <main class="pago-main">
+
+        <article class="pago-card" id="pago-card">
+
+            <header class="pago-card__header">
+                <div class="pago-card__icono">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJuaGg1OWY5MGE2cTNyMjEwMXE4a3ZmejVldTlnczRzb3NtN25iMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XMdnkAT4Q9rJ4thW8h/giphy.gif"
+                        alt="DuckStore patito" />
+                </div>
+                <h1 class="pago-card__titulo">Tu Recibo</h1>
+                <p class="pago-card__id" id="pago-id">ID: #DS-00000</p>
+            </header>
+
+            <section class="pago-card__body">
+                <ul id="pago-items" class="pago-items"></ul>
+
+                <hr class="pago-separador" />
+
+                <section class="pago-totales">
+                    <div class="pago-totales__fila">
+                        <span>Subtotal</span>
+                        <span id="pago-subtotal">0.00€</span>
+                    </div>
+                    <div class="pago-totales__fila">
+                        <span>Envio</span>
+                        <span class="pago-totales__gratis">¡Gratis!</span>
+                    </div>
+                    <div class="pago-totales__fila pago-totales__fila--total">
+                        <span>Total</span>
+                        <span id="pago-total">0.00€</span>
+                    </div>
+                </section>
+
+                <div class="pago-card__btn-wrapper" id="pago-btn-wrapper">
+                    <button id="btn-confirmar-pago" class="pago-card__btn">
+                        Confirmar pago <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div id="pago-exito" class="pago-exito" style="display: none;">
+                </div>
+
+            </section>
+
+            <div class="pago-card__perforacion">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+        </article>
+
+        <a href="carrito.html" class="pago-volver">
+            <i class="fa-solid fa-chevron-left"></i> Volver a la tienda
+        </a>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <a href="../index.html" class="footer__logo">
+                <img src="../assets/imgs/logo.png" alt="DuckStore logo" />
+            </a>
+            <p class="footer__copy">2026 - DuckStore by Group 1 of F5 Bootcamp</p>
+        </div>
+        <div class="footer__right">
+            <a href="https://www.facebook.com/factoriaf5" target="_blank" rel="noopener noreferrer" class="footer__link"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/factoria_f5" target="_blank" rel="noopener noreferrer"
+                class="footer__link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/pago.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+:root {
+  --color-amarillo: #FFD700;
+  --color-dorado: #B8860B;
+  --color-terciario: #00B4D8;
+  --color-fondo: #FAF5E6;
+  --color-blanco: #FFFFFF;
+  --color-texto: #1F1F1F;
+  --color-texto-suave: #5C5C5C;
+  --font-display: 'Quicksand', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --radius-card: 16px;
+  --radius-button: 999px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+/*# sourceMappingURL=variables.css.map */

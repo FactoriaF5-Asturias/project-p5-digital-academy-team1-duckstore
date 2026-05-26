@@ -1,4 +1,4 @@
-/* Colores */
+// Variables globales
 :root {
   --color-amarillo: #FFD700;
   --color-dorado: #B8860B;
@@ -8,15 +8,15 @@
   --color-texto: #1F1F1F;
   --color-texto-suave: #5C5C5C;
 
-  /* Tipografía */
+  // Tipografia
   --font-display: 'Quicksand', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
-  /* Bordes */
+  // Bordes
   --radius-card: 16px;
   --radius-button: 999px;
 
-  /* Espaciados */
+  // Espaciados
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;

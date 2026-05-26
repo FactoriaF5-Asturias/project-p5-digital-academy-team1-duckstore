@@ -1,52 +1,66 @@
 import { ducks } from './ducks.js';
 
 const gridPatitos = document.getElementById('contenedor-patitos');
-// Seleccionamos todos los botones de filtro
 const botonesFiltro = document.querySelectorAll('.filters__btn');
 
-// 1. Tu función de pintar que ya funcionaba perfectamente
-function renderizarCatalogo(listaDePatitos) {
-    gridPatitos.innerHTML = "";
+// ==========================================================================
+// 1. FUNCIÓN PRINCIPAL PARA PINTAR LOS PATITOS EN LA WEB (USANDO MAP)
+// ==========================================================================
+function mostrarPatitos(productos) {
+    // Usamos .map() para transformar cada patito en su código HTML correspondiente
+    const mapeoTarjetas = productos.map(pato => {
+        // Transformamos el precio a número y le ponemos el formato de euro con coma
+        const precioNumero = Number(pato.precio);
+        const precioParaPantalla = !isNaN(precioNumero) 
+            ? `${precioNumero.toFixed(2).replace('.', ',')}€` 
+            : pato.precio;
 
-    listaDePatitos.forEach(pato => {
-        const claseBadge = pato.categoria.toLowerCase().replace('é', 'e').replace(' ', '-');
+        // Evitamos errores con los espacios en las categorías para las cápsulas de CSS
+        const claseCategoria = pato.categoria 
+            ? pato.categoria.toLowerCase().replace(' ', '-') 
+            : 'default';
 
-        const tarjeta = `
+        // Retornamos el Template String de la tarjeta sin usar ninguna concatenación con '+'
+        return `
             <article class="product-card">
-                <span class="product-card__badge product-card__badge--${claseBadge}">${pato.categoria}</span>
+                <span class="product-card__badge product-card__badge--${claseCategoria}">${pato.categoria}</span>
                 <div class="product-card__image-container">
                     <img class="product-card__image" src="${pato.imagen}" alt="${pato.nombre}" />
                 </div>
                 <h2 class="product-card__title">${pato.nombre}</h2>
-                <p class="product-card__price">${pato.precio}</p>
+                <p class="product-card__price">${precioParaPantalla}</p>
                 <a href="detalle.html" class="product-card__button">Ver detalle</a>
             </article>
         `;
-        gridPatitos.innerHTML += tarjeta;
     });
+
+    // .join('') junta todas las tarjetas del array en un único texto limpio de HTML
+    gridPatitos.innerHTML = mapeoTarjetas.join('');
 }
 
-// 2. NUEVO: Lógica para filtrar al hacer clic
+// ==========================================================================
+// 2. LÓGICA PARA FILTRAR AL HACER CLIC EN LOS BOTONES
+// ==========================================================================
 botonesFiltro.forEach(boton => {
     boton.addEventListener('click', (e) => {
         // Desactivamos el diseño activo del botón anterior
         document.querySelector('.filters__btn--active')?.classList.remove('filters__btn--active');
-        // Activamos el diseño en el botón que acabamos de pulsar
-        boton.classList.add('filters__btn--active');
+        
+        // Activamos el botón actual
+        e.target.classList.add('filters__btn--active');
 
-        // Capturamos la categoría que queremos filtrar
-        const categoriaSeleccionada = e.target.getAttribute('data-category');
+        const categoriaSeleccionada = e.target.textContent.trim();
 
-        if (categoriaSeleccionada === 'todos') {
-            // Si pulsa 'Todos', mostramos el array completo
-            renderizarCatalogo(ducks);
+        if (categoriaSeleccionada === "Todos") {
+            mostrarPatitos(ducks);
         } else {
-            // Si pulsa otra cosa, filtramos el array dejando solo los que coincidan
             const patitosFiltrados = ducks.filter(pato => pato.categoria === categoriaSeleccionada);
-            renderizarCatalogo(patitosFiltrados);
+            mostrarPatitos(patitosFiltrados);
         }
     });
 });
 
-// 3. Ejecución inicial al cargar la página
-renderizarCatalogo(ducks);
+// ==========================================================================
+// 3. LLAMADA INICIAL: Carga todos los patitos nada más abrir la web
+// ==========================================================================
+mostrarPatitos(ducks);

@@ -1,0 +1,25 @@
+// Animaciones de entrada
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.breadcrumb {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.detalle__imagen {
+  animation: fadeInUp 0.7s ease 0.1s forwards;
+  opacity: 0;
+}
+
+.detalle__info {
+  animation: fadeInUp 0.7s ease 0.2s forwards;
+  opacity: 0;
+}

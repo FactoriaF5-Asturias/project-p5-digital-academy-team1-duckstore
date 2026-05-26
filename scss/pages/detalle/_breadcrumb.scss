@@ -1,0 +1,32 @@
+.breadcrumb {
+  margin-bottom: 48px;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-texto-suave);
+}
+
+.breadcrumb__link {
+  color: var(--color-texto-suave);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-dorado);
+  }
+}
+
+.breadcrumb__separator {
+  color: var(--color-texto-suave);
+}
+
+.breadcrumb__item--active {
+  font-weight: 700;
+  color: var(--color-dorado);
+}

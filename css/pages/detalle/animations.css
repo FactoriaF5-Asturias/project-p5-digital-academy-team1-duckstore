@@ -8,7 +8,6 @@
     transform: translateY(0);
   }
 }
-
 .breadcrumb {
   animation: fadeInUp 0.5s ease forwards;
 }
@@ -22,3 +21,5 @@
   animation: fadeInUp 0.7s ease 0.2s forwards;
   opacity: 0;
 }
+
+/*# sourceMappingURL=animations.css.map */
