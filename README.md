@@ -547,9 +547,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🧪 Commits de tests
 
-> 📌 Se añadirán al finalizar el desarrollo.
-
-- 
+- `chore`: install vitest
 - 
 
 ## 🔧 Commits finales Parte 2
