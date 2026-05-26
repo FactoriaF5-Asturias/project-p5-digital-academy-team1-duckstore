@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuckStore | Tu Carrito Quack</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/carrito.css" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/variables.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/carrito/carrito.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -31,15 +32,18 @@
                 </li>
             </ul>
         </nav>
-        <a href="carrito.html" class="header__carrito nav__link--active">
-            🛒 <span id="contador-carrito">0</span>
+        <a href="carrito.html" class="header__carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
         </a>
     </header>
 
     <main class="carrito-main">
 
         <section class="carrito-hero">
-            <h1 class="carrito-hero__titulo">Tu Carrito Quack 🦆</h1>
+            <h1 class="carrito-hero__titulo">Tu Carrito Quack <img
+                    src="https://media3.giphy.com/media/mcaH3uGYxz6PbU8cdw/giphy.gif" alt="patito con carrito"
+                    class="carrito-hero__gif" /></h1>
             <p class="carrito-hero__subtitulo" id="carrito-subtitulo">Tu carrito está vacío.</p>
         </section>
 

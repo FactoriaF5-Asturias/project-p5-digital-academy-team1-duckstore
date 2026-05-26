@@ -16,9 +16,10 @@
 .breadcrumb__link {
   color: var(--color-texto-suave);
   transition: color 0.3s ease;
-}
-.breadcrumb__link:hover {
-  color: var(--color-dorado);
+
+  &:hover {
+    color: var(--color-dorado);
+  }
 }
 
 .breadcrumb__separator {
@@ -29,5 +30,3 @@
   font-weight: 700;
   color: var(--color-dorado);
 }
-
-/*# sourceMappingURL=breadcrumb.css.map */

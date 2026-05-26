@@ -1,7 +1,13 @@
-/* Array del carrito */
-export let carrito = [];
+// Recuperamos el carrito del navegador o empezamos vacio
+const carritoGuardado = localStorage.getItem('carrito');
+export let carrito = carritoGuardado ? JSON.parse(carritoGuardado) : [];
 
-/* Añadir al carrito */
+// Guardamos el carrito en el navegador
+const guardarCarrito = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
+
+// Añadir al carrito
 export const agregarAlCarrito = (pato) => {
     const existe = carrito.find(p => p.id === pato.id);
     if (existe) {
@@ -9,21 +15,30 @@ export const agregarAlCarrito = (pato) => {
         return;
     }
     carrito.push({ ...pato, cantidad: 1 });
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
 
-/* Actualizar contador del nav */
+// Actualizar contador del nav
 export const actualizarContador = () => {
     const contador = document.querySelector('#contador-carrito');
     if (contador) contador.textContent = carrito.length;
 };
 
-/* Pintar el carrito en pantalla */
+// Pintar el carrito en pantalla
 export const renderCarrito = () => {
     const contenedor = document.querySelector('#carrito-items');
     const total = document.querySelector('#carrito-total');
     if (!contenedor) return;
+
+    // Actualizar subtitulo segun productos en carrito
+    const subtitulo = document.querySelector('#carrito-subtitulo');
+    if (subtitulo) {
+        subtitulo.textContent = carrito.length === 0
+            ? 'Tu carrito esta vacio.'
+            : `Tienes ${carrito.length} patito${carrito.length === 1 ? '' : 's'} listo${carrito.length === 1 ? '' : 's'} para irse a casa contigo...`;
+    }
 
     if (carrito.length === 0) {
         contenedor.innerHTML = `<p>Tu carrito está vacío.</p>`;
@@ -37,7 +52,7 @@ export const renderCarrito = () => {
       <div class="carrito-item__info">
         <h4 class="carrito-item__nombre">${pato.nombre}</h4>
         <p class="carrito-item__categoria">${pato.categoria}</p>
-        <p class="carrito-item__precio">${pato.precio}€</p>
+        <p class="carrito-item__precio">${Number(pato.precio).toFixed(2)}€</p>
       </div>
       <div class="carrito-item__cantidad">
         <button class="btn-decrementar" data-id="${pato.id}">−</button>
@@ -53,10 +68,14 @@ export const renderCarrito = () => {
 
     const totalCalculado = carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
     if (total) total.textContent = `${totalCalculado.toFixed(2)}€`;
+    
+    // Actualizar subtotal en el resumen
+    const subtotal = document.querySelector('#carrito-subtotal');
+    if (subtotal) subtotal.textContent = `${totalCalculado.toFixed(2)}€`;
     agregarEventosCarrito();
 };
 
-/* Eventos de los botones del carrito */
+// Eventos de los botones del carrito
 const agregarEventosCarrito = () => {
     document.querySelectorAll('.btn-incrementar').forEach(btn => {
         btn.addEventListener('click', () => incrementarCantidad(parseInt(btn.dataset.id)));
@@ -69,14 +88,15 @@ const agregarEventosCarrito = () => {
     });
 };
 
-/* Incrementar cantidad */
+// Incrementar cantidad
 export const incrementarCantidad = (id) => {
     const pato = carrito.find(p => p.id === id);
     if (pato) pato.cantidad += 1;
+    guardarCarrito();
     renderCarrito();
 };
 
-/* Decrementar cantidad */
+// Decrementar cantidad
 export const decrementarCantidad = (id) => {
     const pato = carrito.find(p => p.id === id);
     if (!pato) return;
@@ -84,18 +104,20 @@ export const decrementarCantidad = (id) => {
         eliminarDelCarrito(id);
     } else {
         pato.cantidad -= 1;
+        guardarCarrito();
         renderCarrito();
     }
 };
 
-/* Eliminar del carrito */
+// Eliminar del carrito
 export const eliminarDelCarrito = (id) => {
     carrito = carrito.filter(p => p.id !== id);
+    guardarCarrito();
     actualizarContador();
     renderCarrito();
 };
 
-/* Mostrar recibo */
+// Mostrar recibo
 export const mostrarRecibo = () => {
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -109,7 +131,7 @@ export const mostrarRecibo = () => {
       ${carrito.map(p => `
         <li>
           <span>${p.nombre}</span>
-          <span>${p.cantidad} x ${p.precio}€</span>
+          <span>${p.cantidad} x ${Number(p.precio).toFixed(2)}€</span>
           <span>${(p.precio * p.cantidad).toFixed(2)}€</span>
         </li>
       `).join('')}
@@ -121,9 +143,10 @@ export const mostrarRecibo = () => {
     if (btnConfirmar) btnConfirmar.style.display = 'block';
 };
 
-/* Confirmar pago */
+// Confirmar pago
 export const confirmarPago = () => {
     carrito = [];
+    guardarCarrito();
     actualizarContador();
     const recibo = document.querySelector('#recibo');
     const btnConfirmar = document.querySelector('#btn-confirmar');
@@ -136,6 +159,14 @@ export const confirmarPago = () => {
     if (contenedor) contenedor.innerHTML = '';
 };
 
-/* Eventos botones de pago */
-document.querySelector('#btn-pago')?.addEventListener('click', mostrarRecibo);
+// Eventos botones de pago
+document.querySelector('#btn-pago')?.addEventListener('click', () => {
+    window.location.href = 'pago.html';
+});
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
+
+// Evento al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+    actualizarContador();
+    renderCarrito();
+});
