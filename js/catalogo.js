@@ -42,9 +42,6 @@ function mostrarCatalogo(productos) {
     gridPatitos.innerHTML = tarjetasFormateadas.join('');
 }
 
-// ==========================================
-// 🚀 NUEVA LÓGICA: EVENTO PARA FILTRAR LOS BOTONES
-// ==========================================
 botonesFiltros.forEach(boton => {
     boton.addEventListener('click', (e) => {
         // 1. Quitamos la clase 'active' de todos los botones y se la ponemos al que tocamos
@@ -81,9 +78,12 @@ const botonesFiltros = document.querySelectorAll('.filters__btn');
 // 2. Añadimos el evento click a cada uno de ellos
 botonesFiltros.forEach(boton => {
     boton.addEventListener('click', (e) => {
+        botonesFiltros.forEach(btn => btn.classList.remove('filters__btn--active'));
+        e.target.classList.add('filters__btn--active');
+
         const categoria = e.target.getAttribute('data-category');
         
-        // SUBTAREA 2: Filtrar el array con filter() al hacer click
+        // Filtrar el array con filter() al hacer click
         const patitosFiltrados = ducks.filter(pato => {
             const categoriaPatoLimpia = pato.categoria
                 .toLowerCase()
