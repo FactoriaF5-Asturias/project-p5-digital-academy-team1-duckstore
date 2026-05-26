@@ -74,3 +74,17 @@ botonesFiltros.forEach(boton => {
 
 // Ejecutamos la función nada más cargar la página para que se vean todos los patitos al inicio
 mostrarCatalogo(ducks);
+
+// 1. Seleccionamos todos los botones que tengan la clase de filtro
+const botonesFiltros = document.querySelectorAll('.filters__btn');
+
+// 2. Añadimos el evento click a cada uno de ellos (Subtarea 1)
+botonesFiltros.forEach(boton => {
+    boton.addEventListener('click', (e) => {
+        // Capturamos el botón que ha recibido el click
+        const botonPulsado = e.target;
+        const categoria = botonPulsado.getAttribute('data-category');
+        
+        console.log(`Has pulsado el botón de la categoría: ${categoria}`);
+    });
+});
