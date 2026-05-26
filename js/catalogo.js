@@ -1,6 +1,8 @@
 import { ducks } from './ducks.js';
 
 const gridPatitos = document.querySelector('#contenedor-patitos');
+const botonesFiltros = document.querySelectorAll('.filters__btn'); // <- Seleccionamos los botones de filtros
+
 // Función para generar el catálogo usando .map() y Template Strings
 function generarCards(productos) {
     const mapeoTarjetas = productos.map(pato => {
@@ -15,7 +17,7 @@ function generarCards(productos) {
             ? pato.categoria.toLowerCase().replace(' ', '-') 
             : 'default';
 
-        // Retornamos el bloque de HTML usando template strings (comillas invertidas)
+        // RETORNAMOS EL BLOQUE HTML (¡Aquí ya le añadimos el ?id=${pato.id} para que funcione el detalle!)
         return `
             <article class="product-card">
                 <span class="product-card__badge product-card__badge--${claseCategoria}">${pato.categoria}</span>
@@ -24,7 +26,7 @@ function generarCards(productos) {
                 </div>
                 <h2 class="product-card__title">${pato.nombre}</h2>
                 <p class="product-card__price">${precioParaPantalla}</p>
-                <a href="detalle.html" class="product-card__button">Ver detalle</a>
+                <a href="detalle.html?id=${pato.id}" class="product-card__button">Ver detalle</a>
             </article>
         `;
     });
@@ -40,5 +42,35 @@ function mostrarCatalogo(productos) {
     gridPatitos.innerHTML = tarjetasFormateadas.join('');
 }
 
-// Ejecutamos la función nada más cargar la página para que se vean todos los patitos
+// ==========================================
+// 🚀 NUEVA LÓGICA: EVENTO PARA FILTRAR LOS BOTONES
+// ==========================================
+botonesFiltros.forEach(boton => {
+    boton.addEventListener('click', (e) => {
+        // 1. Quitamos la clase 'active' de todos los botones y se la ponemos al que tocamos
+        botonesFiltros.forEach(btn => btn.classList.remove('filters__btn--active'));
+        e.target.classList.add('filters__btn--active');
+
+        // 2. Capturamos la categoría del botón (todos, clasicos, superheroes, etc.)
+        const categoriaSeleccionada = e.target.getAttribute('data-category');
+
+        // 3. Filtramos el array de patitos
+        if (categoriaSeleccionada === 'todos') {
+            mostrarCatalogo(ducks); // Si pulsa Todos, mostramos toda la lista
+        } else {
+            // Filtramos comparando que la categoría del patito coincida (pasándolo a minúsculas y quitando tildes de forma simple)
+            const patitosFiltrados = ducks.filter(pato => {
+                const categoriaPatoLimpia = pato.categoria
+                    .toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "") // Esto quita los acentos de "Superhéroes" automáticamente
+                    .replace(' ', '-');
+                return categoriaPatoLimpia === categoriaSeleccionada;
+            });
+            mostrarCatalogo(patitosFiltrados);
+        }
+    });
+});
+
+// Ejecutamos la función nada más cargar la página para que se vean todos los patitos al inicio
 mostrarCatalogo(ducks);
