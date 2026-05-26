@@ -496,6 +496,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: filter ducks array using filter method on click
 - `feat`: render filtered products array into the catalog container
 - `feat`: toggle active class on category filter buttons
+- `feat`: implement show all products option without filtering
+- `feat`: add category filters to catalog
 
 ## 🚀 Commits de Jenny (Homepage)
 

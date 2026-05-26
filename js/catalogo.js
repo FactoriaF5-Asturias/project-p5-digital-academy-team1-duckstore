@@ -99,5 +99,6 @@ botonesFiltros.forEach(boton => {
         });
 
         mostrarCatalogo(patitosFiltrados);
+    }
     });
 });
