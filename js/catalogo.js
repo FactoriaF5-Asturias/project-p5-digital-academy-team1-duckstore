@@ -82,6 +82,10 @@ botonesFiltros.forEach(boton => {
         e.target.classList.add('filters__btn--active');
 
         const categoria = e.target.getAttribute('data-category');
+
+        if (categoria === 'todos') {
+            mostrarCatalogo(ducks);
+        } else {
         
         // Filtrar el array con filter() al hacer click
         const patitosFiltrados = ducks.filter(pato => {
