@@ -78,13 +78,22 @@ mostrarCatalogo(ducks);
 // 1. Seleccionamos todos los botones que tengan la clase de filtro
 const botonesFiltros = document.querySelectorAll('.filters__btn');
 
-// 2. Añadimos el evento click a cada uno de ellos (Subtarea 1)
+// 2. Añadimos el evento click a cada uno de ellos
 botonesFiltros.forEach(boton => {
     boton.addEventListener('click', (e) => {
-        // Capturamos el botón que ha recibido el click
-        const botonPulsado = e.target;
-        const categoria = botonPulsado.getAttribute('data-category');
+        const categoria = e.target.getAttribute('data-category');
         
-        console.log(`Has pulsado el botón de la categoría: ${categoria}`);
+        // SUBTAREA 2: Filtrar el array con filter() al hacer click
+        const patitosFiltrados = ducks.filter(pato => {
+            const categoriaPatoLimpia = pato.categoria
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "") // Quita los acentos de "Superhéroes"
+                .replace(' ', '-');
+            
+            return categoriaPatoLimpia === categoria;
+        });
+
+        console.log('Patitos encontrados en esta categoría:', patitosFiltrados);
     });
 });

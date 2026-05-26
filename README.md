@@ -493,6 +493,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: new header and footer
 - `fix`:  catalog filters and navigation links
 - `feat`: add click event to category buttons 
+- `feat`: filter ducks array using filter method on click
 
 ## 🚀 Commits de Jenny (Homepage)
 
