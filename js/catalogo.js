@@ -94,6 +94,6 @@ botonesFiltros.forEach(boton => {
             return categoriaPatoLimpia === categoria;
         });
 
-        console.log('Patitos encontrados en esta categoría:', patitosFiltrados);
+        mostrarCatalogo(patitosFiltrados);
     });
 });
