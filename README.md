@@ -540,7 +540,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🚀 Commits de Luisa (Contacto)
 
-> 📌 Se añadirán durante el desarrollo.
+> Se añadirán durante el desarrollo.
 
 - 
 - 
@@ -548,11 +548,10 @@ El proyecto aplica conceptos de accesibilidad:
 ## 🧪 Commits de tests
 
 - `chore`: install vitest
+- `test`: add unit test for add to cart
 - 
 
 ## 🔧 Commits finales Parte 2
-
-> 📌 Se añadirán al finalizar el desarrollo.
 
 - 
 - 
