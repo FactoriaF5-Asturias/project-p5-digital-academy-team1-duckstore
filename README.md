@@ -579,7 +579,7 @@ El proyecto aplica conceptos de accesibilidad:
 ## 🔧 Commits finales Parte 2
 
 - `fix`: remove duplicate scss files and add main.scss with correct imports
-- 
+- `fix`: fix nav and footer links in contacto
 
 ---
 
