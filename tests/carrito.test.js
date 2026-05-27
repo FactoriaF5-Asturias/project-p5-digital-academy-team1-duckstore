@@ -17,4 +17,12 @@ describe('Carrito de compras', () => {
         expect(resultado.length).toBe(1);
     });
 
+    it('deberia eliminar un patito del carrito', () => {
+        const carrito = [];
+        const pato = { id: 1, nombre: 'Pato Clasico', precio: 12.50 };
+        const conPato = añadir(carrito, pato);
+        const resultado = eliminar(conPato, 1);
+        expect(resultado.length).toBe(0);
+    });
+
 });
