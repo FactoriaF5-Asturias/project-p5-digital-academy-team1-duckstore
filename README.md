@@ -558,6 +558,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `chore`: install playwright
 - `test`: add e2e test homepage loads with 3 ducks 
 - `test`: add e2e test for add to cart updates counter
+- `test`: add e2e test for product appears in cart
 
 ## 🔧 Commits finales Parte 2
 
