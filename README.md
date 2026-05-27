@@ -574,6 +574,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: scroll to success message after payment
 - `fix`: fix superhero duck name accent
 - `docs`: add final screenshots to README
+- `docs`: add GitHub Pages link to README
 
 ---
 
@@ -616,7 +617,13 @@ El proyecto aplica conceptos de accesibilidad:
 |:---:|:---:|
 | ![Contacto](assets/imgs/part2/screenshot/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/screenshot/pago-screenshot-p2.png) |
 
----
+-----
+
+## 🌐 Demo en producción
+
+[🦆 Ver DuckStore en vivo](https://factoriaf5-asturias.github.io/project-p5-digital-academy-team1-duckstore/)
+
+-----
 
 # 👩‍💻 Autoras
 
