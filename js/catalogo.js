@@ -78,7 +78,13 @@ document.addEventListener("click", (e) => {
         if (yaExiste) {
             console.log("Este patito ya está en el carrito.");
         } else {
-            console.log("El patito no está en el carrito. Se puede añadir.");
+         // Buscar el objeto completo del patito y añadirlo con .push()
+            const patitoEncontrado = ducks.find(pato => pato.id === Number(patitoId));
+            
+            if (patitoEncontrado) {
+                carrito.push(patitoEncontrado);
+                console.log("Patito añadido al carrito con éxito:", carrito);
+            }
         }
 
     }
