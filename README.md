@@ -585,7 +585,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: prevent checkout with empty cart
 - `style`: fix sticky header
 - `fix`: regenerate style.css from main.scss
-
+- `style`: update hero padding for fixed header
 
 ---
 
