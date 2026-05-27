@@ -606,15 +606,15 @@ El proyecto aplica conceptos de accesibilidad:
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| ![Landing Page](assets/imgs/part2/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-screenshot-p2.png) |
+| ![Landing Page](assets/imgs/part2/screenshot/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/screenshot/catalogo-screenshot-p2.png) |
 
 | 🦆 Detalle Producto | 🛒 Carrito |
 |:---:|:---:|
-| ![Detalle Producto](assets/imgs/part2/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/carrito-screenshot-p2.png) |
+| ![Detalle Producto](assets/imgs/part2/screenshot/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/screenshot/carrito-screenshot-p2.png) |
 
 | 📩 Contacto | 💳 Pago |
 |:---:|:---:|
-| ![Contacto](assets/imgs/part2/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/pago-screenshot-p2.png) |
+| ![Contacto](assets/imgs/part2/screenshot/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/screenshot/pago-screenshot-p2.png) |
 
 ---
 
