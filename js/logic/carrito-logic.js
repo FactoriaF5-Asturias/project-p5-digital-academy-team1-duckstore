@@ -9,3 +9,8 @@ export const añadir = (carrito, pato) => {
 export const eliminar = (carrito, id) => {
     return carrito.filter(p => p.id !== id);
 };
+
+// Incrementar cantidad
+export const incrementar = (carrito, id) => {
+    return carrito.map(p => p.id === id ? { ...p, cantidad: p.cantidad + 1 } : p);
+};

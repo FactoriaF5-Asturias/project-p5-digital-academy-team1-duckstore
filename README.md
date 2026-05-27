@@ -551,6 +551,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `test`: add unit test for add to cart
 - `test`: add unit test for no duplicate in cart
 - `test`: add unit test for remove from cart
+- `test`: add unit test for increment quantity
 
 ## 🔧 Commits finales Parte 2
 
