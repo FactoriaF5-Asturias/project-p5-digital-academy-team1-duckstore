@@ -432,22 +432,6 @@ El proyecto aplica conceptos de accesibilidad:
 
 ---
 
-# 📸 Capturas finales — Parte 2
-
-| 🏠 Landing Page | 🛍️ Catálogo |
-|:---:|:---:|
-| ![Landing Page](assets/imgs/part2/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-screenshot-p2.png) |
-
-| 🦆 Detalle Producto | 🛒 Carrito |
-|:---:|:---:|
-| ![Detalle Producto](assets/imgs/part2/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/carrito-screenshot-p2.png) |
-
-| 📩 Contacto | 💳 Pago |
-|:---:|:---:|
-| ![Contacto](assets/imgs/part2/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/pago-screenshot-p2.png) |
-
----
-
 # 🛠️ Tecnologías — Parte 2
 
 - Figma
@@ -589,6 +573,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: fix back to store link in payment page
 - `fix`: scroll to success message after payment
 - `fix`: fix superhero duck name accent
+- `docs`: add final screenshots to README
 
 ---
 
@@ -614,6 +599,23 @@ El proyecto aplica conceptos de accesibilidad:
 | añadir un patito al carrito actualiza el contador | ![test2](assets/imgs/part2/tests/test-playwright-2.png) |
 | el patito aparece en el carrito tras añadirlo | ![test3](assets/imgs/part2/tests/test-playwright-3.png) |
 | todos los tests en verde | ![all](assets/imgs/part2/tests/all-playwright.png) |
+
+---
+
+# 📸 Capturas finales — Parte 2
+
+| 🏠 Landing Page | 🛍️ Catálogo |
+|:---:|:---:|
+| ![Landing Page](assets/imgs/part2/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-screenshot-p2.png) |
+
+| 🦆 Detalle Producto | 🛒 Carrito |
+|:---:|:---:|
+| ![Detalle Producto](assets/imgs/part2/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/carrito-screenshot-p2.png) |
+
+| 📩 Contacto | 💳 Pago |
+|:---:|:---:|
+| ![Contacto](assets/imgs/part2/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/pago-screenshot-p2.png) |
+
 ---
 
 # 👩‍💻 Autoras
