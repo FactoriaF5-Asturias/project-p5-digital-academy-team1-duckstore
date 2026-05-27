@@ -554,11 +554,34 @@ El proyecto aplica conceptos de accesibilidad:
 - `test`: add unit test for increment quantity
 - `test`: add unit test for decrement quantity
 - `test`: add unit test for calculate total
+- `docs`: add vitest screenshots to README
 
 ## 🔧 Commits finales Parte 2
 
 - 
 - 
+
+---
+
+## 📸 Capturas de tests
+
+### 🧪 Vitest - Tests unitarios
+
+| Test | Resultado |
+|------|-----------|
+| deberia añadir un patito al carrito | ![test1](assets/imgs/part2/tests/test-vitest-1.png) |
+| no deberia añadir el mismo patito dos veces | ![test2](assets/imgs/part2/tests/test-vitest-2.png) |
+| deberia eliminar un patito del carrito | ![test3](assets/imgs/part2/tests/test-vitest-3.png) |
+| deberia incrementar la cantidad de un patito | ![test4](assets/imgs/part2/tests/test-vitest-4.png) |
+| deberia decrementar la cantidad de un patito | ![test5](assets/imgs/part2/tests/test-vitest-5.png) |
+| deberia calcular el total correctamente | ![test6](assets/imgs/part2/tests/test-vitest-6.png) |
+| todos los tests en verde | ![all](assets/imgs/part2/tests/all-vitest.png) |
+
+### 🧪 Playwright - Tests e2e
+
+| Test | Resultado |
+|------|-----------|
+| | |
 
 ---
 
