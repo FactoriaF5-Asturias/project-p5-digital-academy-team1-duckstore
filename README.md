@@ -549,7 +549,7 @@ El proyecto aplica conceptos de accesibilidad:
 
 - `chore`: install vitest
 - `test`: add unit test for add to cart
-- 
+- `test`: add unit test for no duplicate in cart
 
 ## 🔧 Commits finales Parte 2
 
