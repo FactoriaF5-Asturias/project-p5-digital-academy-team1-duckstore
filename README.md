@@ -582,8 +582,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: fix nav and footer links in contacto
 - `fix`: add actualizarContador to contacto.js
 - `fix`: connect catalog cart to localStorage
-- 
-- 
+- `fix`: prevent checkout with empty cart
+- `style`: fix sticky header
 - 
 
 

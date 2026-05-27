@@ -6,6 +6,11 @@
   gap: 1rem;
   padding: 1rem;
   background-color: var(--color-fondo);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header__logo {
@@ -76,7 +81,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
 
   .header__logo {
@@ -101,7 +107,8 @@
 @media (min-width: 1024px) {
   .header {
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 1rem 2rem;
   }
 
