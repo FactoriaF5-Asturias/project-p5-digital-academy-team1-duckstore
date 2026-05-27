@@ -556,6 +556,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `test`: add unit test for calculate total
 - `docs`: add vitest screenshots to README
 - `chore`: install playwright
+- `test`: add e2e test homepage loads with 3 ducks 
 
 ## 🔧 Commits finales Parte 2
 
@@ -578,7 +579,7 @@ El proyecto aplica conceptos de accesibilidad:
 | deberia calcular el total correctamente | ![test6](assets/imgs/part2/tests/test-vitest-6.png) |
 | todos los tests en verde | ![all](assets/imgs/part2/tests/all-vitest.png) |
 
-### 🧪 Playwright - Tests e2e
+### 🎭 Playwright - Tests e2e
 
 | Test | Resultado |
 |------|-----------|

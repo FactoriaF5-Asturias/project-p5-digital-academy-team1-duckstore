@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore#readme",
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
     "sass": "^1.100.0",
-    "vitest": "^4.1.7",
-    "@playwright/test": "^1.60.0"
+    "vitest": "^4.1.7"
   }
 }
