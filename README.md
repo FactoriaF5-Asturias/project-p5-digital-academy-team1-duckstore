@@ -559,7 +559,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `test`: add e2e test homepage loads with 3 ducks 
 - `test`: add e2e test for add to cart updates counter
 - `test`: add e2e test for product appears in cart
-
+- `docs`: add playwright screenshots to README
 
 ## 🔧 Commits finales Parte 2
 
