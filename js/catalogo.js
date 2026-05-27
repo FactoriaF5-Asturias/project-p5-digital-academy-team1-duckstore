@@ -2,6 +2,7 @@ import { ducks } from "./ducks.js";
 
 const gridPatitos = document.querySelector("#contenedor-patitos");
 const botonesFiltros = document.querySelectorAll(".filters__btn");
+const contadorCarrito = document.querySelector("#contador-carrito");
 
 // FUNCIÓN PARA GENERAR EL HTML DE LAS TARJETAS
 function generarCards(productos) {
@@ -83,6 +84,11 @@ document.addEventListener("click", (e) => {
             
             if (patitoEncontrado) {
                 carrito.push(patitoEncontrado);
+
+                // Actualizar el número del contador del nav en tiempo real
+                if (contadorCarrito) {
+                    contadorCarrito.textContent = carrito.length;
+                }
                 console.log("Patito añadido al carrito con éxito:", carrito);
             }
         }

@@ -502,6 +502,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: implement click event listener for add to cart buttons
 - `feat`: check if product already exists in cart before adding
 - `feat`: push non-duplicate products into the cart array
+- `feat`: add to cart button in catalog
 
 ## 🚀 Commits de Jenny (Homepage)
 
