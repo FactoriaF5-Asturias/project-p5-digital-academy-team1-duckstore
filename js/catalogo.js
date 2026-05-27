@@ -1,24 +1,21 @@
 import { ducks } from "./ducks.js";
 
 const gridPatitos = document.querySelector("#contenedor-patitos");
-const botonesFiltros = document.querySelectorAll(".filters__btn"); // <- Seleccionamos los botones de filtros
+const botonesFiltros = document.querySelectorAll(".filters__btn");
 
-// Función para generar el catálogo usando .map() y Template Strings
+// FUNCIÓN PARA GENERAR EL HTML DE LAS TARJETAS
 function generarCards(productos) {
-  const mapeoTarjetas = productos.map((pato) => {
-    // Formateamos el precio para que aparezca con coma y el símbolo del euro
-    const precioNumero = Number(pato.precio);
-    const precioParaPantalla = !isNaN(precioNumero)
-      ? `${precioNumero.toFixed(2).replace(".", ",")}€`
-      : pato.precio;
+    const mapeoTarjetas = productos.map((pato) => {
+        const precioNumero = Number(pato.precio);
+        const precioParaPantalla = !isNaN(precioNumero)
+            ? `${precioNumero.toFixed(2).replace(".", ",")}€`
+            : pato.precio;
 
-    // Limpiamos los espacios en la categoría para las clases CSS
-    const claseCategoria = pato.categoria
-      ? pato.categoria.toLowerCase().replace(" ", "-")
-      : "default";
+        const claseCategoria = pato.categoria
+            ? pato.categoria.toLowerCase().replace(" ", "-")
+            : "default";
 
-    // RETORNAMOS EL BLOQUE HTML (¡Aquí ya le añadimos el ?id=${pato.id} para que funcione el detalle!)
-    return `
+        return `
             <article class="product-card">
                 <span class="product-card__badge product-card__badge--${claseCategoria}">${pato.categoria}</span>
                 <div class="product-card__image-container">
@@ -30,102 +27,50 @@ function generarCards(productos) {
                 <button class="product-card__button btn-agregar-carrito" data-id="${pato.id}" style="margin-top: 8px; background-color: #ffd60a;">Añadir al carrito</button>
             </article>
         `;
-  });
-
-  return mapeoTarjetas;
+    });
+    return mapeoTarjetas;
 }
 
-// Función para pintar las tarjetas en la pantalla usando innerHTML
+// FUNCIÓN PARA PINTAR LAS TARJETAS EN PANTALLA
 function mostrarCatalogo(productos) {
-  const tarjetasFormateadas = generarCards(productos);
-
-  // .join('') une todas las tarjetas del array en una sola cadena de texto limpia
-  gridPatitos.innerHTML = tarjetasFormateadas.join("");
+    const tarjetasFormateadas = generarCards(productos);
+    gridPatitos.innerHTML = tarjetasFormateadas.join("");
 }
 
+// LÓGICA DE LOS FILTROS
 botonesFiltros.forEach((boton) => {
-  boton.addEventListener("click", (e) => {
-    // 1. Quitamos la clase 'active' de todos los botones y se la ponemos al que tocamos
-    botonesFiltros.forEach((btn) =>
-      btn.classList.remove("filters__btn--active"),
-    );
-    e.target.classList.add("filters__btn--active");
+    boton.addEventListener("click", (e) => {
+        botonesFiltros.forEach((btn) => btn.classList.remove("filters__btn--active"));
+        e.target.classList.add("filters__btn--active");
 
-    // 2. Capturamos la categoría del botón (todos, clasicos, superheroes, etc.)
-    const categoriaSeleccionada = e.target.getAttribute("data-category");
+        const categoriaSeleccionada = e.target.getAttribute("data-category");
 
-    // 3. Filtramos el array de patitos
-    if (categoriaSeleccionada === "todos") {
-      mostrarCatalogo(ducks); // Si pulsa Todos, mostramos toda la lista
-    } else {
-      // Filtramos comparando que la categoría del patito coincida (pasándolo a minúsculas y quitando tildes de forma simple)
-      const patitosFiltrados = ducks.filter((pato) => {
-        const categoriaPatoLimpia = pato.categoria
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "") // Esto quita los acentos de "Superhéroes" automáticamente
-          .replace(" ", "-");
-        return categoriaPatoLimpia === categoriaSeleccionada;
-      });
-      mostrarCatalogo(patitosFiltrados);
-    }
-  });
+        if (categoriaSeleccionada === "todos") {
+            mostrarCatalogo(ducks);
+        } else {
+            const patitosFiltrados = ducks.filter((pato) => {
+                const categoriaPatoLimpia = pato.categoria
+                    .toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .replace(" ", "-");
+                return categoriaPatoLimpia === categoriaSeleccionada;
+            });
+            mostrarCatalogo(patitosFiltrados);
+        }
+    });
 });
 
-// Ejecutamos la función nada más cargar la página para que se vean todos los patitos al inicio
+// Carga inicial del catálogo
 mostrarCatalogo(ducks);
 
-// 1. Seleccionamos todos los botones que tengan la clase de filtro
-const botonesFiltros = document.querySelectorAll(".filters__btn");
+// Definimos un array vacío para almacenar los patitos que añadamos al carrito
+const carrito = [];
 
-// 2. Añadimos el evento click a cada uno de ellos
-botonesFiltros.forEach((boton) => {
-  boton.addEventListener("click", (e) => {
-    botonesFiltros.forEach((btn) =>
-      btn.classList.remove("filters__btn--active"),
-    );
-    e.target.classList.add("filters__btn--active");
-
-    const categoria = e.target.getAttribute("data-category");
-
-    if (categoria === "todos") {
-      mostrarCatalogo(ducks);
-    } else {
-      // Filtrar el array con filter() al hacer click
-      const patitosFiltrados = ducks.filter((pato) => {
-        const categoriaPatoLimpia = pato.categoria
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "") // Quita los acentos de "Superhéroes"
-          .replace(" ", "-");
-
-        return categoriaPatoLimpia === categoria;
-      });
-
-      mostrarCatalogo(patitosFiltrados);
-    }
-
-    // ==========================================
-    // 🛒 HISTORIA DE USUARIO 4: LÓGICA DEL CARRITO
-    // ==========================================
-
-    // Definimos un array vacío para almacenar los patitos que añadamos al carrito
-    const carrito = [];
-
-    // SUBTAREA 2: Añadir evento click al botón de cada card usando delegación de eventos
-    document.addEventListener("click", (e) => {
-      // Comprobamos si el elemento clicado contiene la clase del botón del carrito
-      if (
-        e.target.classList.contains("product-card__button") &&
-        e.target.tagName === "BUTTON"
-      ) {
-        // Capturamos el ID del patito desde el atributo data-id
+// Añadir evento click al botón de cada card usando delegación de eventos
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-agregar-carrito") && e.target.tagName === "BUTTON") {
         const patitoId = e.target.getAttribute("data-id");
-
-        console.log(
-          `Subtarea 2: Se ha pulsado el botón añadir al carrito del patito con ID: ${patitoId}`,
-        );
-      }
-    });
-  });
+        console.log(`Subtarea 2: Se ha pulsado el botón añadir al carrito del patito con ID: ${patitoId}`);
+    }
 });

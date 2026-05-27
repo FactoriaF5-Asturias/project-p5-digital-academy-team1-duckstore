@@ -499,6 +499,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: implement show all products option without filtering
 - `feat`: add category filters to catalog
 - `feat`: add 'Add to cart' button element to each product card
+- `feat`: implement click event listener for add to cart buttons
 
 ## 🚀 Commits de Jenny (Homepage)
 
