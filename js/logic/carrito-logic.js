@@ -20,3 +20,8 @@ export const decrementar = (carrito, id) => {
     return carrito.map(p => p.id === id ? { ...p, cantidad: p.cantidad - 1 } : p)
         .filter(p => p.cantidad > 0);
 };
+
+// Calcular total
+export const calcularTotal = (carrito) => {
+    return carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
+};

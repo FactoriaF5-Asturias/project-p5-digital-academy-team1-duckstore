@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { añadir, eliminar, incrementar, decrementar } from '../js/logic/carrito-logic.js';
+import { añadir, eliminar, incrementar, decrementar, calcularTotal } from '../js/logic/carrito-logic.js';
 
 describe('Carrito de compras', () => {
 
@@ -40,6 +40,15 @@ describe('Carrito de compras', () => {
         const conDos = incrementar(conPato, 1);
         const resultado = decrementar(conDos, 1);
         expect(resultado[0].cantidad).toBe(1);
+    });
+
+    it('deberia calcular el total correctamente', () => {
+        const carrito = [];
+        const pato1 = { id: 1, nombre: 'Pato Clasico', precio: 12.50 };
+        const pato2 = { id: 2, nombre: 'Pato Astronauta', precio: 15.90 };
+        const conPatos = añadir(añadir(carrito, pato1), pato2);
+        const total = calcularTotal(conPatos);
+        expect(total).toBe(28.40);
     });
 
 });
