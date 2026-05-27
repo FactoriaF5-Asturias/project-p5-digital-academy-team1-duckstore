@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "> *\"No son simples patitos de goma. Son compañeros de aventuras.\"*",
   "main": "index.js",
+<<<<<<< HEAD
   "scripts": {},
+=======
+  "scripts": {
+    "test": "vitest"
+  },
+>>>>>>> dev
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore.git"
@@ -11,7 +17,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore/issues"
   },
@@ -19,6 +25,11 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.1",
+<<<<<<< HEAD
     "sass": "^1.100.0"
+=======
+    "sass": "^1.100.0",
+    "vitest": "^4.1.7"
+>>>>>>> dev
   }
 }

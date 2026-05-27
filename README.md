@@ -436,15 +436,15 @@ El proyecto aplica conceptos de accesibilidad:
 
 | 🏠 Landing Page | 🛍️ Catálogo |
 |:---:|:---:|
-| [![Landing Page](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/homepage-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/homepage-screenshot-p2.png) | [![Catálogo](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/catalogo-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/catalogo-screenshot-p2.png) |
+| ![Landing Page](assets/imgs/part2/homepage-screenshot-p2.png) | ![Catálogo](assets/imgs/part2/catalogo-screenshot-p2.png) |
 
 | 🦆 Detalle Producto | 🛒 Carrito |
 |:---:|:---:|
-| [![Detalle Producto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/detalle-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/detalle-screenshot-p2.png) | [![Carrito](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/carrito-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/carrito-screenshot-p2.png) |
+| ![Detalle Producto](assets/imgs/part2/detalle-screenshot-p2.png) | ![Carrito](assets/imgs/part2/carrito-screenshot-p2.png) |
 
 | 📩 Contacto | 💳 Pago |
 |:---:|:---:|
-| [![Contacto](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/contacto-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/contacto-screenshot-p2.png) | [![Pago](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/raw/main/assets/imgs/pago-screenshot-p2.png)](https://github.com/Jennydev-25/project-p5-digital-academy-team1-duckstore/blob/main/assets/imgs/pago-screenshot-p2.png) |
+| ![Contacto](assets/imgs/part2/contacto-screenshot-p2.png) | ![Pago](assets/imgs/part2/pago-screenshot-p2.png) |
 
 ---
 
@@ -470,8 +470,6 @@ El proyecto aplica conceptos de accesibilidad:
 - `docs`: update README for part 2
 - `docs`: add part 2 prototype screenshots to README
 - `chore`: add package.json and update gitignore
-- `refactor`: move carrito styles to scss/parcials structure
-
 
 ## 🚀 Commits de Nieves (Catálogo JS)
 
@@ -538,31 +536,67 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: add missing script to payment page
 - `style`: add duck gif to payment page
 - `style`: add duck gif to cart title
+- `docs`: update README
 
 ## 🚀 Commits de Luisa (Contacto)
 
+<<<<<<< HEAD
 - `feat`: fix SASS architecture root and contact styles
 - `feat`: add duck icon to navigation bar
 - `style`: implement modular architecture with SASS and compile styles
 - `chore`: update gitignore and project dependencies
 - `test`: add automated e2e testing with playwright (2.6s)
 - `docs`: add fix commits summary and final screenshots to README
+=======
+> Se añadirán durante el desarrollo.
+>>>>>>> dev
 
 
 ## 🧪 Commits de tests
 
-> 📌 Se añadirán al finalizar el desarrollo.
-
-- 
-- 
+- `chore`: install vitest
+- `test`: add unit test for add to cart
+- `test`: add unit test for no duplicate in cart
+- `test`: add unit test for remove from cart
+- `test`: add unit test for increment quantity
+- `test`: add unit test for decrement quantity
+- `test`: add unit test for calculate total
+- `docs`: add vitest screenshots to README
+- `chore`: install playwright
+- `test`: add e2e test homepage loads with 3 ducks 
+- `test`: add e2e test for add to cart updates counter
+- `test`: add e2e test for product appears in cart
+- `docs`: add playwright screenshots to README
 
 ## 🔧 Commits finales Parte 2
 
-> 📌 Se añadirán al finalizar el desarrollo.
-
 - 
 - 
 
+---
+
+## 📸 Capturas de tests
+
+### 🧪 Vitest - Tests unitarios
+
+| Test | Resultado |
+|------|-----------|
+| deberia añadir un patito al carrito | ![test1](assets/imgs/part2/tests/test-vitest-1.png) |
+| no deberia añadir el mismo patito dos veces | ![test2](assets/imgs/part2/tests/test-vitest-2.png) |
+| deberia eliminar un patito del carrito | ![test3](assets/imgs/part2/tests/test-vitest-3.png) |
+| deberia incrementar la cantidad de un patito | ![test4](assets/imgs/part2/tests/test-vitest-4.png) |
+| deberia decrementar la cantidad de un patito | ![test5](assets/imgs/part2/tests/test-vitest-5.png) |
+| deberia calcular el total correctamente | ![test6](assets/imgs/part2/tests/test-vitest-6.png) |
+| todos los tests en verde | ![all](assets/imgs/part2/tests/all-vitest.png) |
+
+### 🎭 Playwright - Tests e2e
+
+| Test | Resultado |
+|------|-----------|
+| la home carga y muestra 3 patitos destacados | ![test1](assets/imgs/part2/tests/test-playwright-1.png) |
+| añadir un patito al carrito actualiza el contador | ![test2](assets/imgs/part2/tests/test-playwright-2.png) |
+| el patito aparece en el carrito tras añadirlo | ![test3](assets/imgs/part2/tests/test-playwright-3.png) |
+| todos los tests en verde | ![all](assets/imgs/part2/tests/all-playwright.png) |
 ---
 
 # 👩‍💻 Autoras
