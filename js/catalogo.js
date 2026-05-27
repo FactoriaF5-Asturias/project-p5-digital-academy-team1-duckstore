@@ -1,8 +1,8 @@
 import { ducks } from "./ducks.js";
+import { agregarAlCarrito, actualizarContador } from "./carrito.js";
 
 const gridPatitos = document.querySelector("#contenedor-patitos");
 const botonesFiltros = document.querySelectorAll(".filters__btn");
-const contadorCarrito = document.querySelector("#contador-carrito");
 
 // FUNCIÓN PARA GENERAR EL HTML DE LAS TARJETAS
 function generarCards(productos) {
@@ -63,35 +63,18 @@ botonesFiltros.forEach((boton) => {
 });
 
 // Carga inicial del catálogo
-mostrarCatalogo(ducks);
+document.addEventListener("DOMContentLoaded", () => {
+    actualizarContador();
+    mostrarCatalogo(ducks);
 
-// Definimos un array vacío para almacenar los patitos que añadamos al carrito
-const carrito = [];
-
-// Añadir evento click al botón de cada card usando delegación de eventos
-document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn-agregar-carrito") && e.target.tagName === "BUTTON") {
-        const patitoId = e.target.getAttribute("data-id");
-        // Comprobar si el patito ya existe en el carrito
-        // Usamos Number() porque los atributos de HTML siempre se leen como texto
-        const yaExiste = carrito.some(pato => pato.id === Number(patitoId));
-
-        if (yaExiste) {
-            console.log("Este patito ya está en el carrito.");
-        } else {
-         // Buscar el objeto completo del patito y añadirlo con .push()
-            const patitoEncontrado = ducks.find(pato => pato.id === Number(patitoId));
-            
+    // Añadir al carrito con delegación de eventos
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("btn-agregar-carrito") && e.target.tagName === "BUTTON") {
+            const patitoId = Number(e.target.getAttribute("data-id"));
+            const patitoEncontrado = ducks.find(pato => pato.id === patitoId);
             if (patitoEncontrado) {
-                carrito.push(patitoEncontrado);
-
-                // Actualizar el número del contador del nav en tiempo real
-                if (contadorCarrito) {
-                    contadorCarrito.textContent = carrito.length;
-                }
-                console.log("Patito añadido al carrito con éxito:", carrito);
+                agregarAlCarrito(patitoEncontrado);
             }
         }
-
-    }
+    });
 });

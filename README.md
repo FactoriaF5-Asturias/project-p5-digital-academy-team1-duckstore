@@ -580,6 +580,12 @@ El proyecto aplica conceptos de accesibilidad:
 
 - `fix`: remove duplicate scss files and add main.scss with correct imports
 - `fix`: fix nav and footer links in contacto
+- `fix`: add actualizarContador to contacto.js
+- `fix`: connect catalog cart to localStorage
+- 
+- 
+- 
+
 
 ---
 
