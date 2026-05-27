@@ -584,7 +584,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: connect catalog cart to localStorage
 - `fix`: prevent checkout with empty cart
 - `style`: fix sticky header
-- 
+- `fix`: regenerate style.css from main.scss
 
 
 ---

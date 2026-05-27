@@ -46,6 +46,11 @@ img {
   gap: 1rem;
   padding: 1rem;
   background-color: var(--color-fondo);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header__logo {
@@ -110,7 +115,8 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .header__logo {
     width: 45px;
@@ -129,7 +135,8 @@ img {
 @media (min-width: 1024px) {
   .header {
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 1rem 2rem;
   }
   .header__logo {
@@ -236,7 +243,7 @@ img {
   align-items: center;
   text-align: center;
   gap: 40px;
-  padding: 40px 16px;
+  padding: 100px 16px 40px;
   background: radial-gradient(circle at top right, rgba(255, 225, 109, 0.15), transparent 60%);
 }
 
