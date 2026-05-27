@@ -14,3 +14,9 @@ export const eliminar = (carrito, id) => {
 export const incrementar = (carrito, id) => {
     return carrito.map(p => p.id === id ? { ...p, cantidad: p.cantidad + 1 } : p);
 };
+
+// Decrementar cantidad
+export const decrementar = (carrito, id) => {
+    return carrito.map(p => p.id === id ? { ...p, cantidad: p.cantidad - 1 } : p)
+        .filter(p => p.cantidad > 0);
+};
