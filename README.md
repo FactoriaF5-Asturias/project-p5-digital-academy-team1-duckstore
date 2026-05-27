@@ -488,6 +488,19 @@ El proyecto aplica conceptos de accesibilidad:
 - `feat`: setup catalog sass structure and compile to css
 - `feat`: refactor catalog rendering to use ES6 map and template strings"
 - `chore`: merge remote changes and resolve README conflict
+- `feat`: new header and footer
+- `fix`:  catalog filters and navigation links
+- `feat`: add click event to category buttons 
+- `feat`: filter ducks array using filter method on click
+- `feat`: render filtered products array into the catalog container
+- `feat`: toggle active class on category filter buttons
+- `feat`: implement show all products option without filtering
+- `feat`: add category filters to catalog
+- `feat`: add 'Add to cart' button element to each product card
+- `feat`: implement click event listener for add to cart buttons
+- `feat`: check if product already exists in cart before adding
+- `feat`: push non-duplicate products into the cart array
+- `feat`: add to cart button in catalog
 
 ## 🚀 Commits de Jenny (Homepage)
 
