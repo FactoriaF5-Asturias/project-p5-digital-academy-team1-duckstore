@@ -71,6 +71,15 @@ const carrito = [];
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-agregar-carrito") && e.target.tagName === "BUTTON") {
         const patitoId = e.target.getAttribute("data-id");
-        console.log(`Subtarea 2: Se ha pulsado el botón añadir al carrito del patito con ID: ${patitoId}`);
+        // Comprobar si el patito ya existe en el carrito
+        // Usamos Number() porque los atributos de HTML siempre se leen como texto
+        const yaExiste = carrito.some(pato => pato.id === Number(patitoId));
+
+        if (yaExiste) {
+            console.log("Este patito ya está en el carrito.");
+        } else {
+            console.log("El patito no está en el carrito. Se puede añadir.");
+        }
+
     }
 });
