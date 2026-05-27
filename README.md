@@ -541,10 +541,13 @@ El proyecto aplica conceptos de accesibilidad:
 
 ## 🚀 Commits de Luisa (Contacto)
 
-> 📌 Se añadirán durante el desarrollo.
+- `feat`: fix SASS architecture root and contact styles
+- `feat`: add duck icon to navigation bar
+- `style`: implement modular architecture with SASS and compile styles
+- `chore`: update gitignore and project dependencies
+- `test`: add automated e2e testing with playwright (2.6s)
+- `docs`: add fix commits summary and final screenshots to README
 
-- 
-- 
 
 ## 🧪 Commits de tests
 
