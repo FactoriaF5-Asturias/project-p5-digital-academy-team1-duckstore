@@ -557,6 +557,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `docs`: add vitest screenshots to README
 - `chore`: install playwright
 - `test`: add e2e test homepage loads with 3 ducks 
+- `test`: add e2e test for add to cart updates counter
 
 ## 🔧 Commits finales Parte 2
 
