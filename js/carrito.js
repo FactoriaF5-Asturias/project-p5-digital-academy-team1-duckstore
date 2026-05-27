@@ -161,6 +161,10 @@ export const confirmarPago = () => {
 
 // Eventos botones de pago
 document.querySelector('#btn-pago')?.addEventListener('click', () => {
+    if (carrito.length === 0) {
+        alert('Tu carrito está vacío. Añade algún patito antes de pagar.');
+        return;
+    }
     window.location.href = 'pago.html';
 });
 document.querySelector('#btn-confirmar')?.addEventListener('click', confirmarPago);
