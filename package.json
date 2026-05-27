@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "> *\"No son simples patitos de goma. Son compañeros de aventuras.\"*",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore.git"
@@ -19,6 +17,8 @@
   },
   "homepage": "https://github.com/FactoriaF5-Asturias/project-p5-digital-academy-team1-duckstore#readme",
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
     "sass": "^1.100.0"
   }
 }
