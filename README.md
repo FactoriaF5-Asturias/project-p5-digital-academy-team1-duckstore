@@ -560,6 +560,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `test`: add e2e test for add to cart updates counter
 - `test`: add e2e test for product appears in cart
 
+
 ## 🔧 Commits finales Parte 2
 
 - 
@@ -585,8 +586,10 @@ El proyecto aplica conceptos de accesibilidad:
 
 | Test | Resultado |
 |------|-----------|
-| | |
-
+| la home carga y muestra 3 patitos destacados | ![test1](assets/imgs/part2/tests/test-playwright-1.png) |
+| añadir un patito al carrito actualiza el contador | ![test2](assets/imgs/part2/tests/test-playwright-2.png) |
+| el patito aparece en el carrito tras añadirlo | ![test3](assets/imgs/part2/tests/test-playwright-3.png) |
+| todos los tests en verde | ![all](assets/imgs/part2/tests/all-playwright.png) |
 ---
 
 # 👩‍💻 Autoras
