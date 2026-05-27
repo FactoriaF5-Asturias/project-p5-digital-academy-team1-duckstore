@@ -587,6 +587,8 @@ El proyecto aplica conceptos de accesibilidad:
 - `fix`: regenerate style.css from main.scss
 - `style`: update hero padding for fixed header
 - `fix`: fix back to store link in payment page
+- `fix`: scroll to success message after payment
+- 
 
 ---
 

@@ -51,6 +51,7 @@ const mostrarExito = () => {
     exito.classList.add("pago-exito--animado");
 
     confirmarPago();
+    exito.scrollIntoView({ behavior: 'smooth', block: 'center' });
 };
 
 // Evento al cargar el DOM
