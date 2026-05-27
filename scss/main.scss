@@ -1,0 +1,23 @@
+// Base
+@use 'base/reset';
+@use 'base/variables';
+
+// Components
+@use 'components/header';
+@use 'components/footer';
+
+// Pages
+@use 'pages/homepage/hero';
+@use 'pages/homepage/ventajas';
+@use 'pages/homepage/featured';
+@use 'pages/catalogo/cards';
+@use 'pages/catalogo/filtros';
+@use 'pages/catalogo/catalogo';
+@use 'pages/detalle/breadcrumb';
+@use 'pages/detalle/image-card';
+@use 'pages/detalle/product-info';
+@use 'pages/detalle/layout';
+@use 'pages/detalle/animations';
+@use 'pages/contacto/contacto';
+@use 'pages/carrito/carrito';
+@use 'pages/pago/pago';
