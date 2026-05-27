@@ -29,7 +29,7 @@ export const ducks = [
     },
     {
         id: 4,
-        nombre: "Pato Súperhéroe",
+        nombre: "Pato Superhéroe",
         precio: 16.50, // Número puro, con punto decimal y sin comillas
         categoria: "Superhéroes",
         imagen: "../assets/imgs/pato-superheroe.png",

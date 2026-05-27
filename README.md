@@ -588,7 +588,7 @@ El proyecto aplica conceptos de accesibilidad:
 - `style`: update hero padding for fixed header
 - `fix`: fix back to store link in payment page
 - `fix`: scroll to success message after payment
-- 
+- `fix`: fix superhero duck name accent
 
 ---
 
