@@ -48,7 +48,7 @@ export const renderCarrito = () => {
 
     contenedor.innerHTML = carrito.map(pato => `
     <li class="carrito-item">
-      <img src="${pato.imagen}" alt="${pato.nombre}">
+      <img src="../${pato.imagen}" alt="${pato.nombre}">
       <div class="carrito-item__info">
         <h4 class="carrito-item__nombre">${pato.nombre}</h4>
         <p class="carrito-item__categoria">${pato.categoria}</p>

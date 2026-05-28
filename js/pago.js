@@ -21,7 +21,7 @@ const renderPago = () => {
 
     items.innerHTML = carrito.map(p => `
         <li class="pago-item">
-            <img src="${p.imagen}" alt="${p.nombre}" class="pago-item__img" />
+            <img src="../${p.imagen}" alt="${p.nombre}" class="pago-item__img" />
             <div class="pago-item__info">
                 <p class="pago-item__nombre">${p.nombre}</p>
                 <p class="pago-item__cantidad">Cant: ${p.cantidad}</p>
