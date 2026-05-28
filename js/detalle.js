@@ -19,7 +19,7 @@ const renderDetalle = () => {
     contenedor.innerHTML = `
         <section class="detalle__imagen">
             <span class="detalle__imagen-badge">${pato.categoria}</span>
-            <img src="${pato.imagen}" alt="${pato.nombre}" class="detalle__imagen-img" />
+            <img src="../${pato.imagen}" alt="${pato.nombre}" class="detalle__imagen-img" />
         </section>
         <section class="detalle__info">
             <h1 class="detalle__info-title">${pato.nombre}</h1>
